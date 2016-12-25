@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Community Choice Aggregation for the City of Boston">
+    <meta name="author" content="Boston Climate Action Network">
+    <link rel="icon" href="/img/favicon.ico">
+    <title>Community Choice Energy for Boston</title>
+
+    <!-- CSS and fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Community Choice Energy for Boston</h1>
+        <p class="lead"></p>
+        <p><a id="sign" class="btn btn-lg btn-success" href="#" role="button">
+            Sign the Petition</a></p>
+      </div>
+    </div>
+
+    <div class="container section">
+        <div class="row">
+            <div class="col-sm-5 green-info bg-success check-list">
+                <p>Choose renewables</p>
+                <p>Fight climate change</p>
+                <p>Protect consumers</p>
+                <p>Stabilize prices</p>
+            </div>
+            <div class="col-sm-7">
+                <p>The City of Boston has the authority to decide where our energy comes from.  We can come together and with the power of bulk purchasing, choose to buy more renewable energy without increasing costs to businesses and residents.</p>
+                <p>Your more autonomous, butch-type female stemming from a childhood trauma too hair-raising to discuss here, retroactive puzzlement pericardium-piercer, feeling all ungenerous and greedy. Near an umbrella but not in the actual shade of the umbrella wearing neither sunglasses nor a look of Dickensian oppression thoroughgoingly lack the oracular foresight of Pynchon votaried self-transcendence. Meta-stuff invites the very question it begs ovaloid mammarial bags, unwittingly teratoid espial.</p>
+            </div>
+        </div>
+
+        <h2 class="text-center vert-spacer-top">Let's Join the Massachusetts Movement</h2>
+        <div class="hidden-xs center-block">
+            <div id="map"></div>
+            <div id="legend"></div>
+        </div>
+        <div class="row vert-spacer-top">
+            <div class="col-sm-6">
+                <p>Your more autonomous, butch-type female stemming from a childhood trauma too hair-raising to discuss here, retroactive puzzlement pericardium-piercer, feeling all ungenerous and greedy. Near an umbrella but not in the actual shade of the umbrella wearing neither sunglasses nor a look of Dickensian oppression thoroughgoingly lack the oracular foresight of Pynchon votaried self-transcendence. Meta-stuff invites the very question it begs ovaloid mammarial bags, unwittingly teratoid espial.</p>
+            </div>
+            <div class="col-sm-6">
+                <p class="text-muted text-center">Hover over a town to see details</p>
+                <table class="table">
+                    <tr>
+                        <th>Town</th>
+                        <td id="town-name"></td>
+                    </tr>
+                    <tr>
+                        <th>CCA name</th>
+                        <td id="town-cca-name"></td>
+                    </tr>
+                    <tr>
+                        <th>CCA established</th>
+                        <td id="town-cca-established"></td>
+                    </tr>
+                    <tr>
+                        <th>Renewables Investment</th>
+                        <td id="town-renewables"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-section bg-success">
+        <div class="container">
+          <div class="media">
+            <div class="media-left hidden-xs">
+                <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle text-success fa-stack-2x"></i>
+                  <i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+            <div class="media-body card">
+                <h3>
+                    <i class="visible-xs-inline fa fa-leaf"></i>
+                    Better for the Planet
+                </h3>
+                <p>We can increase <strong>5% more renewables</strong> without
+                increasing costs, which saves 2 quadrillion tonnes of CO2 each year,
+                protecting the environment and helping us reach our climate
+                targets. Join the movement.  Band together to save the planet from
+                warming.</p>
+            </div>
+          </div>
+
+          <div class="media">
+            <div class="media-left hidden-xs">
+                 <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle text-success fa-stack-2x"></i>
+                  <i class="fa fa-dollar fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+            <div class="media-body card">
+               <h3>
+                  <i class="visible-xs-inline fa fa-dollar"></i>
+                  Money Smart
+               </h3>
+               <p>The purchase plan <strong>will not add any costs to residents
+                   or businesses</strong>, and by choosing our generation with
+                   contracts, the price of energy will be stable: fixed through
+                   the contract term instead of fluctuating
+                   with the cost of oil and gas.</p>
+            </div>
+          </div>
+
+          <div class="media">
+            <div class="media-left hidden-xs">
+                 <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle text-success fa-stack-2x"></i>
+                  <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+            <div class="media-body card">
+                <h3>
+                  <i class="visible-xs-inline fa fa-users"></i>
+                   Protects Residents
+                </h3>
+                <p>Deregulated markets lets energy buyer companies offer custom
+                plans to to Eversource customers.  Many of these plans do not
+                deliver on their promises. The utility and city have to issue
+                scam warnings to its residents.  Our Community Choice Energy plan
+                helps the City of Boston protect against these scams by
+                doing the market research to select a good default plan for
+                all residents.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 vert-spacer-bottom">
+              <img class="img-circle center-block" src="/img/sara_driscoll.png" alt="" width="140" height="140">
+              <h4 class="text-center">Sara Driscoll</h4>
+              <p class="text-muted">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            </div>
+
+            <div class="col-sm-4 vert-spacer-bottom">
+              <img class="img-circle center-block" src="/img/judith_kolligan.png" alt="" height="140">
+              <h4 class="text-center">Judith Kolligan</h4>
+              <p class="text-muted">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            </div>
+
+            <div class="col-sm-4 vert-spacer-bottom">
+              <img class="img-circle center-block" src="/img/mike_prokosch.png" alt="Generic placeholder image" width="140" height="140">
+              <h4 class="text-center"><span class="hidden-xs">Mike Prokosch</h4>
+              <p class="text-muted">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="section bg-section bg-success">
+      <div class="container">
+        <div class="card faq">
+            <h4>Will I be able to keep my current plan?</h4>
+            <p><strong>Yes!</strong> No one is locked into the Community Choice
+               Aggregation plan,
+               and you may opt out of the plan to keep the Eversource defaults or
+               whatever energy buying program you choose.</p>
+
+            <h4>Will this affect the utility companies' margins?</h4>
+            <p><strong>No.</strong> Eversource earns its money on the transmission
+               and delivery only,
+               not on the power generation, so utility jobs should not be affected.</p>
+
+            <h4>Will buying more solar cause brownouts on cloudy days?</h4>
+            <p><strong>No.</strong> The grid is able to sustain a much higher
+               percentage of
+               renewable sources than it currently delivers.  We could reasonably
+               double the amount of solar currently powering our grid without
+               running into trouble.</p>
+
+            <p class="vert-spacer-top text-center"><a href="/faq/" class="btn btn-default">Read More</a></p>
+          </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="firstName" class="col-sm-2 control-label">First name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="firstName" placeholder="First name">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="lastName" class="col-sm-2 control-label">Last name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="lastName" placeholder="Last name">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-success">Sign the Petition</button>
+                </div>
+              </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+      <footer class="footer">
+      <p class="text-small">Built with <i class="fa fa-heart text-danger"></i>
+         by the
+         <a href="http://bostoncan.org">Boston Climate Action Network</a></p>
+      </footer>
+    </div>
+
+    <!-- Javascript  Dependencies -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/2.2.0/topojson.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="/js/map.js"></script>
+    <script>
+        $("#sign").click(function() {
+            $('html,body').animate({
+                scrollTop: $("form").offset().top
+            }, 'slow');
+        });
+    </script>
+  </body>
+</html>

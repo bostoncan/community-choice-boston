@@ -1,0 +1,133 @@
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#map {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 615px;
+}
+
+#legend {
+    margin-top: -100px;
+}
+
+.town {
+    fill: #fff;
+    stroke: gray;
+}
+
+.town:hover {
+    fill: yellow;
+}
+
+.town-green {
+    fill: green;
+}
+
+.town-orange {
+    fill: orange;
+}
+
+.jumbotron {
+    background-image: url("../img/hero.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center top;
+    color: #fff;
+}
+
+.jumbotron h1 {
+    text-shadow: -2px 0 #444, 0 2px #444, 2px 0 #444, 0 -2px #444;
+    font-weight: bold;
+}
+
+.jumbotron p .btn {
+    margin-top: 70px;
+}
+
+.green-info {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    box-shadow:
+        inset 0px 11px 8px -10px #CCC,
+        inset 0px -11px 8px -10px #CCC;
+    margin-bottom: 30px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .green-info {
+        border-radius: 4px;
+        padding: 30px;
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+}
+
+.check-list p:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    padding-right: 10px;
+    color: green;
+    content: "\f00c ";
+}
+
+.faq h4 {
+    padding-top: 30px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 0 20px 15px 20px;
+    border-radius: 4px;
+}
+
+.bg-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    box-shadow:
+        inset 0px 11px 8px -10px #CCC,
+        inset 0px -11px 8px -10px #CCC;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.vert-spacer-top {
+    margin-top: 60px;
+}
+
+.vert-spacer-bottom {
+    margin-bottom: 30px;
+}
+
+.section .lead {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-small {
+    font-size: 10px;
+}
+
+.section h5 {
+    margin-top: 30px;
+}
+
+footer {
+    margin-top: 10px;
+}
+
