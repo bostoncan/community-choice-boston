@@ -16,6 +16,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/jumbotron-narrow.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/cal.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -47,8 +48,17 @@
                 <p>Your more autonomous, butch-type female stemming from a childhood trauma too hair-raising to discuss here, retroactive puzzlement pericardium-piercer, feeling all ungenerous and greedy. Near an umbrella but not in the actual shade of the umbrella wearing neither sunglasses nor a look of Dickensian oppression thoroughgoingly lack the oracular foresight of Pynchon votaried self-transcendence. Meta-stuff invites the very question it begs ovaloid mammarial bags, unwittingly teratoid espial.</p>
             </div>
         </div>
+    </div>
 
-        <h2 class="text-center vert-spacer-top">Let's Join the Massachusetts Movement</h2>
+    <div class="section bg-section bg-success">
+        <div class="margin-sides container">
+            <div id="next-event" class="row card vert-padding-top-small">
+            </div>
+        </div>
+    </div>
+
+    <div class="container section">
+        <h2 class="text-center">Let's Join the Massachusetts Movement</h2>
         <div class="hidden-xs center-block">
             <div id="map"></div>
             <div id="legend"></div>
@@ -57,7 +67,7 @@
             <div class="col-sm-6">
                 <p>Your more autonomous, butch-type female stemming from a childhood trauma too hair-raising to discuss here, retroactive puzzlement pericardium-piercer, feeling all ungenerous and greedy. Near an umbrella but not in the actual shade of the umbrella wearing neither sunglasses nor a look of Dickensian oppression thoroughgoingly lack the oracular foresight of Pynchon votaried self-transcendence. Meta-stuff invites the very question it begs ovaloid mammarial bags, unwittingly teratoid espial.</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 hidden-xs">
                 <p class="text-muted text-center">Hover over a town to see details</p>
                 <table class="table">
                     <tr>
@@ -242,9 +252,26 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="//d3js.org/d3.v3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/2.2.0/topojson.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ical.js/1.2.2/ical.min.js"></script>
 
     <!-- Custom js -->
-    <script src="/js/map.js"></script>
+    <script id="template-cal-event" type="text/html">
+        <div class="col-sm-2 text-center center-block">
+            <time datetime="{{isoformat}}" class="icon">
+                <em>{{day}}</em>
+                <strong>{{month}}</strong>
+                <span>{{date}}</span>
+            </time>
+        </div>
+        <div class="col-sm-10">
+            <h4><strong>{{title}}</strong></h4>
+            <p class="text-muted">{{when}}<br/>
+               {{where}} (<a target="_blank" href="https://maps.google.com/?q={{where-enc}}">map</a>)</p>
+            <p>{{description}}</p>
+        </div>
+    </script>
+
     <script>
         $("#sign").click(function() {
             $('html,body').animate({
@@ -252,5 +279,8 @@
             }, 'slow');
         });
     </script>
+
+    <script src="/js/map.js"></script>
+    <script src="/js/cal.js"></script>
   </body>
 </html>
