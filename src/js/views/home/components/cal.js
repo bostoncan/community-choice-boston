@@ -7,18 +7,22 @@ var $ = require('jquery'),
     eventTemplate = require('raw-loader!../templates/cal-event.html'),
     errorTemplate = require('raw-loader!../templates/cal-error.html');
 
+// Set lodash interpolation
+_.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
+
 module.exports = Backbone.View.extend({
     initialize: function(options) {
         this.template = _.template(eventTemplate);
         var url = 'https://www.googleapis.com/calendar/v3/calendars/' +
-                  options.cal_id + '/events?' +
+                  options.id + '/events?' +
                   'orderBy=startTime&singleEvents=True&maxResults=1&key=' +
-                  options.cal_key;
+                  options.key;
 
+        this.el = $('#next-event');
         $.ajax({
             url: url,
-            success: this.render,
-            error: this.error
+            success: this.render.bind(this),
+            error: this.error.bind(this)
         });
     },
 
