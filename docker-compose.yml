@@ -1,10 +1,17 @@
 version: '2'
 services:
-    cca:
-        image: 'python:2.7'
-        command: ['python', '-m', 'SimpleHTTPServer']
-        working_dir: '/src'
+    nginx:
+        image: 'nginx'
         volumes:
-            - './src:/src'
+            - './build:/usr/share/nginx/html:ro'
         ports:
-            - '8100:8000'
+            - '8100:80'
+    webpack:
+        build: '.'
+        command: ['webpack', '--progress', '--colors']
+        volumes:
+            - './src:/app/src'
+            - './webpack.config.js:/app/webpack.config.js'
+            - './assets:/app/assets'
+            - './plugins:/app/plugins'
+            - './build:/app/build'

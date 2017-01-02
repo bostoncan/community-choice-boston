@@ -1,17 +1,21 @@
-/* global d3, topojson */
-(function() {
-  'use strict';
+/* globals d3, topojson */
+'use strict';
 
-  function titleCase(name) {
+var d3 = require('d3'),
+    topojson = require('topojson'),
+    $ = require('jquery');
+
+function titleCase(name) {
     return name
         .split(' ')
         .map(function(n) {
             return n[0] + n.slice(1).toLowerCase();
         })
         .join(' ');
-  }
+}
 
-  d3.json('/data/ma-towns.topojson', function(err, topology) {
+module.exports = function() {
+  d3.json('/assets/data/ma-towns.topojson', function(err, topology) {
 
     // Convert the topojson to geojson
     var geojson = topojson.feature(topology, topology.objects.towns),
@@ -88,4 +92,4 @@
             .attr('dy', '.35em')
             .text(function(d) { return d; });
   });
-}());
+};

@@ -1,0 +1,89 @@
+title: 'Home'
+leaders:
+    - 'Choose renewables'
+    - 'Fight climate change'
+    - 'Protect consumers'
+    - 'Stabilize prices'
+leader_text: |
+    <p>The City of Boston has the authority to decide where our energy comes from.  We can come together and with the power of bulk purchasing, choose to buy more renewable energy without increasing costs to businesses and residents.</p>
+    <p>Your more autonomous, butch-type female stemming from a childhood trauma too hair-raising to discuss here, retroactive puzzlement pericardium-piercer, feeling all ungenerous and greedy. Near an umbrella but not in the actual shade of the umbrella wearing neither sunglasses nor a look of Dickensian oppression thoroughgoingly lack the oracular foresight of Pynchon votaried self-transcendence. Meta-stuff invites the very question it begs ovaloid mammarial bags, unwittingly teratoid espial.</p>
+
+map_summary: |
+    <p>Your more autonomous, butch-type female stemming from a childhood
+    trauma too hair-raising to discuss here, retroactive puzzlement
+    pericardium-piercer, feeling all ungenerous and greedy. Near an umbrella
+    but not in the actual shade of the umbrella wearing neither sunglasses
+    nor a look of Dickensian oppression thoroughgoingly lack the oracular
+    foresight of Pynchon votaried self-transcendence. Meta-stuff invites the
+    very question it begs ovaloid mammarial bags, unwittingly teratoid
+    espial.</p>
+
+media_bullets:
+    - icon: 'fa-leaf'
+      title: 'Better for the Planet'
+      content: |
+        <p>We can increase <strong>5% more renewables</strong> without
+        increasing costs, which saves 2 quadrillion tonnes of CO2 each year,
+        protecting the environment and helping us reach our climate
+        targets. Join the movement.  Band together to save the planet from
+        warming.</p>
+    - icon: 'fa-dollar'
+      title: 'Money Smart'
+      content: |
+        <p>The purchase plan <strong>will not add any costs to residents
+        or businesses</strong>, and by choosing our generation with
+        contracts, the price of energy will be stable: fixed through
+        the contract term instead of fluctuating
+        with the cost of oil and gas.</p>
+    - icon: 'fa-users'
+      title: 'Protects Residents'
+      content: |
+        <p>Deregulated markets lets energy buyer companies offer custom
+        plans to to Eversource customers.  Many of these plans do not
+        deliver on their promises. The utility and city have to issue
+        scam warnings to its residents.  Our Community Choice Energy plan
+        helps the City of Boston protect against these scams by
+        doing the market research to select a good default plan for
+        all residents.</p>
+
+endorsements:
+    - image: 'sara_driscoll.png'
+      name: 'Sara Driscoll'
+      text: |
+        Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+        egestas eget quam. Vestibulum id ligula porta felis euismod semper.
+        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+        nibh, ut fermentum massa justo sit amet risus.
+    - image: 'judith_kolligan.png'
+      name: 'Judith Kolligan'
+      text: |
+        Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+        egestas eget quam. Vestibulum id ligula porta felis euismod semper.
+        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+        nibh, ut fermentum massa justo sit amet risus.
+    - image: 'mike_prokosch.png'
+      name: 'Mike Prokosch'
+      text: |
+        Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+        egestas eget quam. Vestibulum id ligula porta felis euismod semper.
+        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+        nibh, ut fermentum massa justo sit amet risus.
+
+faqs:
+    - question: 'Will I be able to keep my current plan?'
+      answer: |
+        <p><strong>Yes!</strong> No one is locked into the Community Choice
+        Aggregation plan, and you may opt out of the plan to keep the
+        Eversource defaults orwhatever energy buying program you choose.</p>
+    - question: 'Will this affect the utility companies'' margins?'
+      answer: |
+        <p><strong>No.</strong> Eversource earns its money on the transmission
+        and delivery only, not on the power generation, so utility jobs
+        should not be affected.</p>
+    - question: 'Will buying more solar cause brownouts on cloudy days?'
+      answer: |
+        <p><strong>No.</strong> The grid is able to sustain a much higher
+        percentage of renewable sources than it currently delivers.  We could
+        reasonably double the amount of solar currently powering our grid
+        without running into trouble.</p>
+

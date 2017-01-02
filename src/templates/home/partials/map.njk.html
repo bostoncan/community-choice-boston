@@ -1,0 +1,30 @@
+<h2 class="text-center">Let's Join the Massachusetts Movement</h2>
+<div class="hidden-xs center-block">
+    <div id="map"></div>
+    <div id="legend"></div>
+</div>
+<div class="row vert-spacer-top">
+    <div class="col-sm-6">{{ map_summary | safe }}</div>
+    <div class="col-sm-6 hidden-xs">
+        <p class="text-muted text-center">Hover over a town to see details</p>
+        <table class="table">
+            <tr>
+                <th>Town</th>
+                <td id="town-name"></td>
+            </tr>
+            <tr>
+                <th>CCA name</th>
+                <td id="town-cca-name"></td>
+            </tr>
+            <tr>
+                <th>CCA established</th>
+                <td id="town-cca-established"></td>
+            </tr>
+            <tr>
+                <th>Renewables Investment</th>
+                <td id="town-renewables"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+

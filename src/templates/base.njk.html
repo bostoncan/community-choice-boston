@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Community Choice Aggregation for the City of Boston">
+    <meta name="author" content="Boston Climate Action Network">
+    <link rel="icon" href="/img/favicon.ico">
+    <title>{{ title }} - Community Choice Energy for Boston</title>
+
+    <!-- CSS and fonts-->
+    <link href="//fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/cal.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    {% block header %}{% endblock %}
+
+    {% block content %}{% endblock %}
+
+    <div class="container">
+      <footer class="footer">
+      <p class="text-small">Built with <i class="fa fa-heart text-danger"></i>
+         by the
+         <a href="http://bostoncan.org">Boston Climate Action Network</a></p>
+      </footer>
+    </div>
+
+    <script src="/app.js"></script>
+    </body>
+</html>
