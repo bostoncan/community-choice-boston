@@ -34,7 +34,7 @@ body {
 }
 
 .jumbotron {
-    background-image: url("../img/hero.jpg");
+    background-image: url("/assets/img/hero.jpg");
     background-size:     cover;
     background-repeat:   no-repeat;
     background-position: center top;
