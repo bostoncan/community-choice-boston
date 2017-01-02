@@ -16,7 +16,11 @@
         <div class="row">
             <div class="col-sm-5 green-info bg-success check-list">
             {% for leader in leaders %}
-                <p>{{ leader }}</p>
+            <p>
+                <span class="fa-stack">
+                  <i class="fa fa-circle text-success fa-stack-2x"></i>
+                  <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                </span> {{ leader }}</p>
             {% endfor %}
             </div>
             <div class="col-sm-7">{{ leader_text | safe }}</div>
@@ -58,15 +62,8 @@
 
     <div class="section">
         <div class="container">
-          <div class="row">
-            {% for e in endorsements %}
-            <div class="col-sm-4 vert-spacer-bottom">
-                <img class="img-circle center-block" src="/assets/img/endorsements/{{ e.image }}" alt="" width="140" height="140">
-              <h4 class="text-center">{{ e.name }}</h4>
-              <p class="text-muted">{{ e.text }}</p>
-            </div>
-            {% endfor %}
-          </div>
+            {% include "common/endorsements.njk.html" %}
+            <p class="text-center"><a href="/endorsements/" class="btn btn-default">See All Endorsements</a></p>
         </div>
     </div>
 

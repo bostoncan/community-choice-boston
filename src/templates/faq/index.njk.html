@@ -1,0 +1,18 @@
+{% extends "base.njk.html" %}
+
+{% block header %}
+<div class="jumbotron">
+  <div class="container">
+    <h2>Community Choice Energy for Boston - Questions and Answers</h2>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container faq">
+    {% for q in faqs %}
+        <h4>{{ q.question }}</h4>
+        {{ q.answer | safe }}
+    {% endfor %}
+</div>
+{% endblock %}

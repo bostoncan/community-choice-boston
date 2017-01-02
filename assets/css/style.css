@@ -41,8 +41,8 @@ body {
     color: #fff;
 }
 
-.jumbotron h1 {
-    text-shadow: -2px 0 #444, 0 2px #444, 2px 0 #444, 0 -2px #444;
+.jumbotron h1,h2 {
+    text-shadow: -1px 0 #444, 0 1px #444, 1px 0 #444, 0 -1px #444;
     font-weight: bold;
 }
 
@@ -74,7 +74,7 @@ body {
 @media (min-width: 768px) {
     .green-info {
         border-radius: 4px;
-        padding: 30px;
+        padding: 25px;
         box-shadow: none;
         margin-bottom: 0;
     }
@@ -85,18 +85,6 @@ body {
     .margin-sides div div h4 {
         text-align: left;
     }
-}
-
-
-.check-list p:before {
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    display: inline-block;
-    text-decoration: inherit;
-    padding-right: 10px;
-    color: green;
-    content: "\f00c ";
 }
 
 .faq h4 {

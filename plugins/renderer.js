@@ -2,6 +2,7 @@
 
 const fs = require('fs'),
       path = require('path'),
+      mkdirp = require('mkdirp'),
       yaml = require('js-yaml'),
       nunjucks = require('nunjucks');
 
@@ -36,6 +37,7 @@ class NunjucksRenderPlugin {
                     f.context
                 ));
                 console.log('Writing ' + f.outFile);
+                mkdirp.sync(path.dirname(f.outFile));
                 fs.writeFileSync(f.outFile, f.rendered);
             });
             callback();
