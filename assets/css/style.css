@@ -33,12 +33,25 @@ body {
     fill: orange;
 }
 
-.jumbotron {
+.bg {
     background-image: url("/assets/img/hero.jpg");
-    background-size:     cover;
     background-repeat:   no-repeat;
     background-position: center top;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: -1;
+    /* height: 450px; (via js) */
+}
+
+
+.jumbotron {
     color: #fff;
+    background-color: #333;
+    height: 450px;
+    text-shadow: #444 0 1px 1px;
+    /* background: transparent (via js) */
 }
 
 .jumbotron h1,h2 {
