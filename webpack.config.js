@@ -1,6 +1,7 @@
 'use strict';
 
-const NunjucksRenderPlugin = require('./plugins/renderer'),
+const webpack = require('webpack'),
+      NunjucksRenderPlugin = require('./plugins/renderer'),
       CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
@@ -33,7 +34,8 @@ module.exports = {
                     template: './endorsements/index.njk.html'
                 }
             ]
-        })
+        }),
+        new webpack.optimize.UglifyJsPlugin()
     ],
     watch: true,
     watchOptions: {
