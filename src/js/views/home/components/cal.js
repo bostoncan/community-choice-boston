@@ -3,7 +3,7 @@
 var $ = require('jquery'),
     _ = require('lodash'),
     Backbone = require('backbone-lodash'),
-    moment = require('moment'),
+    dateFormat = require('dateformat'),
     eventTemplate = require('raw-loader!../templates/cal-event.html'),
     errorTemplate = require('raw-loader!../templates/cal-error.html');
 
@@ -32,13 +32,13 @@ module.exports = Backbone.View.extend({
 
     render: function(resp) {
         try {
-            var start = moment(new Date(resp.items[0].start.dateTime));
+            var start = new Date(resp.items[0].start.dateTime);
             var context = {
                 isoformat: start.toISOString(),
-                day: start.format('dddd'),
-                month: start.format('MMMM'),
-                date: start.format('D'),
-                when: start.format('h:mm a'),
+                day: dateFormat(start, 'dddd'),
+                month: dateFormat(start, 'mmmm'),
+                date: dateFormat(start, 'd'),
+                when: dateFormat(start, 'h:MM tt'),
                 where: resp.items[0].location,
                 whereEnc: encodeURI(resp.items[0].location),
                 title: resp.items[0].summary,

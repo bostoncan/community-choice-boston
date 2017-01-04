@@ -1,4 +1,3 @@
-/* globals d3, topojson */
 'use strict';
 
 var d3 = require('d3'),
