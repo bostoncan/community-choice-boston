@@ -45,6 +45,12 @@ body {
     /* height: 450px; (via js) */
 }
 
+.jumbotron-subpage {
+    background-image: url("/assets/img/hero.jpg");
+    background-repeat:   no-repeat;
+    background-position: center top;
+    height: 180px !important;
+}
 
 .jumbotron {
     color: #fff;
@@ -81,7 +87,6 @@ body {
 .margin-sides div div h4 {
     text-align: center;
 }
-
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {

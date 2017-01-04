@@ -6,7 +6,12 @@ var Backbone = require('backbone-lodash'),
 
 var Router = Backbone.Router.extend({
     routes: {
+        'faq/': 'subpage',
+        'endorsements/': 'subpage',
         '': 'home'
+    },
+
+    subpage: function() {
     },
 
     home: function() {
@@ -16,4 +21,4 @@ var Router = Backbone.Router.extend({
 
 // Route from location and kick off view
 new Router();
-Backbone.history.start();
+Backbone.history.start({pushState: true});
