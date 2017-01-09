@@ -14,11 +14,7 @@ $ docker-compose up
 Open [localhost:8100](http://localhost:8100) to see.
 
 ### To Do
-- Sub-pages
-    - FAQ page
-    - Citations page, styling for links
-    - Sub-page header
-- Template based generator?
+- Citations page, styling for links
 - Hook up petition form (when we have a destination)
 - Action timeline
   - Create proposal
@@ -33,7 +29,10 @@ Open [localhost:8100](http://localhost:8100) to see.
 - Petition form destination
 - Actual action timeline
 - Estimated energy and C02 savings
+- 10/12 word summary tagline
+- Primary pitch text
 - Endorsements
+- Massachussets summary stats & text of CCAs
 - Massachussets community choice energy programs
   - Location
   - Date of program
@@ -46,3 +45,15 @@ Open [localhost:8100](http://localhost:8100) to see.
   - Windows
   - Browsers
 - Deployment discussion (location, cost, etc.)
+
+### Deployment Options
+
+#### AWS
+- Very cheap (Free for a year then 10cents/month maybe)
+- Easy, terraform deployable
+
+#### Firebase
+- Free up to 5000 page views per month
+
+#### litbt
+- Free, generally easy, but not open if I get hit by a bus
