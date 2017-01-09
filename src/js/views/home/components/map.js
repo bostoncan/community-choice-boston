@@ -14,6 +14,11 @@ function titleCase(name) {
 }
 
 module.exports = function() {
+  // Skip if the map isn't visible
+  if (!$('#map').is(":visible")) {
+    return;
+  }
+
   d3.json('/assets/data/ma-towns.topojson', function(err, topology) {
 
     // Convert the topojson to geojson
