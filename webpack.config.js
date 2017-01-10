@@ -2,6 +2,7 @@
 
 const webpack = require('webpack'),
       NunjucksRenderPlugin = require('./plugins/renderer'),
+      BrowserSyncPlugin = require('browser-sync-webpack-plugin'),
       CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
@@ -11,10 +12,22 @@ module.exports = {
         filename: "app.js"
     },
     plugins: [
+        // Serve & live reload
+        new BrowserSyncPlugin({
+            host: 'localhost',
+            port: 3000,
+            server: {
+                baseDir: [
+                    './build'
+                ]
+            }
+        }),
+        // Copy assets (images, css, etc to build folder)
         new CopyWebpackPlugin([{
             from: './assets',
             to: './assets'
         }]),
+        // Render HTML pages from yaml file context
         new NunjucksRenderPlugin({
             baseDir: './src/templates',
             files: [
@@ -35,6 +48,7 @@ module.exports = {
                 }
             ]
         }),
+        // Optimize
         new webpack.optimize.UglifyJsPlugin()
     ],
     watch: true,

@@ -1,12 +1,5 @@
 version: '2'
 services:
-    nginx:
-        image: 'nginx'
-        volumes:
-            - './build:/var/www:ro'
-            - './site.conf:/etc/nginx/conf.d/default.conf'
-        ports:
-            - '8100:80'
     webpack:
         build: '.'
         command: ['webpack', '--progress', '--colors']
@@ -16,3 +9,5 @@ services:
             - './assets:/app/assets'
             - './plugins:/app/plugins'
             - './build:/app/build'
+        ports:
+            - '3000:3000'

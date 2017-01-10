@@ -11,7 +11,7 @@ Install [Docker](https://docs.docker.com/engine/installation/#/on-macos-and-wind
 $ docker-compose up
 ```
 
-Open [localhost:8100](http://localhost:8100) to see.
+Open [localhost:3000](http://localhost:3000) to see.
 
 ### To Do
 - Citations page, styling for links
