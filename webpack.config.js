@@ -25,7 +25,7 @@ module.exports = {
         // Copy assets (images, css, etc to build folder)
         new CopyWebpackPlugin([{
             from: './assets',
-            to: './assets'
+            to: './'
         }]),
         // Render HTML pages from yaml file context
         new NunjucksRenderPlugin({
@@ -38,12 +38,12 @@ module.exports = {
                 },
                 {
                     context: './src/pages/faq.yml',
-                    outFile: './build/faq/index.html',
+                    outFile: './build/faq.html',
                     template: './faq/index.njk.html'
                 },
                 {
                     context: './src/pages/endorsements.yml',
-                    outFile: './build/endorsements/index.html',
+                    outFile: './build/endorsements.html',
                     template: './endorsements/index.njk.html'
                 }
             ]

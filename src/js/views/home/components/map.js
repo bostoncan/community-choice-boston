@@ -19,7 +19,7 @@ module.exports = function() {
     return;
   }
 
-  d3.json('/assets/data/ma-towns.topojson', function(err, topology) {
+  d3.json('/data/ma-towns.topojson', function(err, topology) {
 
     // Convert the topojson to geojson
     var geojson = topojson.feature(topology, topology.objects.towns),
