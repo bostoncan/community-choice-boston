@@ -88,6 +88,14 @@ body {
     text-align: center;
 }
 
+.get-involved .action {
+    margin-bottom: 30px;
+}
+
+.get-involved .action p {
+    margin-top: 10px;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .green-info {
@@ -102,6 +110,9 @@ body {
     }
     .margin-sides div div h4 {
         text-align: left;
+    }
+    .get-involved .action {
+        height: 120px;
     }
 }
 
@@ -128,6 +139,20 @@ body {
     margin-bottom: 50px;
 }
 
+.section h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+.section h4.section-subtitle {
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.small-padding {
+    margin: 2px;
+}
+
 .vert-spacer-top {
     margin-top: 60px;
 }
@@ -150,6 +175,10 @@ body {
 
 .text-small {
     font-size: 10px;
+}
+
+.get-involved h4 {
+    text-align: center;
 }
 
 .section h5 {

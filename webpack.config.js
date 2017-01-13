@@ -2,14 +2,23 @@
 
 const webpack = require('webpack'),
       NunjucksRenderPlugin = require('./plugins/renderer'),
+      ExtractTextPlugin = require('extract-text-webpack-plugin'),
       BrowserSyncPlugin = require('browser-sync-webpack-plugin'),
       CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: "./src/js/app.js",
+    entry: './src/js/app.js',
     output: {
         path: './build',
-        filename: "app.js"
+        filename: 'app.js'
+    },
+    module: {
+        loaders: [
+            {
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+            }
+        ]
     },
     plugins: [
         // Serve & live reload
@@ -28,6 +37,8 @@ module.exports = {
             from: './assets',
             to: './'
         }]),
+        // Compile CSS into file
+        new ExtractTextPlugin('./css/styles.css'),
         // Render HTML pages from yaml file context
         new NunjucksRenderPlugin({
             baseDir: './src/templates',

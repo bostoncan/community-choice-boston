@@ -1,5 +1,9 @@
 'use strict';
 
+require('../css/jumbotron-narrow.css');
+require('../css/style.css');
+require('../css/cal.css');
+
 var Backbone = require('backbone-lodash'),
     config = require('./config'),
     HomeView = require('./views/home');
