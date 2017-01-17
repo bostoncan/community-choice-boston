@@ -68,7 +68,7 @@ module.exports = function() {
         /*
          * Map legend
          */
-        var legendText = ['Participating in a CCA', 'Proposed', 'None yet'],
+        var legendText = ['Participating in a CCE', 'Proposed', 'None yet'],
             color = d3.scale.ordinal().range(['#fff', 'orange', 'green']);
         color.domain([0,1,2]); // setting the range of the input data
 
