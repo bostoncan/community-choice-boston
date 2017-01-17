@@ -28,16 +28,11 @@
         </div>
     </div>
 
-    <div class="hidden-xs">
-        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/ZKBDemgNiNs" align="center" frameborder="0" allowfullscreen></iframe></center>
+    <div class="container section">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZKBDemgNiNs" allowfullscreen></iframe></center>
+        </div>
     </div>
-    <div class="visible-xs-inline center-block">
-        <a href="https://www.youtube.com/watch?v=ZKBDemgNiNs">
-            <img src="/img/vid-splash.png" style="width: 100%"/>
-        </a>
-    </div>
-
-    <div class="vert-spacer-top">&nbsp;</div>
 
     <div class="section bg-section bg-success">
         <div class="margin-sides container">
@@ -47,6 +42,8 @@
     </div>
 
     <div class="container section">
+        <h2>Let's Join the Massachusetts Movement</h2>
+        <h4 class="section-subtitle">Dozens of towns across the state are using Community Choice to go green!</h4>
         {% include "home/partials/map.njk.html" %}
     </div>
 
@@ -74,8 +71,10 @@
 
     <div class="section">
         <div class="container">
+            <h2>Endorsements</h2>
+            <h4 class="section-subtitle">Organizations, Activist Groups, Officials, and Businesses are all getting on board.</h4>
             {% include "common/endorsements.njk.html" %}
-            <p class="text-center"><a href="/endorsements.html" class="btn btn-default">See All Endorsements</a></p>
+            <p class="text-center"><a href="/endorsements.html" class="btn btn-default">See All</a></p>
         </div>
     </div>
 
@@ -93,7 +92,8 @@
 
     <div class="section">
         <div class="container">
-            {% include "home/partials/signup.njk.html" %}
+            <h2>Three Ways To Join the Movement</h2>
+            {% include "home/partials/get-involved.njk.html" %}
         </div>
     </div>
 {% endblock %}

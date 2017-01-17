@@ -111,9 +111,6 @@ body {
     .margin-sides div div h4 {
         text-align: left;
     }
-    .get-involved .action {
-        height: 120px;
-    }
 }
 
 .faq h4 {
@@ -183,6 +180,13 @@ body {
 
 .section h5 {
     margin-top: 30px;
+}
+
+.petition {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 420px;
 }
 
 footer {
