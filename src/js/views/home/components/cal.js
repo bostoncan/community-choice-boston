@@ -15,7 +15,7 @@ module.exports = Backbone.View.extend({
         this.template = _.template(eventTemplate);
         var url = 'https://www.googleapis.com/calendar/v3/calendars/' +
                   options.id + '/events?' +
-                  'orderBy=startTime&singleEvents=True&maxResults=1&key=' +
+                  'orderBy=startTime&singleEvents=True&maxResults=20&key=' +
                   options.key;
 
         this.el = $('#next-event');
@@ -32,17 +32,24 @@ module.exports = Backbone.View.extend({
 
     render: function(resp) {
         try {
-            var start = new Date(resp.items[0].start.dateTime);
+            var now = Date.now();
+            var items = resp.items.filter(function(item) {
+                if (!item.start || !item.start.dateTime) {
+                    return false;
+                }
+                return new Date(item.start.dateTime).valueOf() > now;
+            });
+            var start = new Date(items[0].start.dateTime);
             var context = {
                 isoformat: start.toISOString(),
                 day: dateFormat(start, 'dddd'),
                 month: dateFormat(start, 'mmmm'),
                 date: dateFormat(start, 'd'),
                 when: dateFormat(start, 'h:MM tt'),
-                where: resp.items[0].location,
-                whereEnc: encodeURI(resp.items[0].location),
-                title: resp.items[0].summary,
-                description: resp.items[0].description
+                where: items[0].location,
+                whereEnc: encodeURI(items[0].location),
+                title: items[0].summary,
+                description: items[0].description
             };
             this.el.html(this.template(context));
         } catch(e) {
