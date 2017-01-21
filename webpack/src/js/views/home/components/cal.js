@@ -13,14 +13,9 @@ _.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
 module.exports = Backbone.View.extend({
     initialize: function(options) {
         this.template = _.template(eventTemplate);
-        var url = 'https://www.googleapis.com/calendar/v3/calendars/' +
-                  options.id + '/events?' +
-                  'orderBy=startTime&singleEvents=True&maxResults=20&key=' +
-                  options.key;
-
         this.el = $('#next-event');
         $.ajax({
-            url: url,
+            url: options.backend + '/api/v1/calendar',
             success: this.render.bind(this),
             error: this.error.bind(this)
         });
@@ -32,14 +27,10 @@ module.exports = Backbone.View.extend({
 
     render: function(resp) {
         try {
-            var now = Date.now();
-            var items = resp.items.filter(function(item) {
-                if (!item.start || !item.start.dateTime) {
-                    return false;
-                }
-                return new Date(item.start.dateTime).valueOf() > now;
-            });
-            var start = new Date(items[0].start.dateTime);
+            var now = Date.now(),
+                items = resp.items,
+                start = new Date(items[0].start.dateTime);
+
             var context = {
                 isoformat: start.toISOString(),
                 day: dateFormat(start, 'dddd'),

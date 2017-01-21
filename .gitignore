@@ -1,2 +1,2 @@
-/build
-/src/js/config.js
+/webpack/src/js/config.js
+/webpack/build

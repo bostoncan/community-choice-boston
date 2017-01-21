@@ -1,13 +1,13 @@
 version: '2'
 services:
     webpack:
-        build: '.'
+        build: './webpack'
         command: ['webpack', '--progress', '--colors']
         volumes:
-            - './src:/app/src'
-            - './webpack.config.js:/app/webpack.config.js'
-            - './assets:/app/assets'
-            - './plugins:/app/plugins'
-            - './build:/app/build'
+            - './webpack/src:/app/src'
+            - './webpack/webpack.config.js:/app/webpack.config.js'
+            - './webpack/assets:/app/assets'
+            - './webpack/plugins:/app/plugins'
+            - './webpack/build:/app/build'
         ports:
             - '3000:3000'
