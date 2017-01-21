@@ -1,51 +1,47 @@
 title: 'Home'
+lead: 'Get more renewable electricity for all Boston residents by combining our buying power.'
 leaders:
     - 'Choose renewables'
     - 'Fight climate change'
     - 'Protect consumers'
     - 'Stabilize prices'
 leader_text: |
-    <p>The City of Boston has the authority to decide where our energy comes from.  We can come together and with the power of bulk purchasing, choose to buy more renewable energy without increasing costs to businesses and residents.</p>
-    <p>Your more autonomous, butch-type female stemming from a childhood trauma too hair-raising to discuss here, retroactive puzzlement pericardium-piercer, feeling all ungenerous and greedy. Near an umbrella but not in the actual shade of the umbrella wearing neither sunglasses nor a look of Dickensian oppression thoroughgoingly lack the oracular foresight of Pynchon votaried self-transcendence. Meta-stuff invites the very question it begs ovaloid mammarial bags, unwittingly teratoid espial.</p>
-
+    <p>We are an activist collective working to prevent climate change in Boston, and are not affiliated with private interests.</p>
+    <p>The City of Boston has the authority to decide where our energy comes from. City residents can come together and, with the power of bulk purchasing, choose to buy more renewable electricity without increasing costs to businesses and residents.</p>
+    <p>Learn more in the short infographic video below!</p>
 map_summary: |
-    <p>Your more autonomous, butch-type female stemming from a childhood
-    trauma too hair-raising to discuss here, retroactive puzzlement
-    pericardium-piercer, feeling all ungenerous and greedy. Near an umbrella
-    but not in the actual shade of the umbrella wearing neither sunglasses
-    nor a look of Dickensian oppression thoroughgoingly lack the oracular
-    foresight of Pynchon votaried self-transcendence. Meta-stuff invites the
-    very question it begs ovaloid mammarial bags, unwittingly teratoid
-    espial.</p>
+  <p>Dozens of towns across Massachusetts and hundreds across America
+  are choosing how they get their energy instead of depending on the
+  utility to choose for them.<p>
+  <ul class="list-unstyled">
+  <p><strong>Brookline, MA</strong> recently initiated a plan to increase
+  their renewable commitment by <strong>25%</strong> of their power usage.
+  <strong>Greenfield, MA</strong> went for a <strong>100%</strong> renewables plan in December 2016.</p>
+  <p>This is a plan that is working for lots of communities - let's make it work for Boston!</p>
 
 media_bullets:
     - icon: 'fa-leaf'
       title: 'Better for the Planet'
       content: |
-        <p>We can increase <strong>5% more renewables</strong> without
-        increasing costs, which saves 2 quadrillion tonnes of CO2 each year,
-        protecting the environment and helping us reach our climate
-        targets. Join the movement.  Band together to save the planet from
-        warming.</p>
+        <p>With bulk purchasing, we can obtain <strong>5% more renewable
+        energy</strong> without increasing energy costs. This will save
+        tonnes of CO2 each year, protecting the environment and helping
+        us reach our climate targets.</p>
     - icon: 'fa-dollar'
       title: 'Money Smart'
       content: |
-        <p>The purchase plan <strong>will not add any costs to residents
-        or businesses</strong>, and by choosing our generation with
-        contracts, the price of energy will be stable: fixed through
-        the contract term instead of fluctuating
-        with the cost of oil and gas.</p>
+        <p>The new Community Choice Energy purchasing plan <strong>will
+        not add overall costs to residents or businesses</strong>. The
+        new shared plan will also protect us from price spikes caused by
+        the changing cost of fossil fuels.</p>
     - icon: 'fa-users'
       title: 'Protects Residents'
       content: |
-        <p>Deregulated markets lets energy buyer companies offer custom
-        plans to to Eversource customers.  Many of these plans do not
-        deliver on their promises. The utility and city have to issue
-        scam warnings to its residents.  Our Community Choice Energy plan
-        helps the City of Boston protect against these scams by
-        doing the market research to select a good default plan for
-        all residents.</p>
-
+        <p>Have people been calling you or knocking on your door and
+        offering you a new electricity plan? Many of these plans do not
+        deliver on their promises. Our Community Choice Energy plan
+        protects residents against energy scams by implementing a new
+        citywide clean energy electricity plan for all of us.</p>
 endorsements:
     - image: 'sara_driscoll.png'
       name: 'Sara Driscoll'
@@ -87,3 +83,128 @@ faqs:
         reasonably double the amount of solar currently powering our grid
         without running into trouble.</p>
 
+petition_body: |
+    <p>We petition the elected officials of the city of Boston -
+    Mayor Marty Walsh and the City Council - to formally engage an
+    energy broker to find contracts to purchase energy generation
+    for the City of Boston that increases our renewable commitment
+    by at least 5% over the required Renewable Portfolio Standard
+    state levels.</p>
+    <p>We believe it is critical to take this action to mitigate the
+    effects of climate change to protect the environment and future
+    generations.  Adaptation and resilience is not sufficient - by
+    engaging in bulk renewable purchasing, we can help drive the
+    market toward clean energy solutions for the betterment of
+    Boston, America, and the world.</p>
+
+states:
+  - name: 'Alabama'
+    abbr: 'AL'
+  - name: 'Alaska'
+    abbr: 'AK'
+  - name: 'American Samoa'
+    abbr: 'AS'
+  - name: 'Arizona'
+    abbr: 'AZ'
+  - name: 'Arkansas'
+    abbr: 'AR'
+  - name: 'California'
+    abbr: 'CA'
+  - name: 'Colorado'
+    abbr: 'CO'
+  - name: 'Connecticut'
+    abbr: 'CT'
+  - name: 'Delaware'
+    abbr: 'DE'
+  - name: 'Dist. of Columbia'
+    abbr: 'DC'
+  - name: 'Florida'
+    abbr: 'FL'
+  - name: 'Georgia'
+    abbr: 'GA'
+  - name: 'Guam'
+    abbr: 'GU'
+  - name: 'Hawaii'
+    abbr: 'HI'
+  - name: 'Idaho'
+    abbr: 'ID'
+  - name: 'Illinois'
+    abbr: 'IL'
+  - name: 'Indiana'
+    abbr: 'IN'
+  - name: 'Iowa'
+    abbr: 'IA'
+  - name: 'Kansas'
+    abbr: 'KS'
+  - name: 'Kentucky'
+    abbr: 'KY'
+  - name: 'Louisiana'
+    abbr: 'LA'
+  - name: 'Maine'
+    abbr: 'ME'
+  - name: 'Maryland'
+    abbr: 'MD'
+  - name: 'Marshall Islands'
+    abbr: 'MH'
+  - name: 'Massachusetts'
+    abbr: 'MA'
+  - name: 'MI'
+    abbr: 'Michigan'
+  - name: 'Micronesia'
+    abbr: 'FM'
+  - name: 'Minnesota'
+    abbr: 'MN'
+  - name: 'Mississippi'
+    abbr: 'MS'
+  - name: 'Montana'
+    abbr: 'MO'
+  - name: 'Nebraska'
+    abbr: 'NE'
+  - name: 'Nevada'
+    abbr: 'NV'
+  - name: 'New Hampshire'
+    abbr: 'NH'
+  - name: 'New Jersey'
+    abbr: 'NJ'
+  - name: 'New Mexico'
+    abbr: 'NM'
+  - name: 'New York'
+    abbr: 'NY'
+  - name: 'North Carolina'
+    abbr: 'NC'
+  - name: 'North Dakota'
+    abbr: 'ND'
+  - name: 'Ohio'
+    abbr: 'OH'
+  - name: 'Oklahoma'
+    abbr: 'OK'
+  - name: 'Oregon'
+    abbr: 'OR'
+  - name: 'Pennsylvania'
+    abbr: 'PA'
+  - name: 'Puerto Rico'
+    abbr: 'PR'
+  - name: 'Rhode Island'
+    abbr: 'RI'
+  - name: 'South Carolina'
+    abbr: 'SC'
+  - name: 'South Dakota'
+    abbr: 'SD'
+  - name: 'Tennessee'
+    abbr: 'TN'
+  - name: 'Texas'
+    abbr: 'TX'
+  - name: 'Utah'
+    abbr: 'UT'
+  - name: 'Vermont'
+    abbr: 'VT'
+  - name: 'Virginia'
+    abbr: 'VI'
+  - name: 'Washington'
+    abbr: 'WA'
+  - name: 'West Virginia'
+    abbr: 'WV'
+  - name: 'Wisconsin'
+    abbr: 'WI'
+  - name: 'Wyoming'
+    abbr: 'WY'

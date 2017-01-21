@@ -2,6 +2,7 @@
     <div id="map"></div>
     <div id="legend"></div>
 </div>
+{% if include_map_details %}
 <div class="row vert-spacer-top">
     <div class="col-sm-6">{{ map_summary | safe }}</div>
     <div class="col-sm-6 hidden-xs">
@@ -26,4 +27,8 @@
         </table>
     </div>
 </div>
-
+{% else %}
+<div class="row vert-spacer-top">
+    <div class="col-sm-12">{{ map_summary | safe }}</div>
+</div>
+{% endif %}
