@@ -6,7 +6,7 @@ var Backbone = require('backbone-lodash'),
     MapView = require('./components/map');
 
 module.exports = Backbone.View.extend({
-    initialize: function(options) {
+    initialize: function() {
         // Set the header image to have a nice parallax mode
         var bg = $('.bg'),
             jumboHeight = $('.jumbotron').outerHeight();
@@ -28,9 +28,7 @@ module.exports = Backbone.View.extend({
 
         // Sub views
         new CalenderView({
-            el: '#next-event',
-            id: options.config.CAL_ID,
-            key: options.config.CAL_KEY
+            el: '#next-event'
         });
         new MapView({
             el: '#map'

@@ -15,7 +15,7 @@ module.exports = Backbone.View.extend({
         this.template = _.template(eventTemplate);
         this.el = $('#next-event');
         $.ajax({
-            url: options.backend + '/api/v1/calendar',
+            url: '/api/v1/calendar',
             success: this.render.bind(this),
             error: this.error.bind(this)
         });
@@ -28,8 +28,8 @@ module.exports = Backbone.View.extend({
     render: function(resp) {
         try {
             var now = Date.now(),
-                items = resp.items,
-                start = new Date(items[0].start.dateTime);
+                item = resp.data,
+                start = new Date(item.start.dateTime);
 
             var context = {
                 isoformat: start.toISOString(),
@@ -37,10 +37,10 @@ module.exports = Backbone.View.extend({
                 month: dateFormat(start, 'mmmm'),
                 date: dateFormat(start, 'd'),
                 when: dateFormat(start, 'h:MM tt'),
-                where: items[0].location,
-                whereEnc: encodeURI(items[0].location),
-                title: items[0].summary,
-                description: items[0].description
+                where: item.location,
+                whereEnc: encodeURI(item.location),
+                title: item.summary,
+                description: item.description
             };
             this.el.html(this.template(context));
         } catch(e) {

@@ -5,7 +5,6 @@ require('../css/style.css');
 require('../css/cal.css');
 
 var Backbone = require('backbone-lodash'),
-    config = require('./config'),
     HomeView = require('./views/home');
 
 var Router = Backbone.Router.extend({
@@ -19,7 +18,7 @@ var Router = Backbone.Router.extend({
     },
 
     home: function() {
-        new HomeView({config: config});
+        new HomeView();
     }
 });
 
