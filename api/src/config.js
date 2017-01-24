@@ -14,4 +14,6 @@ Object.keys(config).forEach((key) => {
     }
 });
 
+console.log
+
 module.exports = config;

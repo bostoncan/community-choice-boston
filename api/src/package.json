@@ -1,0 +1,9 @@
+{
+  "name": "cce-api",
+  "version": "0.0.1",
+  "description": "CCE lambda backend dependencies",
+  "dependencies": {
+    "superagent": "3.3.2",
+    "google-sheets-node-api": "0.3.0"
+  }
+}

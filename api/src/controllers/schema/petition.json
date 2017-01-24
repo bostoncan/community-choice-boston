@@ -13,11 +13,40 @@
     },
     "email_address": {
       "type": "string",
-      "format": "email"
+      "format": "email",
+      "required": true
     },
     "zip": {
       "type": "string",
-      "pattern": "^\\d{5}$"
+      "pattern": "^\\d{5}$",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "pattern": "^[\\d\\-\\(\\) ]",
+      "minLength": 7
+    },
+    "address1": {
+      "type": "string"
+    },
+    "address2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string",
+      "maxLength": 2
+    },
+    "contact-pref": {
+      "enum": ["all", "cce-only", "none"],
+      "required": true
+    },
+    "date": {
+      "type": "string",
+      "format": "dttm",
+      "required": true
     }
   },
   "additionalProperties": false
