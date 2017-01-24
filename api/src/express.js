@@ -52,4 +52,4 @@ app.use('/api/v1/*', (req, res) => {
 
 app.use(express.static('../build'));
 
-app.listen(3001);
+app.listen(3000);
