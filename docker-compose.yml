@@ -1,5 +1,15 @@
 version: '2'
 services:
+    api:
+        build: './api'
+        env_file: './.env'
+        command: ['node', './src/express.js']
+        volumes:
+            - '/app/node_modules'
+            - './api:/app'
+            - './webpack/build:/build'
+        ports:
+            - '3001:3001'
     webpack:
         build: './webpack'
         command: ['webpack', '--progress', '--colors']
@@ -9,5 +19,3 @@ services:
             - './webpack/assets:/app/assets'
             - './webpack/plugins:/app/plugins'
             - './webpack/build:/app/build'
-        ports:
-            - '3000:3000'
