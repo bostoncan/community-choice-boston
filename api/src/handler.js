@@ -1,6 +1,7 @@
 'use strict';
 
-const CalendarHandler = require('./controllers/calendar'),
+const tv4 = require('tv4'),
+      CalendarHandler = require('./controllers/calendar'),
       PetitionHandler = require('./controllers/petition'),
       config = require('./config');
 
@@ -15,12 +16,16 @@ module.exports.handle = function(req, context) {
         return context.done('ERR_INTERNAL');
     }
 
-    /*
-    const errs = validator.validate(req, handler.schema);
-    if (errs) {
-        return context.done('ERR_BAD_REQUEST: ' + errs[0].text);
+    if (handler.schema) {
+        if (!Object.keys(req.body).length) {
+            return context.done('ERR_BAD_REQUEST: Empty request');
+        }
+
+        const v = tv4.validateResult(req.body, handler.schema);
+        if (!v.valid) {
+            return context.done('ERR_BAD_REQUEST: ' + v.error.message);
+        }
     }
-    */
 
     handler.handle(req, context);
 };
