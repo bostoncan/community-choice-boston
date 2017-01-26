@@ -6,6 +6,11 @@ var Backbone = require('backbone-lodash'),
     MapView = require('./components/map');
 
 module.exports = Backbone.View.extend({
+    events: {
+        'click #sign': 'petitionScroll',
+        'click #submit-petition': 'submitPetition'
+    },
+
     initialize: function() {
         // Set the header image to have a nice parallax mode
         var bg = $('.bg'),
@@ -19,13 +24,6 @@ module.exports = Backbone.View.extend({
         $('.jumbotron').css('background', 'transparent');
         parallax();
 
-        // Clicking the button moves you to the form
-        $("#sign").click(function() {
-            $('html,body').animate({
-                scrollTop: $("form").offset().top
-            }, 'slow');
-        });
-
         // Sub views
         new CalenderView({
             el: '#next-event'
@@ -33,5 +31,42 @@ module.exports = Backbone.View.extend({
         new MapView({
             el: '#map'
         });
+    },
+
+    petitionScroll: function() {
+        console.log('hi');
+        $('html,body').animate({
+            scrollTop: $("form").offset().top
+        }, 'slow');
+    },
+
+    submitPetition: function(e) {
+        e.preventDefault();
+        var form = $('#petition').serializeArray();
+        var data = {};
+        form.forEach(function(d) {
+            if (d.value !== '') {
+                data[d.name] = d.value;
+            }
+        });
+
+        $.post({
+            uri: '/api/v1/petition',
+            data: data,
+            success: function() {
+
+            },
+            error: function() {
+
+            }
+        });
+    },
+
+    closeOutForm: function() {
+
+    },
+
+    formError: function() {
+
     }
 });
