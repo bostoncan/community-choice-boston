@@ -5,10 +5,12 @@ leaders:
     - 'Fight climate change'
     - 'Protect consumers'
     - 'Stabilize prices'
+
 leader_text: |
     <p>We are an activist collective working to prevent climate change in Boston, and are not affiliated with private interests.</p>
     <p>The City of Boston has the authority to decide where our energy comes from. City residents can come together and, with the power of bulk purchasing, choose to buy more renewable electricity without increasing costs to businesses and residents.</p>
     <p>Learn more in the short infographic video below!</p>
+
 map_summary: |
   <p>Dozens of towns across Massachusetts and hundreds across America
   are choosing how they get their energy instead of depending on the
@@ -17,7 +19,7 @@ map_summary: |
   <p><strong>Brookline, MA</strong> recently initiated a plan to increase
   their renewable commitment by <strong>25%</strong> of their power usage.
   <strong>Greenfield, MA</strong> went for a <strong>100%</strong> renewables plan in December 2016.</p>
-  <p>This is a plan that is working for lots of communities - let's make it work for Boston!</p>
+  <p>This is a plan that is working for lots of communities - let''s make it work for Boston!</p>
 
 media_bullets:
     - icon: 'fa-leaf'
@@ -42,6 +44,7 @@ media_bullets:
         deliver on their promises. Our Community Choice Energy plan
         protects residents against energy scams by implementing a new
         citywide clean energy electricity plan for all of us.</p>
+
 endorsements:
     - image: 'michelle_wu.jpg'
       name: 'Michelle Wu<br/>City Councillor-at-Large'
@@ -57,22 +60,24 @@ endorsements:
         "Community Choice Aggregation allows residents and small businesses to seamlessly switch to more renewable energy, making it possible for everyone in town to easily do the right thing on climate change. It makes cleaning up your electricity easy, creating jobs in our region."
 
 faqs:
+    - question: 'What is Community Choice Energy?'
+      answer: |
+        Massachusetts state law allows any city or town to choose the
+        electricity supplier for all its residents and businesses. This way,
+        we can make important energy decisions instead of for-profit utilities
+        and their competitors.
+    - question: 'Will I pay more?'
+      answer: |
+        No. Our goal is to get you at least 5% more renewable energy without
+        raising the overall cost. In future years, maybe we can get
+        7% renewables, 10%, and eventually 100%!
     - question: 'Will I be able to keep my current plan?'
       answer: |
-        <p><strong>Yes!</strong> No one is locked into the Community Choice
-        Aggregation plan, and you may opt out of the plan to keep the
-        Eversource defaults orwhatever energy buying program you choose.</p>
-    - question: 'Will this affect the utility companies'' margins?'
-      answer: |
-        <p><strong>No.</strong> Eversource earns its money on the transmission
-        and delivery only, not on the power generation, so utility jobs
-        should not be affected.</p>
-    - question: 'Will buying more solar cause brownouts on cloudy days?'
-      answer: |
-        <p><strong>No.</strong> The grid is able to sustain a much higher
-        percentage of renewable sources than it currently delivers.  We could
-        reasonably double the amount of solar currently powering our grid
-        without running into trouble.</p>
+        Yes! No one is locked into the Community Choice Energy plan. If you
+        currently have a competitive supplier you can keep that supplier as
+        long as you like. If you have Eversource as your supplier, you can
+        opt out of Community Choice Energy or choose another competitive
+        supplier.
 
 petition_body: |
     <p>We petition the elected officials of the city of Boston -
