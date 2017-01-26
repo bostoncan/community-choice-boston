@@ -21,17 +21,6 @@ module.exports = {
         ]
     },
     plugins: [
-        // Serve & live reload
-        new BrowserSyncPlugin({
-            host: 'localhost',
-            port: 3000,
-            open: false,
-            server: {
-                baseDir: [
-                    './build'
-                ]
-            }
-        }),
         // Copy assets (images, css, etc to build folder)
         new CopyWebpackPlugin([{
             from: './assets',

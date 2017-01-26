@@ -1,5 +1,5 @@
 <div class="row get-involved">
-    <div class="action col-sm-12">
+    <div class="action petition-scroll-target col-sm-12">
         <h4><strong>1.</strong> Make your voice heard</h4>
         <p>Sign our petition and tell your elected officials you support
            reducing Boston's greenhouse gas emissions through
@@ -10,97 +10,8 @@
             <h5 class="text-center"><strong>The Petition</strong></h5>
             {{ petition_body | safe }}
           </div>
-          <div class="col-sm-6">
-        <form id="petition" class="well">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="name_first">First Name *</label>
-                        <input type="text" class="form-control" name="name_first" placeholder="Your first name" required>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="name_last">Last Name *</label>
-                        <input type="text" class="form-control" name="name_last" placeholder="Your last name" required>
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email address *</label>
-                <input type="email" class="form-control" name="email" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-                <label for="zip">Zip Code *</label>
-                <input type="number" class="form-control" name="zip" required>
-            </div>
-
-            <hr />
-
-            <div class="form-group">
-                <label for="phone">Phone number</label>
-                <input type="text" class="form-control" name="phone" placeholder="Phone number">
-            </div>
-
-            <div class="form-group">
-                <label for="address1">Street Address</label>
-                <input type="text" class="form-control" name="address1" placeholder="Your street address">
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" name="address2" placeholder="Apt #, etc.">
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="city">City</label>
-                        <input type="text" class="form-control" name="city" placeholder="City">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="state">State</label>
-                        <select class="form-control" type="text" name="state">
-                          <option value="" disabled selected>State</option>
-                          <option value="MA">Massachusetts</option>
-                          <option value="" disabled>----</option>
-                          {% for state in states %}
-                          <option value="{{ state.abbr }}">{{ state.name }}</option>
-                          {% endfor %}
-                        </select>
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-group">
-              <div class="radio">
-                <label>
-                  <input type="radio" name="contact-pref" value="all" checked>
-                  Contact me about Community Choice Energy and future campaigns
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-              <input type="radio" name="contact-pref" value="cce-only">
-              Only contact me about Community Choice Energy
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-              <input type="radio" name="contact-pref" value="none">
-                Use my info for the petition, but please do not contact me.
-              </label>
-            </div>
-            <p><strong>We respect your right to privacy and promise
-            to be secure and responsible with your information.</strong></p>
-            </div>
-
-
-            <div class="text-center">
-                <button id="submit-petition" type="submit" class="btn btn-success">Sign the Petition</button>
-            </div>
-        </form>
+          <div class="col-sm-6" class="petition-wrapper">
+            <form id="petition" class="well"></form>
           </div>
         </div>
     </div>

@@ -4,8 +4,8 @@ var $ = require('jquery'),
     _ = require('lodash'),
     Backbone = require('backbone-lodash'),
     dateFormat = require('dateformat'),
-    eventTemplate = require('raw-loader!../templates/cal-event.html'),
-    errorTemplate = require('raw-loader!../templates/cal-error.html');
+    eventTemplate = require('raw-loader!../templates/cal/event.html'),
+    errorTemplate = require('raw-loader!../templates/cal/error.html');
 
 // Set lodash interpolation
 _.templateSettings.interpolate = /{{([\s\S]+?)}}/g;

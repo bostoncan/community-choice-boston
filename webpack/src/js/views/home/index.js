@@ -3,12 +3,12 @@
 var Backbone = require('backbone-lodash'),
     $ = require('jquery'),
     CalenderView = require('./components/cal'),
-    MapView = require('./components/map');
+    MapView = require('./components/map'),
+    PetitionView = require('./components/petition');
 
 module.exports = Backbone.View.extend({
     events: {
-        'click #sign': 'petitionScroll',
-        'click #submit-petition': 'submitPetition'
+        'click #sign': 'petitionScroll'
     },
 
     initialize: function() {
@@ -31,42 +31,14 @@ module.exports = Backbone.View.extend({
         new MapView({
             el: '#map'
         });
+        new PetitionView({
+            el: '#petition'
+        });
     },
 
     petitionScroll: function() {
-        console.log('hi');
         $('html,body').animate({
-            scrollTop: $("form").offset().top
+            scrollTop: $("#petition").offset().top
         }, 'slow');
-    },
-
-    submitPetition: function(e) {
-        e.preventDefault();
-        var form = $('#petition').serializeArray();
-        var data = {};
-        form.forEach(function(d) {
-            if (d.value !== '') {
-                data[d.name] = d.value;
-            }
-        });
-
-        $.post({
-            uri: '/api/v1/petition',
-            data: data,
-            success: function() {
-
-            },
-            error: function() {
-
-            }
-        });
-    },
-
-    closeOutForm: function() {
-
-    },
-
-    formError: function() {
-
     }
 });
