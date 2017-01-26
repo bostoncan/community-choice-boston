@@ -3,7 +3,7 @@ services:
     api:
         build: './api'
         env_file: './.env'
-        command: ['gulp', 'serve']
+        command: ['node', './src/express.js']
         volumes:
             - '/app/node_modules'
             - './api:/app'

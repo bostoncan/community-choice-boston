@@ -25,7 +25,7 @@ app.use('*', morgan('dev'));
 app.use('/api/v1/*', (req, res) => {
     let lreq = {
         params: _.merge(req.query, req.params),
-        payload: req.body,
+        body: req.body,
         route: req.baseUrl.split('/')[3]
     };
 
