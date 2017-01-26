@@ -43,27 +43,18 @@ media_bullets:
         protects residents against energy scams by implementing a new
         citywide clean energy electricity plan for all of us.</p>
 endorsements:
-    - image: 'sara_driscoll.png'
-      name: 'Sara Driscoll'
+    - image: 'michelle_wu.jpg'
+      name: 'Michelle Wu<br/>City Councillor-at-Large'
       text: |
-        Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-        egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-        nibh, ut fermentum massa justo sit amet risus.
-    - image: 'judith_kolligan.png'
-      name: 'Judith Kolligan'
+        "The law lays out a process for the City of Boston to choose to power our city as a whole with renewable energy resources such as solar and wind. Community choice energy is the fastest way that Boston can get on the path to being a 100% renewable energy city."
+    - image: 'kalila_barnett.jpg'
+      name: 'Kalila Barnett<br/>Executive Director <a href="https://www.ace-ej.org">ACE</a>'
       text: |
-        Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-        egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-        nibh, ut fermentum massa justo sit amet risus.
-    - image: 'mike_prokosch.png'
-      name: 'Mike Prokosch'
+        "I support Community Choice Energy because it can provide access to clean renewable energy for all Boston residents."
+    - image: 'mcan.jpeg'
+      name: 'Mass Climate Action'
       text: |
-        Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-        egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-        nibh, ut fermentum massa justo sit amet risus.
+        "Community Choice Aggregation allows residents and small businesses to seamlessly switch to more renewable energy, making it possible for everyone in town to easily do the right thing on climate change. It makes cleaning up your electricity easy, creating jobs in our region."
 
 faqs:
     - question: 'Will I be able to keep my current plan?'
@@ -96,115 +87,3 @@ petition_body: |
     engaging in bulk renewable purchasing, we can help drive the
     market toward clean energy solutions for the betterment of
     Boston, America, and the world.</p>
-
-states:
-  - name: 'Alabama'
-    abbr: 'AL'
-  - name: 'Alaska'
-    abbr: 'AK'
-  - name: 'American Samoa'
-    abbr: 'AS'
-  - name: 'Arizona'
-    abbr: 'AZ'
-  - name: 'Arkansas'
-    abbr: 'AR'
-  - name: 'California'
-    abbr: 'CA'
-  - name: 'Colorado'
-    abbr: 'CO'
-  - name: 'Connecticut'
-    abbr: 'CT'
-  - name: 'Delaware'
-    abbr: 'DE'
-  - name: 'Dist. of Columbia'
-    abbr: 'DC'
-  - name: 'Florida'
-    abbr: 'FL'
-  - name: 'Georgia'
-    abbr: 'GA'
-  - name: 'Guam'
-    abbr: 'GU'
-  - name: 'Hawaii'
-    abbr: 'HI'
-  - name: 'Idaho'
-    abbr: 'ID'
-  - name: 'Illinois'
-    abbr: 'IL'
-  - name: 'Indiana'
-    abbr: 'IN'
-  - name: 'Iowa'
-    abbr: 'IA'
-  - name: 'Kansas'
-    abbr: 'KS'
-  - name: 'Kentucky'
-    abbr: 'KY'
-  - name: 'Louisiana'
-    abbr: 'LA'
-  - name: 'Maine'
-    abbr: 'ME'
-  - name: 'Maryland'
-    abbr: 'MD'
-  - name: 'Marshall Islands'
-    abbr: 'MH'
-  - name: 'Massachusetts'
-    abbr: 'MA'
-  - name: 'MI'
-    abbr: 'Michigan'
-  - name: 'Micronesia'
-    abbr: 'FM'
-  - name: 'Minnesota'
-    abbr: 'MN'
-  - name: 'Mississippi'
-    abbr: 'MS'
-  - name: 'Montana'
-    abbr: 'MO'
-  - name: 'Nebraska'
-    abbr: 'NE'
-  - name: 'Nevada'
-    abbr: 'NV'
-  - name: 'New Hampshire'
-    abbr: 'NH'
-  - name: 'New Jersey'
-    abbr: 'NJ'
-  - name: 'New Mexico'
-    abbr: 'NM'
-  - name: 'New York'
-    abbr: 'NY'
-  - name: 'North Carolina'
-    abbr: 'NC'
-  - name: 'North Dakota'
-    abbr: 'ND'
-  - name: 'Ohio'
-    abbr: 'OH'
-  - name: 'Oklahoma'
-    abbr: 'OK'
-  - name: 'Oregon'
-    abbr: 'OR'
-  - name: 'Pennsylvania'
-    abbr: 'PA'
-  - name: 'Puerto Rico'
-    abbr: 'PR'
-  - name: 'Rhode Island'
-    abbr: 'RI'
-  - name: 'South Carolina'
-    abbr: 'SC'
-  - name: 'South Dakota'
-    abbr: 'SD'
-  - name: 'Tennessee'
-    abbr: 'TN'
-  - name: 'Texas'
-    abbr: 'TX'
-  - name: 'Utah'
-    abbr: 'UT'
-  - name: 'Vermont'
-    abbr: 'VT'
-  - name: 'Virginia'
-    abbr: 'VI'
-  - name: 'Washington'
-    abbr: 'WA'
-  - name: 'West Virginia'
-    abbr: 'WV'
-  - name: 'Wisconsin'
-    abbr: 'WI'
-  - name: 'Wyoming'
-    abbr: 'WY'

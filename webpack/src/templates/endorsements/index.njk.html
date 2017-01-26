@@ -10,6 +10,14 @@
 
 {% block content %}
 <div class="container">
-    {% include "common/endorsements.njk.html" %}
+
+<h2 class="text-center">Community Leaders</h2>
+{% set endorsements = people %}
+{% include "common/endorsements.njk.html" %}
+
+<h2 class="text-center">Organizations</h2>
+{% set endorsements = organizations %}
+{% include "common/endorsements.njk.html" %}
+
 </div>
 {% endblock %}
