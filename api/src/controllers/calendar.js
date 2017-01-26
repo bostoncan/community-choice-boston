@@ -28,7 +28,7 @@ class CalendarHandler {
             .end((err, res) => {
                 if (err) {
                     console.log(err);
-                    context.done('ERR_INTERNAL_ERROR');
+                    return context.done('ERR_INTERNAL_ERROR');
                 }
 
                 // Filter the event to just the required fields

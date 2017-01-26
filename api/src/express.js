@@ -14,7 +14,7 @@ const handler = require('./handler');
 
 const responseHash = {
     ERR_BAD_REQUEST: 400,
-    ERR_INTERNAL: 500
+    ERR_INTERNAL_ERROR: 500
 };
 
 // Basic middleware

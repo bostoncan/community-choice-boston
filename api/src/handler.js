@@ -13,7 +13,7 @@ const routes = {
 module.exports.handle = function(req, context) {
     const handler = routes[req.route];
     if (!handler) {
-        return context.done('ERR_INTERNAL');
+        return context.done('ERR_INTERNAL_ERROR');
     }
 
     if (handler.schema) {
