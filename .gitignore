@@ -1,7 +1,7 @@
 .env
 /.tmp
 
-/api/src/controllers/credentials/*.json
+/api/src/config/*.json
 /api/coverage
 /api/node_modules
 /api/src/node_modules

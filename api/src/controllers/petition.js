@@ -8,12 +8,7 @@ class PetitionHandler {
     constructor(config) {
         this.schema = PetitionModel;
         this.doc = new GoogleSpreadsheet(config.GOOGLE_SHEET_ID);
-
-        try {
-            this.creds = require('./credentials/drive.json')
-        } catch(e) {
-            console.warn('No config file found');
-        }
+        this.creds = config.GOOGLE_DRIVE_CRED;
     }
 
     handle(req, context) {
