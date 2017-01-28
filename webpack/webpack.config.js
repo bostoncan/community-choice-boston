@@ -3,7 +3,6 @@
 const webpack = require('webpack'),
       NunjucksRenderPlugin = require('./plugins/renderer'),
       ExtractTextPlugin = require('extract-text-webpack-plugin'),
-      BrowserSyncPlugin = require('browser-sync-webpack-plugin'),
       CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
