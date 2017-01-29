@@ -51,7 +51,6 @@ module.exports = {
         // Optimize
         new webpack.optimize.UglifyJsPlugin()
     ],
-    watch: true,
     watchOptions: {
         poll: true
     }

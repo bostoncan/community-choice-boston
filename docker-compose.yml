@@ -11,7 +11,7 @@ services:
             - '3000:3000'
     webpack:
         build: './webpack'
-        command: ['webpack', '--progress', '--colors']
+        command: ['webpack', '--progress', '--colors', '--watch']
         volumes:
             - './webpack/src:/app/src'
             - './webpack/webpack.config.js:/app/webpack.config.js'

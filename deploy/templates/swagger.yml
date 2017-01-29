@@ -1,0 +1,118 @@
+---
+swagger: '2.0'
+host: 'communitychoiceboston.org'
+info:
+    version: 1.0.0
+    title: 'Community Choice Energy Boston API'
+    description: 'Backend logic for Community Choice Energy Boston'
+basePath: '/api/v1'
+schemes:
+    - 'https'
+produces:
+    - 'application/json'
+consumes:
+    - 'application/json'
+paths:
+    '/calendar':
+        get:
+            produces:
+                - 'application/json'
+            responses:
+                200:
+                    description: 'OK'
+                400:
+                    description: 'ERR_BAD_REQUEST'
+                500:
+                    description: 'ERR_INTERNAL_ERROR'
+            'x-amazon-apigateway-integration':
+                type: 'aws'
+                uri: 'arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/${lambda_arn}/invocations'
+                httpMethod: 'POST'
+                credentials: '${iam_role_invoke_lambda_arn}'
+                passthroughBehavior: 'never'
+                requestTemplates:
+                    'application/json': |
+                      {
+                          "route": "get",
+                          "body": {}
+                      }
+                responses:
+                    'default':
+                        statusCode: '200'
+                        responseTemplates:
+                            'application/json': |
+                                {
+                                    "code": 200,
+                                    "message": "OK",
+                                    "data": $input.json('$.data')
+                                }
+                    'ERR_BAD_REQUEST.*':
+                        statusCode: '400'
+                        responseTemplates:
+                            'application/json': |
+                                {
+                                    "code": 400,
+                                    "message": "ERR_BAD_REQUEST",
+                                    "detail": $input.json('$.errorMessage')
+                                }
+                    'ERR_INTERNAL_ERROR':
+                        statusCode: '500'
+                        responseTemplates:
+                            'application/json': |
+                                {
+                                    "code": 500,
+                                    "message": "ERR_INTERNAL_ERROR"
+                                }
+    '/petitions':
+        post:
+            produces:
+                - 'application/json'
+            parameters:
+                - name: 'payload'
+                  in: 'body'
+                  required: true
+            responses:
+                200:
+                    description: 'OK'
+                400:
+                    description: 'ERR_BAD_REQUEST'
+                500:
+                    description: 'ERR_INTERNAL_ERROR'
+            'x-amazon-apigateway-integration':
+                type: 'aws'
+                uri: 'arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/${lambda_arn}/invocations'
+                httpMethod: 'POST'
+                credentials: '${iam_role_invoke_lambda_arn}'
+                passthroughBehavior: 'never'
+                requestTemplates:
+                    'application/json': |
+                      {
+                          "route": "petition",
+                          "body": $input.json('$')
+                      }
+                responses:
+                    'default':
+                        statusCode: '200'
+                        responseTemplates:
+                            'application/json': |
+                                {
+                                    "code": 200,
+                                    "message": "OK"
+                                }
+                    'ERR_BAD_REQUEST.*':
+                        statusCode: '400'
+                        responseTemplates:
+                            'application/json': |
+                                {
+                                    "code": 400,
+                                    "message": "ERR_BAD_REQUEST",
+                                    "detail": $input.json('$.errorMessage')
+                                }
+                    'ERR_INTERNAL_ERROR':
+                        statusCode: '500'
+                        responseTemplates:
+                            'application/json': |
+                                {
+                                    "code": 500,
+                                    "message": "ERR_INTERNAL_ERROR"
+                                }

@@ -1,0 +1,8 @@
+{
+    "name": "cce-boston-deploy-dev",
+    "dependencies": {
+        "aws-sdk": "2.9.0",
+        "lodash": "4.17.4",
+        "js-yaml": "3.7.0"
+    }
+}
