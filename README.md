@@ -31,3 +31,18 @@ $ docker-compose up
 ```
 
 Open [localhost:3000](http://localhost:3000) to see.
+
+#### Deploying
+
+Put your production configs (generally Google IDs and credentials) into
+`./api/src/config/production.json`
+
+You will need to get credentials for the BCAN/CCE AWS account.
+
+Make sure you've put your AWS credentials in `~/.aws/credentials` under a
+profile named `bcan`, then you can kick off the builds and run the terraform
+deployment:
+
+```bash
+$ ./deploy.sh
+```
