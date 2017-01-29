@@ -5,7 +5,7 @@ variable "resource_prefix" {
 
 variable "domain_fqdn" {
     type = "string"
-    default = "communitychoiceboston.org"
+    default = "www.communitychoiceboston.org"
 }
 
 variable "aws_region" {
