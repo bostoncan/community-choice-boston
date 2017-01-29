@@ -35,10 +35,6 @@
     "city": {
       "type": "string"
     },
-    "state": {
-      "type": "string",
-      "maxLength": 2
-    },
     "contact-pref": {
       "enum": ["all", "cce-only", "none"],
       "required": true
