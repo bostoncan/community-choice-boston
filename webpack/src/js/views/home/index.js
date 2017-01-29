@@ -8,7 +8,8 @@ var Backbone = require('backbone-lodash'),
 
 module.exports = Backbone.View.extend({
     events: {
-        'click #sign': 'petitionScroll'
+        'click #sign': 'petitionScroll',
+        'click #share-fb': 'shareFB'
     },
 
     initialize: function() {
@@ -40,5 +41,11 @@ module.exports = Backbone.View.extend({
         $('html,body').animate({
             scrollTop: $("#petition").offset().top
         }, 'slow');
+    },
+
+    shareFB: function() {
+        window.open("https://www.facebook.com/sharer/sharer.php?" +
+                    "u=https://www.communitychoiceboston.org/",
+                    "pop", "width=600, height=400, scrollbars=no");
     }
 });
