@@ -15,10 +15,22 @@ resource "aws_cloudfront_distribution" "dist" {
 
     origin {
         domain_name = "${aws_s3_bucket.site.bucket}.s3.amazonaws.com"
-        origin_id   = "${var.resource_prefix}-origin-id"
+        origin_id   = "${var.resource_prefix}-s3-origin"
 
         s3_origin_config {
             origin_access_identity = "${aws_cloudfront_origin_access_identity.id.cloudfront_access_identity_path}"
+        }
+    }
+
+    origin {
+        domain_name = "${aws_api_gateway_rest_api.api.id}.execute-api.us-east-1.amazonaws.com"
+        origin_id = "${var.resource_prefix}-api-origin"
+
+        custom_origin_config {
+            http_port = 80
+            https_port = 443
+            origin_protocol_policy = "match-viewer"
+            origin_ssl_protocols = ["TLSv1.2"]
         }
     }
 
