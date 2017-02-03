@@ -1,8 +1,13 @@
 <div class="row">
     {% for e in endorsements %}
     <div class="col-sm-4 vert-spacer-bottom">
+        <a href="{{ e.link }}">
         <img class="img-circle center-block" src="/img/endorsements/{{ e.image }}" alt="" width="140" height="140">
+        </a>
       <h4 class="text-center">{{ e.name | safe }}</h4>
+      {% if e.title %}
+         <h5 class="text-center">{{ e.title | safe }}</h5>
+      {% endif %}
       <p class="text-muted">{{ e.text | safe }}</p>
     </div>
     {% endfor %}

@@ -150,6 +150,11 @@ body {
     margin: 2px;
 }
 
+.vert-spacer {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
 .vert-spacer-top {
     margin-top: 60px;
 }

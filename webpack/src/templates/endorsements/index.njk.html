@@ -15,8 +15,12 @@
 {% set endorsements = people %}
 {% include "common/endorsements.njk.html" %}
 
-<h2 class="text-center">Organizations</h2>
+<h2 class="text-center vert-spacer-top vert-spacer-bottom">Organizations</h2>
 {% set endorsements = organizations %}
+{% include "common/endorsements.njk.html" %}
+
+<h2 class="text-center vert-spacer-top vert-spacer-bottom">Officials</h2>
+{% set endorsements = officials %}
 {% include "common/endorsements.njk.html" %}
 
 </div>

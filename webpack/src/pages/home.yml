@@ -7,9 +7,15 @@ leaders:
     - 'Stabilize prices'
 
 leader_text: |
-    <p>We are an activist collective working to prevent climate change in Boston, and are not affiliated with private interests.</p>
-    <p>The City of Boston has the authority to decide where our energy comes from. By passing a city ordinance, we can come together and, with the power of bulk purchasing, choose to buy more renewable electricity without increasing costs to businesses and residents.</p>
+    <p>The City of Boston has the authority to decide where our energy comes from.
+    By passing a city ordinance, we can come together and, with the power of bulk
+    purchasing, choose to buy more renewable electricity without increasing costs
+    to businesses and residents.</p>
     <p>Learn more in the short infographic video below!</p>
+    <p>The Boston Climate Action Network is an activist collective working to take
+    action on climate change in Boston. We are a climate justice organization that
+    works to broaden the constituency for a green economy and frame climate concerns
+    to resonate with Boston residents’ daily lives.</p>
 
 map_summary: |
   <p>Dozens of towns across Massachusetts and hundreds across America
@@ -25,39 +31,53 @@ media_bullets:
     - icon: 'fa-leaf'
       title: 'Better for the Planet'
       content: |
-        <p>With bulk purchasing, we can obtain <strong>5% more renewable
-        energy</strong> without increasing energy costs. This will save
-        tonnes of CO2 each year, protecting the environment and helping
-        us reach our climate targets.</p>
+        <p>With bulk purchasing, we can obtain <strong>5 - 10% more renewable
+        energy</strong> without significantly increasing energy costs. This
+        will save tonnes of CO2 each year, protecting the environment and
+        helping us reach our climate targets. </p>
     - icon: 'fa-dollar'
       title: 'Money Smart'
       content: |
         <p>The new Community Choice Energy purchasing plan <strong>will
-        not add overall costs to residents or businesses</strong>. The
+        add little or no costs to residents or businesses</strong>. The
         new shared plan will also protect us from price spikes caused by
         the changing cost of fossil fuels.</p>
     - icon: 'fa-users'
       title: 'Protects Residents'
       content: |
-        <p>Have people been calling you or knocking on your door and
-        offering you a new electricity plan? Many of these plans do not
-        deliver on their promises. Our Community Choice Energy plan
-        protects residents against energy scams by implementing a new
-        citywide clean energy electricity plan for all of us.</p>
+        <p>Have people been calling you or knocking on your door and offering
+        you a new electricity plan? Many of these plans do not deliver on their
+        promises. Our Community Choice Energy plan protects residents against
+        energy scams by implementing a new citywide clean energy electricity
+        plan for all of us.</p>
+primary:
+    image: 'michelle_wu.jpg'
+    name: 'Michelle Wu'
+    title: 'Boston City Councillor-at-Large'
+    text: |
+        "The law lays out a process for the City of Boston to choose to power our city as a whole with renewable energy resources such as solar and wind. Community choice energy is the fastest way that Boston can get on the path to being a 100% renewable energy city."
 
 endorsements:
-    - image: 'michelle_wu.jpg'
-      name: 'Michelle Wu<br/>City Councillor-at-Large'
-      text: |
-        "The law lays out a process for the City of Boston to choose to power our city as a whole with renewable energy resources such as solar and wind. Community choice energy is the fastest way that Boston can get on the path to being a 100% renewable energy city."
     - image: 'kalila_barnett.jpg'
-      name: 'Kalila Barnett<br/>Executive Director <a href="https://www.ace-ej.org">ACE</a>'
+      name: 'Kalila Barnett'
+      title: 'Executive Director ACE-EJ'
+      link: 'http://www.ace-ej.org'
       text: |
         "I support Community Choice Energy because it can provide access to clean renewable energy for all Boston residents."
-    - image: 'MCAN_logo.png'
-      name: 'Mass Climate Action'
+    - image: 'bcan.jpeg'
+      name: 'Boston Climate Action Network'
+      link: 'http://bostoncan.org'
       text: |
-        "Community Choice Aggregation allows residents and small businesses to seamlessly switch to more renewable energy, making it possible for everyone in town to easily do the right thing on climate change. It makes cleaning up your electricity easy, creating jobs in our region."
+        "Get more renewable electricity for all Boston residents by combining our buying power."
+    - image: 'matt_omalley.jpeg'
+      name: 'Matt O''Malley'
+      title: 'Boston City Councilor'
+      link: 'https://www.boston.gov/departments/city-council/matt-omalley'
+      text: |
+        Fighting climate change and protecting our environment is about equity
+        and social justice, standing together to prevent disastrous impacts
+        that will fall disproportionately on vulnerable communities.
+
 
 faqs:
     - question: 'What is Community Choice Energy?'
@@ -67,25 +87,21 @@ faqs:
         we can make important energy decisions instead of for-profit utilities
         and their competitors.
     - question: 'Will I pay more?'
-      answer: |
-        No. Our goal is to get you at least 5% more renewable energy without
-        raising the overall cost. In future years, maybe we can get
-        7% renewables, 10%, and eventually 100%!
+      answer: 'Our goal is to get you 5 - 10% more renewable energy with little or
+        no raise in cost. In the longer term, our goal is to create a path for
+        100% of Bostonians'' energy to be renewable, without raising costs
+        significantly for residents.'
     - question: 'Will I be able to keep my current plan?'
       answer: |
         Yes! No one is locked into the Community Choice Energy plan. If you
         currently have a competitive supplier you can keep that supplier as
-        long as you like. If you have Eversource as your supplier, you can
-        opt out of Community Choice Energy or choose another competitive
-        supplier.
+        long as you like. If you have Eversource as your supplier, you can opt
+        out of Community Choice Energy or choose another competitive supplier.
 
 petition_body: |
-    <p><strong>Dear Boston City Councilors and Mayor Walsh</strong>:<br/>
-    We want to stabilize our energy prices, clean up Boston’s air, cut the
-    city’s carbon emissions, and speed up the transition to renewable power.
-    Please approve a Community Choice Energy ordinance for Boston electric
-    customers.</p>
-    <p>We believe it is critical to take this action to protect Bostonians
-    today, future generations, our city and our environment. With bulk
-    purchasing of renewable energy, we can help drive the market toward clean
-    energy solutions for Boston, America, and the world.</p>
+    <p>We petition Mayor Marty Walsh and the Boston City Council to increase
+    renewable energy and stabilize our electric bills by purchasing electricity
+    for Boston residents and small businesses.</p>
+    <p>Climate change makes this action urgent. By bulk-purchasing renewable
+    power, we can help drive the market for clean energy and protect Boston,
+    the United States, and the world.</p>

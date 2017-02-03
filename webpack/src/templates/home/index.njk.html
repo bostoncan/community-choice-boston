@@ -73,6 +73,21 @@
         <div class="container">
             <h2>Endorsements</h2>
             <h4 class="section-subtitle">Organizations, Activist Groups, Officials, and Businesses are all getting on board.</h4>
+            <div class="row">
+                <div class="col-sm-6">
+                    <a href="{{ primary.link }}">
+                    <img class="img-circle center-block" src="/img/endorsements/{{ primary.image }}" alt="" width="280" height="280">
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                  <h3 class="text-center">{{ primary.name | safe }}</h3>
+                  {% if primary.title %}
+                     <h4 class="text-center">{{ primary.title | safe }}</h4>
+                  {% endif %}
+                  <p class="text-muted">{{ primary.text | safe }}</p>
+                </div>
+            </div>
+            <div class="vert-spacer"><hr/></div>
             {% include "common/endorsements.njk.html" %}
             <p class="text-center"><a href="/endorsements.html" class="btn btn-default">See All</a></p>
         </div>

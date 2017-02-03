@@ -3,26 +3,73 @@ title: 'Endorsements'
 people:
     - image: 'rev_mariama_white_hammond.jpeg'
       name: 'Reverend Mariama White-Hammond'
+      title: 'Co-pastor, Bethel Ame Ministries<br/>&nbsp;'
+      link: 'https://twitter.com/mariamwh'
       text: |
-        Co-pastor<br/>
-        <a href="http://www.bethelame.org">Bethel Ame Ministries</a><br/>
-        "I definitely think it is the direction we should be going in."
+        "I definitely think Community Choice is the direction we should be going in."
     - image: 'kalila_barnett.jpg'
-      name: 'Kalila Barnett<br/>Executive Director <a href="https://www.ace-ej.org">ACE</a>'
+      name: 'Kalila Barnett<br/>&nbsp;'
+      title: 'Executive Director ACE-EJ<br/><br/>&nbsp;'
+      link: 'http://www.ace-ej.org'
       text: |
         "I support Community Choice Energy because it can provide access to clean renewable energy for all Boston residents."
+    - image: 'joel_wool.jpeg'
+      name: 'Joel Wool<br/>&nbsp;'
+      title: 'Advocate: Energy & Environment - Clean Water Action'
+      link: 'https://twitter.com/joelwool'
+      text: |
+        "Community Choice Energy means ALL of Boston can pitch in to build our clean energy future together."
+    - image: 'jenny_sazama.png'
+      name: 'Jenny Sazama'
+      title: 'Director & Co-Founder, Youth On Board'
+      link: 'http://www.youthonboard.org/'
+      text: |
+        "Youth will inherit the climate we create. Let's make it renewable."
+    - image: 'carol_oldham.png'
+      name: 'Carol Oldham'
+      title: 'Executive Director, Mass Climate Action Network'
+      link: 'http://www.massclimateaction.org'
+      text: |
+        "Community Choice Energy allows residents and small businesses to seamlessly switch to more renewable energy."
+
+
+officials:
+    - image: 'michelle_wu.jpg'
+      name: 'Michelle Wu'
+      title: 'Boston City Councilor-at-Large'
+      link: 'https://www.boston.gov/departments/city-council/michelle-wu'
+      text: |
+        The law lays out a process for the City of Boston to choose to power
+        our city as a whole with renewable energy resources such as solar and
+        wind. Community choice energy is the fastest way that Boston can get
+        on the path to being a 100% renewable energy city.
+    - image: 'matt_omalley.jpeg'
+      name: 'Matt O''Malley'
+      title: 'Boston City Councilor'
+      link: 'https://www.boston.gov/departments/city-council/matt-omalley'
+      text: |
+        Fighting climate change and protecting our environment is about equity
+        and social justice, standing together to prevent disastrous impacts
+        that will fall disproportionately on vulnerable communities.
+
 
 organizations:
-    - image: 'MCAN_logo.png'
-      name: 'Mass Climate Action'
+    - image: 'bcan.jpeg'
+      name: 'Boston Climate Action Network'
+      link: 'http://bostoncan.org'
       text: |
-        "Community Choice Aggregation allows residents and small businesses to seamlessly switch to more renewable energy, making it possible for everyone in town to easily do the right thing on climate change. It makes cleaning up your electricity easy, creating jobs in our region."
+        "Get more renewable electricity for all Boston residents by combining our buying power."
     - image: 'bsac.jpeg'
-      name: 'Boston Student Advisory Council<br/>Climate Team'
+      name: 'Boston Student Advisory Council'
+      link: 'http://www.bostonpublicschools.org/student-voice'
       text: |
-        The Boston Student Advisory Council (BSAC) co-administers the Office of Engagement of the Boston Public Schools.
+        "The climate is our future. We don't have time to waste."
     - image: 'roslindale.png'
-      name: 'Roslindale Affinity Group'
+      name: 'Roslindale Affinity Group<br/>&nbsp;'
+      link: '#'
       text: |
-        "We whole-heartedly endorse the Community Choice Energy (CCE) initiative in Boston.  Using the power of bulk puchasing in the electricity generation market, CCE consolidates demand by Boston residents for locally generated wind, solar and non-fossil fuel electricity."
+        "We whole-heartedly endorse the Community Choice Energy (CCE) initiative
+        in Boston.  Using the power of bulk puchasing in the electricity generation
+        market, CCE consolidates demand by Boston residents for locally generated
+        wind, solar and non-fossil fuel electricity."
 

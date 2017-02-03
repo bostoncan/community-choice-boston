@@ -16155,6 +16155,7 @@
                     ],
                     "id": 73,
                     "properties": {
+                        "cca": {"type": 1},
                         "fips": "25021",
                         "town": "DEDHAM"
                     },
@@ -18091,6 +18092,7 @@
                     ],
                     "id": 178,
                     "properties": {
+                        "cca": {"type": 1},
                         "fips": "25017",
                         "town": "MELROSE"
                     },
