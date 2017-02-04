@@ -13,7 +13,10 @@ const gulp = require('gulp'),
  */
 
 gulp.task('archive', ['build'], () => {
-    gulp.src(['./src/**/*.js', './src/config/production.json'])
+    gulp.src([
+            './src/**/*.{js,json}',
+            '!./src/config/local.json'
+        ])
         .pipe(zip('build.zip'))
         .pipe(gulp.dest('./build'));
 });
