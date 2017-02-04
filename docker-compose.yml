@@ -4,7 +4,6 @@ services:
         build: './api'
         command: ['node', './src/express.js']
         volumes:
-            - '/app/node_modules'
             - './api:/app'
             - './webpack/build:/build'
         ports:
