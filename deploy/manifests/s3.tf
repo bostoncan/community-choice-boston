@@ -112,11 +112,43 @@ resource "aws_s3_bucket_object" "img_favicon" {
 # Endorsement Images
 #
 
+resource "aws_s3_bucket_object" "endorsement_bcan" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/bcan.jpeg"
+    source = "./webpack/build/img/endorsements/bcan.jpeg"
+    etag = "${md5(file("./webpack/build/img/endorsements/bcan.jpeg"))}"
+    content_type = "image/jpeg"
+}
+
 resource "aws_s3_bucket_object" "endorsement_bsac" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/bsac.jpeg"
     source = "./webpack/build/img/endorsements/bsac.jpeg"
     etag = "${md5(file("./webpack/build/img/endorsements/bsac.jpeg"))}"
+    content_type = "image/jpeg"
+}
+
+resource "aws_s3_bucket_object" "endorsement_carol_oldham" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/carol_oldham.png"
+    source = "./webpack/build/img/endorsements/carol_oldham.png"
+    etag = "${md5(file("./webpack/build/img/endorsements/carol_oldham.png"))}"
+    content_type = "image/png"
+}
+
+resource "aws_s3_bucket_object" "endorsement_jenny_sazama" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/jenny_sazama.png"
+    source = "./webpack/build/img/endorsements/jenny_sazama.png"
+    etag = "${md5(file("./webpack/build/img/endorsements/jenny_sazama.png"))}"
+    content_type = "image/png"
+}
+
+resource "aws_s3_bucket_object" "endorsement_joel_wool" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/joel_wool.jpg"
+    source = "./webpack/build/img/endorsements/joel_wool.jpg"
+    etag = "${md5(file("./webpack/build/img/endorsements/joel_wool.jpg"))}"
     content_type = "image/jpeg"
 }
 
@@ -128,12 +160,12 @@ resource "aws_s3_bucket_object" "endorsement_kalila_barnett" {
     content_type = "image/jpeg"
 }
 
-resource "aws_s3_bucket_object" "endorsement_mcann" {
+resource "aws_s3_bucket_object" "endorsement_matt_omalley" {
     bucket = "${aws_s3_bucket.site.bucket}"
-    key = "img/endorsements/MCAN_logo.png"
-    source = "./webpack/build/img/endorsements/MCAN_logo.png"
-    etag = "${md5(file("./webpack/build/img/endorsements/MCAN_logo.png"))}"
-    content_type = "image/png"
+    key = "img/endorsements/matt_omalley.jpeg"
+    source = "./webpack/build/img/endorsements/matt_omalley.jpeg"
+    etag = "${md5(file("./webpack/build/img/endorsements/matt_omalley.jpeg"))}"
+    content_type = "image/jpeg"
 }
 
 resource "aws_s3_bucket_object" "endorsement_michelle_wu" {
