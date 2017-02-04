@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y unzip && \
     rm terraform.zip && \
     mv terraform /usr/local/terraform
 
+ENV PATH /usr/local/terraform:$PATH
 COPY ./ /src
 
 WORKDIR /src/deploy
