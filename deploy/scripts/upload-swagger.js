@@ -41,7 +41,7 @@ function deploySwagger() {
         };
 
         // Import swagger yaml, apply template variables, and parse to JSON
-        const swagger = fs.readFileSync('./deploy/templates/swagger.yml'),
+        const swagger = fs.readFileSync('./templates/swagger.yml'),
               jsonDoc = yaml.load(_.template(swagger)(p));
 
         // Set up API Gateway call

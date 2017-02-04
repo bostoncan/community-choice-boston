@@ -40,7 +40,7 @@ class CalendarHandler {
                     });
                 }
 
-                context.done(null, ev);
+                context.done(null, {data: ev});
             });
     }
 }

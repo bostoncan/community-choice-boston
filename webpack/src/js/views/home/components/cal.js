@@ -15,7 +15,7 @@ module.exports = Backbone.View.extend({
         this.template = _.template(eventTemplate);
         this.el = $('#next-event');
         $.ajax({
-            url: '/api/v1/calendar',
+            url: '/api_v1/calendar',
             success: this.render.bind(this),
             error: this.error.bind(this)
         });

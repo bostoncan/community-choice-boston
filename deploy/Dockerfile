@@ -9,9 +9,10 @@ RUN apt-get update && apt-get install -y unzip && \
     mv terraform /usr/local/terraform
 
 ENV PATH /usr/local/terraform:$PATH
-COPY ./ /src
+ADD ./deploy/package.json /root/package.json
 
-WORKDIR /src/deploy
+WORKDIR /root/
 RUN npm install
+ENV NODE_PATH /root/node_modules
 
 WORKDIR /src

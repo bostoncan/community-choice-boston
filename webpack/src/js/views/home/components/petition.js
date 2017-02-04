@@ -35,7 +35,7 @@ module.exports = Backbone.View.extend({
         });
 
         $.post({
-            url: '/api/v1/petition',
+            url: '/api_v1/petition',
             data: JSON.stringify(data),
             dataType: 'json',
             contentType: 'application/json; charset=utf-8',
@@ -43,7 +43,7 @@ module.exports = Backbone.View.extend({
                 localStorage.setItem('petition', '1');
                 self.succeed();
             },
-            error: self.formError
+            error: self.formError.bind(self)
         });
         this.animate(pendingTmpl);
     },

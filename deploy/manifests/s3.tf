@@ -2,8 +2,8 @@
 # Primary Site Bucket
 #
 
-resource "template_file" "bucket_policy" {
-    template = "${file("./manifests/templates/bucket-policy.json")}"
+data "template_file" "bucket_policy" {
+    template = "${file("./templates/bucket-policy.json")}"
 
     vars {
         domain_fqdn = "${var.domain_fqdn}"
@@ -14,12 +14,12 @@ resource "aws_s3_bucket" "site" {
     bucket = "${var.domain_fqdn}"
     acl = "public-read"
     force_destroy = true
-    policy = "${template_file.bucket_policy.rendered}"
+    policy = "${data.template_file.bucket_policy.rendered}"
 
     website {
         index_document = "index.html"
     }
-    depends_on = ["template_file.bucket_policy"]
+    depends_on = ["data.template_file.bucket_policy"]
 }
 
 #
@@ -29,8 +29,8 @@ resource "aws_s3_bucket" "site" {
 resource "aws_s3_bucket_object" "app" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "app.js"
-    source = "./webpack/build/app.js"
-    etag = "${md5(file("./webpack/build/app.js"))}"
+    source = "../webpack/build/app.js"
+    etag = "${md5(file("../webpack/build/app.js"))}"
     content_type = "application/javascript"
 }
 
@@ -41,24 +41,24 @@ resource "aws_s3_bucket_object" "app" {
 resource "aws_s3_bucket_object" "endorsements" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "endorsements.html"
-    source = "./webpack/build/endorsements.html"
-    etag = "${md5(file("./webpack/build/endorsements.html"))}"
+    source = "../webpack/build/endorsements.html"
+    etag = "${md5(file("../webpack/build/endorsements.html"))}"
     content_type = "text/html"
 }
 
 resource "aws_s3_bucket_object" "faq" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "faq.html"
-    source = "./webpack/build/faq.html"
-    etag = "${md5(file("./webpack/build/faq.html"))}"
+    source = "../webpack/build/faq.html"
+    etag = "${md5(file("../webpack/build/faq.html"))}"
     content_type = "text/html"
 }
 
 resource "aws_s3_bucket_object" "index" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "index.html"
-    source = "./webpack/build/index.html"
-    etag = "${md5(file("./webpack/build/index.html"))}"
+    source = "../webpack/build/index.html"
+    etag = "${md5(file("../webpack/build/index.html"))}"
     content_type = "text/html"
 }
 
@@ -70,8 +70,8 @@ resource "aws_s3_bucket_object" "index" {
 resource "aws_s3_bucket_object" "styles" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "css/styles.css"
-    source = "./webpack/build/css/styles.css"
-    etag = "${md5(file("./webpack/build/css/styles.css"))}"
+    source = "../webpack/build/css/styles.css"
+    etag = "${md5(file("../webpack/build/css/styles.css"))}"
     content_type = "text/css"
 }
 
@@ -82,8 +82,8 @@ resource "aws_s3_bucket_object" "styles" {
 resource "aws_s3_bucket_object" "town_data" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "data/ma-towns.topojson"
-    source = "./webpack/build/data/ma-towns.topojson"
-    etag = "${md5(file("./webpack/build/data/ma-towns.topojson"))}"
+    source = "../webpack/build/data/ma-towns.topojson"
+    etag = "${md5(file("../webpack/build/data/ma-towns.topojson"))}"
     content_type = "application/json"
 }
 
@@ -95,16 +95,16 @@ resource "aws_s3_bucket_object" "town_data" {
 resource "aws_s3_bucket_object" "img_hero" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/hero.jpg"
-    source = "./webpack/build/img/hero.jpg"
-    etag = "${md5(file("./webpack/build/img/hero.jpg"))}"
+    source = "../webpack/build/img/hero.jpg"
+    etag = "${md5(file("../webpack/build/img/hero.jpg"))}"
     content_type = "image/jpeg"
 }
 
 resource "aws_s3_bucket_object" "img_favicon" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/favicon.ico"
-    source = "./webpack/build/img/favicon.ico"
-    etag = "${md5(file("./webpack/build/img/favicon.ico"))}"
+    source = "../webpack/build/img/favicon.ico"
+    etag = "${md5(file("../webpack/build/img/favicon.ico"))}"
     content_type = "image/x-icon"
 }
 
@@ -115,80 +115,80 @@ resource "aws_s3_bucket_object" "img_favicon" {
 resource "aws_s3_bucket_object" "endorsement_bcan" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/bcan.jpeg"
-    source = "./webpack/build/img/endorsements/bcan.jpeg"
-    etag = "${md5(file("./webpack/build/img/endorsements/bcan.jpeg"))}"
+    source = "../webpack/build/img/endorsements/bcan.jpeg"
+    etag = "${md5(file("../webpack/build/img/endorsements/bcan.jpeg"))}"
     content_type = "image/jpeg"
 }
 
 resource "aws_s3_bucket_object" "endorsement_bsac" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/bsac.jpeg"
-    source = "./webpack/build/img/endorsements/bsac.jpeg"
-    etag = "${md5(file("./webpack/build/img/endorsements/bsac.jpeg"))}"
+    source = "../webpack/build/img/endorsements/bsac.jpeg"
+    etag = "${md5(file("../webpack/build/img/endorsements/bsac.jpeg"))}"
     content_type = "image/jpeg"
 }
 
 resource "aws_s3_bucket_object" "endorsement_carol_oldham" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/carol_oldham.png"
-    source = "./webpack/build/img/endorsements/carol_oldham.png"
-    etag = "${md5(file("./webpack/build/img/endorsements/carol_oldham.png"))}"
+    source = "../webpack/build/img/endorsements/carol_oldham.png"
+    etag = "${md5(file("../webpack/build/img/endorsements/carol_oldham.png"))}"
     content_type = "image/png"
 }
 
 resource "aws_s3_bucket_object" "endorsement_jenny_sazama" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/jenny_sazama.png"
-    source = "./webpack/build/img/endorsements/jenny_sazama.png"
-    etag = "${md5(file("./webpack/build/img/endorsements/jenny_sazama.png"))}"
+    source = "../webpack/build/img/endorsements/jenny_sazama.png"
+    etag = "${md5(file("../webpack/build/img/endorsements/jenny_sazama.png"))}"
     content_type = "image/png"
 }
 
 resource "aws_s3_bucket_object" "endorsement_joel_wool" {
     bucket = "${aws_s3_bucket.site.bucket}"
-    key = "img/endorsements/joel_wool.jpg"
-    source = "./webpack/build/img/endorsements/joel_wool.jpg"
-    etag = "${md5(file("./webpack/build/img/endorsements/joel_wool.jpg"))}"
+    key = "img/endorsements/joel_wool.jpeg"
+    source = "../webpack/build/img/endorsements/joel_wool.jpeg"
+    etag = "${md5(file("../webpack/build/img/endorsements/joel_wool.jpeg"))}"
     content_type = "image/jpeg"
 }
 
 resource "aws_s3_bucket_object" "endorsement_kalila_barnett" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/kalila_barnett.jpg"
-    source = "./webpack/build/img/endorsements/kalila_barnett.jpg"
-    etag = "${md5(file("./webpack/build/img/endorsements/kalila_barnett.jpg"))}"
+    source = "../webpack/build/img/endorsements/kalila_barnett.jpg"
+    etag = "${md5(file("../webpack/build/img/endorsements/kalila_barnett.jpg"))}"
     content_type = "image/jpeg"
 }
 
 resource "aws_s3_bucket_object" "endorsement_matt_omalley" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/matt_omalley.jpeg"
-    source = "./webpack/build/img/endorsements/matt_omalley.jpeg"
-    etag = "${md5(file("./webpack/build/img/endorsements/matt_omalley.jpeg"))}"
+    source = "../webpack/build/img/endorsements/matt_omalley.jpeg"
+    etag = "${md5(file("../webpack/build/img/endorsements/matt_omalley.jpeg"))}"
     content_type = "image/jpeg"
 }
 
 resource "aws_s3_bucket_object" "endorsement_michelle_wu" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/michelle_wu.jpg"
-    source = "./webpack/build/img/endorsements/michelle_wu.jpg"
-    etag = "${md5(file("./webpack/build/img/endorsements/michelle_wu.jpg"))}"
+    source = "../webpack/build/img/endorsements/michelle_wu.jpg"
+    etag = "${md5(file("../webpack/build/img/endorsements/michelle_wu.jpg"))}"
     content_type = "image/jpeg"
 }
 
 resource "aws_s3_bucket_object" "endorsement_rev_mariama_white_hammond" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/rev_mariama_white_hammond.jpeg"
-    source = "./webpack/build/img/endorsements/rev_mariama_white_hammond.jpeg"
-    etag = "${md5(file("./webpack/build/img/endorsements/rev_mariama_white_hammond.jpeg"))}"
+    source = "../webpack/build/img/endorsements/rev_mariama_white_hammond.jpeg"
+    etag = "${md5(file("../webpack/build/img/endorsements/rev_mariama_white_hammond.jpeg"))}"
     content_type = "image/jpeg"
 }
 
 resource "aws_s3_bucket_object" "endorsement_roslindale" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/roslindale.png"
-    source = "./webpack/build/img/endorsements/roslindale.png"
-    etag = "${md5(file("./webpack/build/img/endorsements/roslindale.png"))}"
+    source = "../webpack/build/img/endorsements/roslindale.png"
+    etag = "${md5(file("../webpack/build/img/endorsements/roslindale.png"))}"
     content_type = "image/png"
 }
 
@@ -200,7 +200,7 @@ resource "aws_s3_bucket_object" "endorsement_roslindale" {
 resource "aws_s3_bucket_object" "robots" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "robots.txt"
-    source = "./webpack/build/robots.txt"
-    etag = "${md5(file("./webpack/build/robots.txt"))}"
+    source = "../webpack/build/robots.txt"
+    etag = "${md5(file("../webpack/build/robots.txt"))}"
     content_type = "text/plain"
 }

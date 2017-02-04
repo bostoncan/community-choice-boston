@@ -5,7 +5,7 @@ variable "resource_prefix" {
 
 variable "domain_fqdn" {
     type = "string"
-    default = "www.communitychoiceboston.org"
+    default = "communitychoiceboston.org"
 }
 
 variable "aws_region" {
@@ -16,6 +16,6 @@ variable "aws_region" {
 
 provider "aws" {
   // Access keys taken from the "bcan" profile of your ~/.aws/credentials file
-  profile = "labs"
+  profile = "bcan"
   region = "${var.aws_region}"
 }

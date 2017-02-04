@@ -22,7 +22,7 @@ app.use('*', bodyParser.json());
 app.use('*', morgan('dev'));
 
 // Primary API controller - does the work that API Gateway does
-app.use('/api/v1/*', (req, res) => {
+app.use('/api_v1/*', (req, res) => {
     let lreq = {
         params: _.merge(req.query, req.params),
         body: req.body,

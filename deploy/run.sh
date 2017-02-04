@@ -1,13 +1,14 @@
 #!/bin/sh
 # This script is run within the deploy docker container
 set -e
+cd /src/deploy
 
 ACTION=$1
 STATE_BUCKET=bcan-terraform-state
 AWS_DEFAULT_REGION=us-east-1
 AWS_DEFAULT_PROFILE=bcan
 
-terraform validate deploy/manifests
+terraform validate manifests/
 
 # Hook up state object storage to S3
 terraform remote config \
@@ -19,4 +20,4 @@ terraform remote config \
 terraform remote pull
 
 # Call terraform action
-terraform $ACTION deploy/manifests
+terraform $ACTION manifests/

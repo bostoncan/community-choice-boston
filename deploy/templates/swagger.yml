@@ -28,12 +28,12 @@ paths:
                 type: 'aws'
                 uri: 'arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/${lambda_arn}/invocations'
                 httpMethod: 'POST'
-                credentials: '${iam_role_invoke_lambda_arn}'
+                credentials: '${iam_invoke_arn}'
                 passthroughBehavior: 'never'
                 requestTemplates:
                     'application/json': |
                       {
-                          "route": "get",
+                          "route": "calendar",
                           "body": {}
                       }
                 responses:
@@ -63,13 +63,15 @@ paths:
                                     "code": 500,
                                     "message": "ERR_INTERNAL_ERROR"
                                 }
-    '/petitions':
+    '/petition':
         post:
             produces:
                 - 'application/json'
             parameters:
                 - name: 'payload'
                   in: 'body'
+                  schema:
+                    $ref: '#/definitions/PetitionPayload'
                   required: true
             responses:
                 200:
@@ -82,7 +84,7 @@ paths:
                 type: 'aws'
                 uri: 'arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/${lambda_arn}/invocations'
                 httpMethod: 'POST'
-                credentials: '${iam_role_invoke_lambda_arn}'
+                credentials: '${iam_invoke_arn}'
                 passthroughBehavior: 'never'
                 requestTemplates:
                     'application/json': |
@@ -116,3 +118,26 @@ paths:
                                     "code": 500,
                                     "message": "ERR_INTERNAL_ERROR"
                                 }
+
+definitions:
+  PetitionPayload:
+    type: 'object'
+    properties:
+      name_first:
+        type: 'string'
+      name_last:
+        type: 'string'
+      email:
+        type: 'string'
+      zip:
+        type: 'string'
+      phone:
+        type: 'string'
+      address1:
+        type: 'string'
+      address2:
+        type: 'string'
+      city:
+        type: 'string'
+      contact-pref:
+        type: 'string'
