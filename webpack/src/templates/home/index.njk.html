@@ -5,7 +5,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Community Choice Energy Boston</h1>
-        <p class="lead">{{ lead }}</p>
+        <p class="lead hidden-xs">{{ lead }}</p>
         <p><a id="sign" class="btn btn-lg btn-success" href="#" role="button">
             Sign the Petition</a></p>
       </div>
@@ -14,6 +14,9 @@
 
 {% block content %}
     <div class="container section">
+        <div class="visible-xs-inline text-center">
+            <h4 class="vert-spacer-bottom">{{ lead }}</h4>
+        </div>
         <div class="row">
             <div class="col-sm-5 green-info bg-success check-list">
             {% for leader in leaders %}
