@@ -130,18 +130,18 @@ resource "aws_s3_bucket_object" "endorsement_bsac" {
 
 resource "aws_s3_bucket_object" "endorsement_carol_oldham" {
     bucket = "${aws_s3_bucket.site.bucket}"
-    key = "img/endorsements/carol_oldham.png"
-    source = "../webpack/build/img/endorsements/carol_oldham.png"
-    etag = "${md5(file("../webpack/build/img/endorsements/carol_oldham.png"))}"
-    content_type = "image/png"
+    key = "img/endorsements/carol_oldham.jpg"
+    source = "../webpack/build/img/endorsements/carol_oldham.jpg"
+    etag = "${md5(file("../webpack/build/img/endorsements/carol_oldham.jpg"))}"
+    content_type = "image/jpeg"
 }
 
 resource "aws_s3_bucket_object" "endorsement_jenny_sazama" {
     bucket = "${aws_s3_bucket.site.bucket}"
-    key = "img/endorsements/jenny_sazama.png"
-    source = "../webpack/build/img/endorsements/jenny_sazama.png"
-    etag = "${md5(file("../webpack/build/img/endorsements/jenny_sazama.png"))}"
-    content_type = "image/png"
+    key = "img/endorsements/jenny_sazama.jpg"
+    source = "../webpack/build/img/endorsements/jenny_sazama.jpg"
+    etag = "${md5(file("../webpack/build/img/endorsements/jenny_sazama.jpg"))}"
+    content_type = "image/jpeg"
 }
 
 resource "aws_s3_bucket_object" "endorsement_joel_wool" {
@@ -186,10 +186,10 @@ resource "aws_s3_bucket_object" "endorsement_rev_mariama_white_hammond" {
 
 resource "aws_s3_bucket_object" "endorsement_roslindale" {
     bucket = "${aws_s3_bucket.site.bucket}"
-    key = "img/endorsements/roslindale.png"
-    source = "../webpack/build/img/endorsements/roslindale.png"
-    etag = "${md5(file("../webpack/build/img/endorsements/roslindale.png"))}"
-    content_type = "image/png"
+    key = "img/endorsements/roslindale.jpg"
+    source = "../webpack/build/img/endorsements/roslindale.jpg"
+    etag = "${md5(file("../webpack/build/img/endorsements/roslindale.jpg"))}"
+    content_type = "image/jpeg"
 }
 
 

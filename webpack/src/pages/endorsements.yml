@@ -1,7 +1,7 @@
 title: 'Endorsements'
 
 people:
-    - image: 'rev_mariama_white_hammond.jpeg'
+    - image: 'rev_mariama_white_hammond.jpg'
       name: 'Reverend Mariama White-Hammond'
       title: 'Co-pastor, Bethel Ame Ministries<br/>&nbsp;'
       link: 'https://twitter.com/mariamwh'
@@ -13,19 +13,19 @@ people:
       link: 'http://www.ace-ej.org'
       text: |
         "I support Community Choice Energy because it can provide access to clean renewable energy for all Boston residents."
-    - image: 'joel_wool.jpeg'
+    - image: 'joel_wool.jpg'
       name: 'Joel Wool<br/>&nbsp;'
       title: 'Advocate: Energy & Environment - Clean Water Action'
       link: 'https://twitter.com/joelwool'
       text: |
         "Community Choice Energy means ALL of Boston can pitch in to build our clean energy future together."
-    - image: 'jenny_sazama.png'
+    - image: 'jenny_sazama.jpg'
       name: 'Jenny Sazama'
       title: 'Director & Co-Founder, Youth On Board'
       link: 'http://www.youthonboard.org/'
       text: |
         "Youth will inherit the climate we create. Let's make it renewable."
-    - image: 'carol_oldham.png'
+    - image: 'carol_oldham.jpg'
       name: 'Carol Oldham'
       title: 'Executive Director, Mass Climate Action Network'
       link: 'http://www.massclimateaction.org'
@@ -43,7 +43,7 @@ officials:
         our city as a whole with renewable energy resources such as solar and
         wind. Community choice energy is the fastest way that Boston can get
         on the path to being a 100% renewable energy city.
-    - image: 'matt_omalley.jpeg'
+    - image: 'matt_omalley.jpg'
       name: 'Matt O''Malley'
       title: 'Boston City Councilor'
       link: 'https://www.boston.gov/departments/city-council/matt-omalley'
@@ -54,17 +54,17 @@ officials:
 
 
 organizations:
-    - image: 'bcan.jpeg'
+    - image: 'bcan.jpg'
       name: 'Boston Climate Action Network'
       link: 'http://bostoncan.org'
       text: |
         "Get more renewable electricity for all Boston residents by combining our buying power."
-    - image: 'bsac.jpeg'
+    - image: 'bsac.jpg'
       name: 'Boston Student Advisory Council'
       link: 'http://www.bostonpublicschools.org/student-voice'
       text: |
         "The climate is our future. We don't have time to waste."
-    - image: 'roslindale.png'
+    - image: 'roslindale.jpg'
       name: 'Roslindale Affinity Group<br/>&nbsp;'
       link: '#'
       text: |
