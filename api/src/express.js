@@ -26,7 +26,7 @@ app.use('/api_v1/*', (req, res) => {
     let lreq = {
         params: _.merge(req.query, req.params),
         body: req.body,
-        route: req.baseUrl.split('/')[3]
+        route: req.baseUrl.split('/')[2]
     };
 
     handler.handle(lreq, {
@@ -42,8 +42,10 @@ app.use('/api_v1/*', (req, res) => {
                     response.detail = detail.trim();
                 }
             } else {
+                let data;
+                if (result) data = result.data;
                 code = 200;
-                response = {code: code, message: 'OK', data: result};
+                response = {code: code, message: 'OK', data: data};
             }
             res.status(code).json(response);
         }
