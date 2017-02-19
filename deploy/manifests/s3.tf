@@ -108,6 +108,15 @@ resource "aws_s3_bucket_object" "img_favicon" {
     content_type = "image/x-icon"
 }
 
+resource "aws_s3_bucket_object" "img_negef" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/negef.png"
+    source = "../webpack/build/img/negef.png"
+    etag = "${md5(file("../webpack/build/img/negef.png"))}"
+    content_type = "image/png"
+}
+
+
 #
 # Endorsement Images
 #
