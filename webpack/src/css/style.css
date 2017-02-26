@@ -33,31 +33,25 @@ body {
     fill: orange;
 }
 
-.bg {
-    background-image: url("/img/hero.jpg");
-    background-repeat:   no-repeat;
-    background-position: center top;
-    position: fixed;
-    width: 100%;
-    top:0;
-    left:0;
-    z-index: -1;
-    /* height: 450px; (via js) */
+.jumbotron-main {
+    height: 450px;
 }
 
 .jumbotron-subpage {
-    background-image: url("/img/hero.jpg");
-    background-repeat:   no-repeat;
-    background-position: center top;
-    height: 180px !important;
+    height: 180px;
 }
 
 .jumbotron {
     color: #fff;
     background-color: #333;
-    height: 450px;
     text-shadow: #444 0 1px 1px;
-    /* background: transparent (via js) */
+    background-image: url("/img/hero.jpg");
+    background-repeat:   no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    width: 100%;
+    top:0;
+    left:0;
 }
 
 .jumbotron h1,h2 {
