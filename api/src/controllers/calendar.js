@@ -10,8 +10,9 @@ const FIELDS = ['start', 'location', 'summary', 'description'];
 
 class CalendarHandler {
     constructor(config) {
+        this.calId = config.GOOGLE_CAL_ID;
         this.url = 'https://www.googleapis.com/calendar/v3/calendars/' +
-            config.GOOGLE_CAL_ID + '/events';
+            this.calId + '/events';
         this.apiKey = config.GOOGLE_API_KEY;
     }
 
@@ -32,9 +33,8 @@ class CalendarHandler {
                 }
 
                 // Filter the event to just the required fields
-                let ev;
+                let ev = {calId: this.calId};
                 if (res.body.items[0]) {
-                    ev = {};
                     FIELDS.forEach((f) => {
                         ev[f] = res.body.items[0][f];
                     });

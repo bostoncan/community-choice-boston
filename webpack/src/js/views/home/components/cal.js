@@ -11,7 +11,7 @@ var $ = require('jquery'),
 _.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
 
 module.exports = Backbone.View.extend({
-    initialize: function(options) {
+    initialize: function() {
         this.template = _.template(eventTemplate);
         this.el = $('#next-event');
         $.ajax({
@@ -27,8 +27,7 @@ module.exports = Backbone.View.extend({
 
     render: function(resp) {
         try {
-            var now = Date.now(),
-                item = resp.data,
+            var item = resp.data,
                 start = new Date(item.start.dateTime);
 
             var context = {
@@ -40,7 +39,8 @@ module.exports = Backbone.View.extend({
                 where: item.location,
                 whereEnc: encodeURI(item.location),
                 title: item.summary,
-                description: item.description
+                description: item.description,
+                calId: item.calId
             };
             this.el.html(this.template(context));
         } catch(e) {
