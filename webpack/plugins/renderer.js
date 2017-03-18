@@ -19,6 +19,11 @@ class NunjucksRenderPlugin {
         compiler.plugin("compilation", () => {
             this.files.forEach((file) => {
                 let context = yaml.load(fs.readFileSync(file.context));
+                context.random = Math
+                    .random()
+                    .toString(36)
+                    .replace(/[^a-z]+/g, '')
+                    .substr(0, 5);
                 file.rendered = nunjucks.render(file.template, context);
             });
             // compilation.plugin("optimize", function() {});
