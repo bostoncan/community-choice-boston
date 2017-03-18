@@ -26,7 +26,15 @@ body {
 }
 
 .town-green {
+    fill: #8BB381;
+}
+
+.town-dark-green {
     fill: green;
+}
+
+.town-gray {
+    fill: #cfcfcf;
 }
 
 .town-orange {
