@@ -53,12 +53,15 @@ media_bullets:
         energy scams by implementing a new citywide clean energy electricity
         plan for all of us.</p>
 primary:
-    image: 'joel_wool.jpg'
-    name: 'Joel Wool'
-    title: 'Advocate: Energy & Environment - Clean Water Action'
-    link: 'https://twitter.com/joelwool'
+    image: 'michelle_wu.jpg'
+    name: 'Michelle Wu'
+    title: 'Boston City Councilor-at-Large'
+    link: 'https://www.boston.gov/departments/city-council/michelle-wu'
     text: |
-      "Community Choice Energy means ALL of Boston can pitch in to build our clean energy future together."
+        The law lays out a process for the City of Boston to choose to power
+        our city as a whole with renewable energy resources such as solar and
+        wind. Community choice energy is the fastest way that Boston can get
+        on the path to being a 100% renewable energy city.
 
 endorsements:
     - image: 'kalila_barnett.jpg'
@@ -72,13 +75,14 @@ endorsements:
       link: 'http://bostoncan.org'
       text: |
         "Get more renewable electricity for all Boston residents by combining our buying power."
-    - image: 'carol_oldham.jpg'
-      name: 'Carol Oldham'
-      title: 'Executive Director, Mass Climate Action Network'
-      link: 'http://www.massclimateaction.org'
+    - image: 'matt_omalley.jpg'
+      name: 'Matt O''Malley'
+      title: 'Boston City Councilor'
+      link: 'https://www.boston.gov/departments/city-council/matt-omalley'
       text: |
-          "Community Choice Energy allows residents and small businesses to seamlessly switch to more renewable energy."
-
+        Fighting climate change and protecting our environment is about equity
+        and social justice, standing together to prevent disastrous impacts
+        that will fall disproportionately on vulnerable communities.
 
 faqs:
     - question: 'What is Community Choice Energy?'
