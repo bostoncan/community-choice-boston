@@ -9,6 +9,7 @@ var ccaTowns = {
     'ARLINGTON': 3,
     'ASHBY': 1,
     'AQUINNAH': 1,
+    'BARNSTABLE': 1,
     'BOSTON': 4,
     'BOURNE': 1,
     'BREWSTER': 1,
