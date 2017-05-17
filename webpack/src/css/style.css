@@ -98,6 +98,15 @@ body {
     margin-top: 10px;
 }
 
+#posts h4 {
+    margin-top: 25px;
+}
+
+#posts h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .green-info {
@@ -110,7 +119,7 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-    .margin-sides div div h4 {
+    .margin-sides div #next-event h4 {
         text-align: left;
     }
 }

@@ -3,6 +3,7 @@
 var Backbone = require('backbone-lodash'),
     $ = require('jquery'),
     CalenderView = require('./components/cal'),
+    PostsView = require('./components/posts'),
     MapView = require('./components/map'),
     PetitionView = require('./components/petition');
 
@@ -16,6 +17,9 @@ module.exports = Backbone.View.extend({
         // Sub views
         new CalenderView({
             el: '#next-event'
+        });
+        new PostsView({
+            el: '#posts'
         });
         new MapView({
             el: '#map'
