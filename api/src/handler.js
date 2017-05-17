@@ -3,11 +3,13 @@
 const tv4 = require('tv4'),
       CalendarHandler = require('./controllers/calendar'),
       PetitionHandler = require('./controllers/petition'),
+      PostsHandler = require('./controllers/posts'),
       config = require('./config');
 
 const routes = {
     calendar: new CalendarHandler(config),
-    petition: new PetitionHandler(config)
+    petition: new PetitionHandler(config),
+    posts: new PostsHandler(config)
 };
 
 module.exports.handle = function(req, context) {
