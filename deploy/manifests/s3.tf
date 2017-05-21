@@ -116,14 +116,6 @@ resource "aws_s3_bucket_object" "img_negef" {
     content_type = "image/png"
 }
 
-resource "aws_s3_bucket_object" "img_poster" {
-    bucket = "${aws_s3_bucket.site.bucket}"
-    key = "img/poster.jpg"
-    source = "../webpack/build/img/poster.jpg"
-    etag = "${md5(file("../webpack/build/img/poster.jpg"))}"
-    content_type = "image/jpeg"
-}
-
 resource "aws_s3_bucket_object" "img_poster_thumb" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/poster-thumb.jpg"
