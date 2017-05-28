@@ -200,6 +200,22 @@ resource "aws_s3_bucket_object" "endorsement_rev_mariama_white_hammond" {
     content_type = "image/jpeg"
 }
 
+resource "aws_s3_bucket_object" "endorsement_bcec" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/bcec.jpg"
+    source = "../webpack/build/img/endorsements/bcec.jpg"
+    etag = "${md5(file("../webpack/build/img/endorsements/bcec.jpg"))}"
+    content_type = "image/jpeg"
+}
+
+resource "aws_s3_bucket_object" "endorsement_wrse" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/wrse.jpg"
+    source = "../webpack/build/img/endorsements/wrse.jpg"
+    etag = "${md5(file("../webpack/build/img/endorsements/wrse.jpg"))}"
+    content_type = "image/jpeg"
+}
+
 resource "aws_s3_bucket_object" "endorsement_roslindale" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/roslindale.jpg"

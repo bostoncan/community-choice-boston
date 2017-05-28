@@ -64,6 +64,13 @@ organizations:
       link: 'http://www.bostonpublicschools.org/student-voice'
       text: |
         "The climate is our future. We don't have time to waste."
+    - image: 'bcec.jpg'
+      name: 'Boston Clean Energy Coalition'
+      link: 'https://www.facebook.com/Boston-Clean-Energy-Coalition-249864232150793/'
+      text: |
+        "The Boston Clean Energy Coalition enthusiastically supports Community
+        Choice Energy for Boston because it will accelerate our transition to
+        a renewable energy future in an equitable fashion."
     - image: 'roslindale.jpg'
       name: 'Roslindale Affinity Group<br/>&nbsp;'
       link: '#'
@@ -72,4 +79,11 @@ organizations:
         in Boston.  Using the power of bulk puchasing in the electricity generation
         market, CCE consolidates demand by Boston residents for locally generated
         wind, solar and non-fossil fuel electricity."
-
+    - image: 'wrse.jpg'
+      name: 'West Roxbury Saves Energy'
+      link: 'http://westroxburysavesenergy.org'
+      text: |
+        "It is time for Boston to take the lead in all matters that help our
+        environment, and CCE is the single most effective way to immediately
+        reduce greenhouse gases in our city. Now is the time for Boston to
+        adopt CCE; we cannot wait."
