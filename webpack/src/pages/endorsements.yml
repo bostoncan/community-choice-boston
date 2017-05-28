@@ -71,6 +71,13 @@ organizations:
         "The Boston Clean Energy Coalition enthusiastically supports Community
         Choice Energy for Boston because it will accelerate our transition to
         a renewable energy future in an equitable fashion."
+    - image: 'sierra-mass.jpg'
+      name: 'Sierra Club - Massachussetts'
+      link: 'http://www.sierraclub.org/massachusetts'
+      text: |
+        "Community Choice Energy is a great opportunity for Boston to invest in
+        renewable energy and help consumers by providing them with consistent
+        electricity prices year round."
     - image: 'roslindale.jpg'
       name: 'Roslindale Affinity Group<br/>&nbsp;'
       link: '#'
