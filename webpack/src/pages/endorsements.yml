@@ -32,6 +32,13 @@ people:
       text: |
         "Community Choice Energy allows residents and small businesses to seamlessly switch to more renewable energy."
 
+    - image: 'michael_orr.jpg'
+      name: 'Michael Orr'
+      title: 'Somerville Resident'
+      link: '#'
+      text: |
+        "I decided to opt up for the 100% renewables choice through CCA. In
+         just two minutes I was signed up! It was sooooo easy."
 
 officials:
     - image: 'michelle_wu.jpg'
