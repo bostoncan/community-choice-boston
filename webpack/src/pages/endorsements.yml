@@ -34,7 +34,7 @@ people:
 
     - image: 'michael_orr.jpg'
       name: 'Michael Orr'
-      title: 'Somerville Resident'
+      title: 'Somerville Resident<br/>&nbsp;'
       link: '#'
       text: |
         "I decided to opt up for the 100% renewables choice through CCA. In
