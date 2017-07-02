@@ -1,8 +1,61 @@
-images:
-    - href: ''
-      image: ''
-      title: ''
-call_in_content: |
-    When you call your councilor or the mayor's office
+handouts:
+    - href: 'https://docs.google.com/document/d/11JKMbYeKk-opOGD_1noJlaAntDsRiLhOlOaHlmcpnJo/edit?usp=sharing'
+      title: 'CCE Informational Handout'
+    - href: 'https://drive.google.com/file/d/0Bz_9optuomsZMlZ0aE9lQXo0TU0/view?usp=sharing'
+      title: 'CCE One Page Advert'
+
+councilor_contacts:
+    - name: 'Michelle Wu'
+      number: '617-635-3115'
+      role: 'Council President'
+    - name: 'Annissa Essaibi-George'
+      number: '617-635-4376'
+      role: 'At-Large'
+    - name: 'Michael Flaherty'
+      number: '617-635-4205'
+      role: 'At-Large'
+    - name: 'Ayanna Pressley'
+      number: '617-635-4217'
+      role: 'At-Large'
+    - name: 'Sal LaMattina'
+      number: '617-635-3200'
+      role: 'District 1'
+    - name: 'Bill Linehan'
+      number: '617-635-3203'
+      role: 'District 2'
+    - name: 'Frank Baker'
+      number: '617-635-3455'
+      role: 'District 3'
+    - name: 'Andrea Campbell'
+      number: '617-635-3131'
+      role: 'District 4'
+    - name: 'Timothy McCarthy'
+      number: '617-635-4210'
+      role: 'District 5'
+    - name: 'Matt O''Malley'
+      number: '617-635-4220'
+      role: 'District 6'
+    - name: 'Tito Jackson'
+      number: '617-635-3510'
+      role: 'District 7'
+    - name: 'Josh Zakim'
+      number: '617-635-4225'
+      role: 'District 8'
+    - name: 'Mark Ciommo'
+      number: '617-635-3113'
+      role: 'District 9'
+
 call_in_guide: |
-    Hi,
+    Hello, Councilor. I am calling to urge your support for Community Choice
+    Energy (CCE) for Boston.  Community Choice Energy is an initiative by the
+    Boston Climate Action Network and the Green Justice Coalition to bring
+    Boston cleaner air, healthier communities, and more safe, clean jobs in the
+    renewable sector. CCE is a positive, proactive step to reduce the use of
+    fossil fuels by purchasing local New England renewable energy for every
+    Boston resident no matter their income. This is the fastest single action
+    Boston can take to meet its greenhouse gas reduction goals. Please support
+    Community Choice Energy for a better city. Thank you.
+
+mayor:
+    name: 'Marty Walsh'
+    number: '617-635-4500'
