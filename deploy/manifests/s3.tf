@@ -216,6 +216,14 @@ resource "aws_s3_bucket_object" "endorsement_sierra_mass" {
     content_type = "image/jpeg"
 }
 
+resource "aws_s3_bucket_object" "endorsement_nabb" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/nabb.jpg"
+    source = "../webpack/build/img/endorsements/nabb.jpg"
+    etag = "${md5(file("../webpack/build/img/endorsements/nabb.jpg"))}"
+    content_type = "image/jpeg"
+}
+
 resource "aws_s3_bucket_object" "endorsement_bcec" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/bcec.jpg"
