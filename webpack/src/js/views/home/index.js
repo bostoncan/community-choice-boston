@@ -31,7 +31,7 @@ module.exports = Backbone.View.extend({
 
     petitionScroll: function() {
         $('html,body').animate({
-            scrollTop: $("#petition").offset().top
+            scrollTop: $("#join").offset().top
         }, 'slow');
     },
 
