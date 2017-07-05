@@ -45,6 +45,11 @@ module.exports = {
                     context: './src/pages/endorsements.yml',
                     outFile: './build/endorsements.html',
                     template: './endorsements/index.njk.html'
+                },
+                {
+                    context: './src/pages/resources.yml',
+                    outFile: './build/resources.html',
+                    template: './resources/index.njk.html'
                 }
             ]
         }),
