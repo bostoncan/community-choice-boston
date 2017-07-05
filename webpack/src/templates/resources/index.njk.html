@@ -1,0 +1,57 @@
+{% extends "base.njk.html" %}
+
+{% block header %}
+<div class="jumbotron-subpage jumbotron">
+  <div class="container">
+    <h2>Community Choice Energy Boston - Questions and Answers</h2>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h3>Community Choice Energy Toolkit</h4>
+
+    <h5>Handouts</h5>
+    <div class="row">
+        {% for a in handouts %}
+        <div class="col-sm-4 vert-spacer-bottom">
+            <a href="{{ a.href }}">
+                <i class="fa fa-file-text-o fa-5x"></i>
+                <h4 class="text-center">{{ a.title }}</h4>
+                <p class="text-muted">{{ a.description }}</p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h5>Call-in Template</h5>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="well">
+                {{ call_in_guide }}
+            </div>
+        </div>
+    </div>
+
+    <h5>City Councilors Contact Info</h5>
+    <div class="row">
+        {% for c in councilors %}
+        <div class="col-sm-4">
+            <h4>{{ c.name }}<h4>
+            <h5 class="text-muted">{{ c.role }}</h5>
+            <p>{{ c.number }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h5>Mayor's Office<h5>
+     <div class="row">
+        <div class="col-sm-4">
+            <h4>{{ mayor.name }}<h4>
+            <p>{{ mayor.number }}</p>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

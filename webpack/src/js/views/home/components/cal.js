@@ -28,7 +28,7 @@ module.exports = Backbone.View.extend({
     render: function(resp) {
         try {
             var item = resp.data,
-                start = new Date(item.start.dateTime);
+                start = new Date(item.start);
 
             var context = {
                 isoformat: start.toISOString(),
@@ -39,11 +39,12 @@ module.exports = Backbone.View.extend({
                 where: item.location,
                 whereEnc: encodeURI(item.location),
                 title: item.summary,
-                description: item.description,
-                calId: item.calId
+                url: item.url,
+                page: item.page
             };
             this.el.html(this.template(context));
         } catch(e) {
+            console.log(e);
             this.error()
         }
     }

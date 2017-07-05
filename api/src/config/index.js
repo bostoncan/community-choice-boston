@@ -2,8 +2,9 @@
 
 // Default values
 let config = {
-    GOOGLE_API_KEY: 'not-a-key',
-    GOOGLE_CAL_ID: 'not-an-id',
+    EVENTBRITE_TOKEN: '',
+    EVENTBRITE_PAGE: 'https://www.eventbrite.com/o/boston-climate-action-network-14272789018',
+    EVENTBRITE_ORGANIZER: '14272789018',
     GOOGLE_SHEET_ID: 'some-spreadsheet-id',
     GOOGLE_DRIVE_CRED: null,
     POSTS_URL: 'https://bostoncan.wordpress.com/category/cce/feed/'
