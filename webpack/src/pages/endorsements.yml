@@ -64,6 +64,13 @@ organizations:
       link: 'http://www.bostonpublicschools.org/student-voice'
       text: |
         "The climate is our future. We don't have time to waste."
+    - image: 'nabb.jpg'
+      name: 'Neighborhood Association of the Back Bay, Green Committee'
+      link: 'http://www.nabbonline.com/'
+      text: |
+        "We can get more renewable electricity by combining our buying power.
+        We can choose renewables, fight climate change, protect consumers,
+        create jobs, and stabilize prices."
     - image: 'bcec.jpg'
       name: 'Boston Clean Energy Coalition'
       link: 'https://www.facebook.com/Boston-Clean-Energy-Coalition-249864232150793/'
