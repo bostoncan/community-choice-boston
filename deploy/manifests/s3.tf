@@ -62,6 +62,14 @@ resource "aws_s3_bucket_object" "index" {
     content_type = "text/html"
 }
 
+resource "aws_s3_bucket_object" "resources" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "resources.html"
+    source = "../webpack/build/resources.html"
+    etag = "${md5(file("../webpack/build/resources.html"))}"
+    content_type = "text/html"
+}
+
 
 #
 # Styles
