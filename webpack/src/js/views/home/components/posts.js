@@ -34,7 +34,7 @@ module.exports = Backbone.View.extend({
                 var context = {
                     title: post.title,
                     link: post.link,
-                    when: dateFormat(new Date(post.pubdate), 'mmmm dS, yy')
+                    when: dateFormat(new Date(post.pubdate), 'mmmm dS, yyyy')
                 };
                 return self.template(context);
             }).join('');
