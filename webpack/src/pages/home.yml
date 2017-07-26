@@ -75,14 +75,15 @@ endorsements:
       link: 'http://bostoncan.org'
       text: |
         "Get more renewable electricity for all Boston residents by combining our buying power."
-    - image: 'matt_omalley.jpg'
-      name: 'Matt O''Malley'
+    - image: 'essaibi-george.jpg'
+      name: 'Annissa Essaibi-George'
       title: 'Boston City Councilor'
-      link: 'https://www.boston.gov/departments/city-council/matt-omalley'
+      link: 'https://www.boston.gov/departments/city-council/annissa-essaibi-george'
       text: |
-        Fighting climate change and protecting our environment is about equity
-        and social justice, standing together to prevent disastrous impacts
-        that will fall disproportionately on vulnerable communities.
+        "Climate Change is a clear threat to future generations. I am committed
+        to supporting work and policy that advances our transition to clean,
+        renewable sources of energy. We have an obligation to do all we can to
+        preserve a habitable environment for our children and their children."
 
 faqs:
     - question: 'What is Community Choice Energy?'
