@@ -200,6 +200,22 @@ resource "aws_s3_bucket_object" "endorsement_matt_omalley" {
     content_type = "image/jpeg"
 }
 
+resource "aws_s3_bucket_object" "endorsement_annissa_essaibi_george" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/essaibi-george.jpg"
+    source = "../webpack/build/img/endorsements/essaibi-george.jpg"
+    etag = "${md5(file("../webpack/build/img/endorsements/essaibi-george.jpg"))}"
+    content_type = "image/jpeg"
+}
+
+resource "aws_s3_bucket_object" "endorsement_josh_zakim" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/zakim.jpg"
+    source = "../webpack/build/img/endorsements/zakim.jpg"
+    etag = "${md5(file("../webpack/build/img/endorsements/zakim.jpg"))}"
+    content_type = "image/jpeg"
+}
+
 resource "aws_s3_bucket_object" "endorsement_michelle_wu" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/michelle_wu.jpg"
@@ -256,6 +272,13 @@ resource "aws_s3_bucket_object" "endorsement_roslindale" {
     content_type = "image/jpeg"
 }
 
+resource "aws_s3_bucket_object" "endorsement_jpnc" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/jpnc.jpg"
+    source = "../webpack/build/img/endorsements/jpnc.jpg"
+    etag = "${md5(file("../webpack/build/img/endorsements/jpnc.jpg"))}"
+    content_type = "image/jpeg"
+}
 
 #
 # Other
