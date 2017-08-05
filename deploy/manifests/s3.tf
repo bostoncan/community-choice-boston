@@ -291,3 +291,11 @@ resource "aws_s3_bucket_object" "robots" {
     etag = "${md5(file("../webpack/build/robots.txt"))}"
     content_type = "text/plain"
 }
+
+resource "aws_s3_bucket_object" "west_rox_rosl_bulletin" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "pdf/West_Rox_Rosl_June_08_2017.pdf"
+    source = "../webpack/build/pdf/West_Rox_Rosl_June_08_2017.pdf"
+    etag = "${md5(file("../webpack/build/pdf/West_Rox_Rosl_June_08_2017.pdf"))}"
+    content_type = "application/pdf"
+}

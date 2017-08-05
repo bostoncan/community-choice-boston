@@ -40,7 +40,25 @@
         <div class="margin-sides container">
             <div class="row card vert-padding-top-small">
                 <div id="next-event"></div>
-                <div id="posts"></div>
+                <div>
+                    <div class="col-sm-4 cce-poster">
+                        <a href="http://bostoncan.org">
+                            <img class="center-block" style="max-width: 100%" alt="Boston wants Community Choice Energy" src="/img/poster-thumb.jpg"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-8">
+                        <div id="news">
+                            <h4 class="text-center">CCE in the News</h4>
+                            {% for n in news %}
+                            <h5>
+                                <strong><a href="{{n.link}}">{{n.title}}</a></strong>
+                            </h5>
+                            <p class="text-muted">{{n.when}}<p>
+                            {% endfor %}
+                        </div>
+                        <div id="posts"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

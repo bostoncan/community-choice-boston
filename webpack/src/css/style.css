@@ -102,6 +102,11 @@ body {
     margin-top: 25px;
 }
 
+#news h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 #posts h5 {
     margin-top: 10px;
     margin-bottom: 5px;
@@ -217,4 +222,8 @@ footer {
 .resources h3 {
     margin-top: 60px;
     margin-bottom: 20px;
+}
+
+.cce-poster {
+    padding-top: 15px;
 }
