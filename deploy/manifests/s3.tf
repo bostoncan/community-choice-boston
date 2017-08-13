@@ -274,10 +274,10 @@ resource "aws_s3_bucket_object" "endorsement_roslindale" {
 
 resource "aws_s3_bucket_object" "endorsement_jpnc" {
     bucket = "${aws_s3_bucket.site.bucket}"
-    key = "img/endorsements/jpnc.jpg"
-    source = "../webpack/build/img/endorsements/jpnc.jpg"
-    etag = "${md5(file("../webpack/build/img/endorsements/jpnc.jpg"))}"
-    content_type = "image/jpeg"
+    key = "img/endorsements/jpnc.png"
+    source = "../webpack/build/img/endorsements/jpnc.png"
+    etag = "${md5(file("../webpack/build/img/endorsements/jpnc.png"))}"
+    content_type = "image/png"
 }
 
 #
