@@ -216,6 +216,14 @@ resource "aws_s3_bucket_object" "endorsement_josh_zakim" {
     content_type = "image/jpeg"
 }
 
+resource "aws_s3_bucket_object" "endorsement_tito_jackson" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/tito_jackson.jpg"
+    source = "../webpack/build/img/endorsements/tito_jackson.jpg"
+    etag = "${md5(file("../webpack/build/img/endorsements/tito_jackson.jpg"))}"
+    content_type = "image/jpeg"
+}
+
 resource "aws_s3_bucket_object" "endorsement_michelle_wu" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/michelle_wu.jpg"
