@@ -138,10 +138,10 @@ resource "aws_s3_bucket_object" "img_poster_thumb" {
 
 resource "aws_s3_bucket_object" "endorsement_bcan" {
     bucket = "${aws_s3_bucket.site.bucket}"
-    key = "img/endorsements/bcan.jpg"
-    source = "../webpack/build/img/endorsements/bcan.jpg"
-    etag = "${md5(file("../webpack/build/img/endorsements/bcan.jpg"))}"
-    content_type = "image/jpeg"
+    key = "img/endorsements/bcan.png"
+    source = "../webpack/build/img/endorsements/bcan.png"
+    etag = "${md5(file("../webpack/build/img/endorsements/bcan.png"))}"
+    content_type = "image/png"
 }
 
 resource "aws_s3_bucket_object" "endorsement_bsac" {
