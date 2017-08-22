@@ -58,6 +58,15 @@ officials:
         "Fighting climate change and protecting our environment is about equity
         and social justice, standing together to prevent disastrous impacts
         that will fall disproportionately on vulnerable communities."
+    - image: 'pressley.jpg',
+      name: 'Ayanna Pressley'
+      title: 'Boston City Councilor'
+      link: 'https://www.boston.gov/departments/city-council/ayanna-pressley'
+      text: |
+        "Cities around the country have had to do more to combat climate change.
+        Community Choice Energy is an example of community driven policy that
+        will push Boston to be greener and more resilient. I am proud to
+        support this effort."
     - image: 'tito_jackson.jpg'
       name: 'Tito Jackson'
       title: 'Boston City Councilor'
