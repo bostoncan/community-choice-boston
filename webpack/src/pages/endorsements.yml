@@ -58,7 +58,7 @@ officials:
         "Fighting climate change and protecting our environment is about equity
         and social justice, standing together to prevent disastrous impacts
         that will fall disproportionately on vulnerable communities."
-    - image: 'pressley.jpg',
+    - image: 'pressley.jpg'
       name: 'Ayanna Pressley'
       title: 'Boston City Councilor'
       link: 'https://www.boston.gov/departments/city-council/ayanna-pressley'

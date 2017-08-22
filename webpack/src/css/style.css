@@ -45,6 +45,19 @@ body {
     height: 450px;
 }
 
+.jumbotron-main .container img {
+    max-width: 80%;
+    max-height: 200px;
+}
+
+.jumbotron .container .lead {
+    margin-top: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(0,0,0,.5);
+}
+
 .jumbotron-subpage {
     height: 250px;
 }
@@ -68,7 +81,7 @@ body {
 }
 
 .jumbotron p .btn {
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 .green-info {
