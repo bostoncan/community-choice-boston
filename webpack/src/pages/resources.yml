@@ -8,6 +8,12 @@ handouts:
     - href: 'https://docs.google.com/document/d/1Wn73Ewdu6eZPUJ3yXc6v42RRkeG8BtHQUtsnIryZVhU/edit?usp=sharing'
       title: 'How to contact City Councilors'
 
+logos:
+    - href: '/data/CCE.zip'
+      title: 'CCE Logos'
+    - href: '/data/BostonCAN.zip'
+      title: 'BostonCAN Logos'
+
 councilors:
     at_large:
         - name: 'Michelle Wu'

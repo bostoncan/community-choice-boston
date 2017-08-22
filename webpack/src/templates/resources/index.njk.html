@@ -25,6 +25,20 @@
         {% endfor %}
     </div>
 
+    <h3>Logos</h3>
+    <div class="row">
+        {% for a in logos %}
+        <div class="col-sm-4 vert-spacer-bottom">
+            <a href="{{ a.href }}">
+                <div class="center-icon">
+                <i class="fa fa-file-zip-o fa-5x"></i>
+                </div>
+                <h4 class="text-center">{{ a.title }}</h4>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+
     <h3>Call-in Template</h3>
     <div class="row vert-space-bottom">
         <div class="col-sm-12">
