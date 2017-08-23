@@ -50,6 +50,15 @@ officials:
         our city as a whole with renewable energy resources such as solar and
         wind. Community choice energy is the fastest way that Boston can get
         on the path to being a 100% renewable energy city."
+    - image: 'tito_jackson.jpg'
+      name: 'Tito Jackson'
+      title: 'Boston City Councilor'
+      link: 'http://www.titojacksonformayor.com/'
+      text: |
+        "Community Choice Energy is simply the right thing to do. It is critical
+        for the City of Boston to use its resources to significantly fight
+        climate change, and become a leader in standing for a better environment."
+        <br/><br/><br/>
     - image: 'matt_omalley.jpg'
       name: 'Matt O''Malley'
       title: 'Boston City Councilor'
@@ -58,6 +67,7 @@ officials:
         "Fighting climate change and protecting our environment is about equity
         and social justice, standing together to prevent disastrous impacts
         that will fall disproportionately on vulnerable communities."
+        <br/><br/><br/>
     - image: 'pressley.jpg'
       name: 'Ayanna Pressley'
       title: 'Boston City Councilor'
@@ -67,30 +77,6 @@ officials:
         Community Choice Energy is an example of community driven policy that
         will push Boston to be greener and more resilient. I am proud to
         support this effort."
-    - image: 'tito_jackson.jpg'
-      name: 'Tito Jackson'
-      title: 'Boston City Councilor'
-      link: 'http://www.titojacksonformayor.com/'
-      text: |
-        "Community Choice Energy is simply the right thing to do. It is critical
-        for the City of Boston to use its resources to significantly fight
-        climate change, and become a leader in standing for a better environment.
-        We are a coastal city that already sees first hand the impact of the climate
-        literally on our doorstep, and Boston’s residents all deserve to breathe
-        clean air and have access to clean water. Community Choice Energy has
-        proven to be a successful strategy for reducing fossil fuel consumption,
-        and by focusing on local renewable energy sources, it can also stimulate
-        a second-fold bottom line of job growth in the green economy as well.
-        I applaud all those who unswervingly do this important work. We must
-        all join that effort."
-    - image: 'zakim.jpg'
-      name: 'Josh Zakim'
-      title: 'Boston City Councilor'
-      link: 'https://www.boston.gov/departments/city-council/josh-zakim'
-      text: |
-          "We must all work together to protect our city from climate change.
-          Adopting CCE is a small, simple step that we can take that will make
-          a large impact on our environment."
     - image: 'essaibi-george.jpg'
       name: 'Annissa Essaibi-George'
       title: 'Boston City Councilor'
@@ -100,6 +86,15 @@ officials:
         to supporting work and policy that advances our transition to clean,
         renewable sources of energy. We have an obligation to do all we can to
         preserve a habitable environment for our children and their children."
+    - image: 'zakim.jpg'
+      name: 'Josh Zakim'
+      title: 'Boston City Councilor'
+      link: 'https://www.boston.gov/departments/city-council/josh-zakim'
+      text: |
+          "We must all work together to protect our city from climate change.
+          Adopting CCE is a small, simple step that we can take that will make
+          a large impact on our environment."
+
 
 organizations:
     - image: 'bcan.png'
