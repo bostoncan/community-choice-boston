@@ -108,6 +108,14 @@ resource "aws_s3_bucket_object" "img_hero" {
     content_type = "image/jpeg"
 }
 
+resource "aws_s3_bucket_object" "img_logo" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/cce.png"
+    source = "../webpack/build/img/cce.png"
+    etag = "${md5(file("../webpack/build/img/cce.png"))}"
+    content_type = "image/png"
+}
+
 resource "aws_s3_bucket_object" "img_favicon" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/favicon.ico"
