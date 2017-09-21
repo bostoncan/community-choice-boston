@@ -160,6 +160,22 @@ resource "aws_s3_bucket_object" "endorsement_bsac" {
     content_type = "image/jpeg"
 }
 
+resource "aws_s3_bucket_object" "endorsement_clampoint" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/clampoint.png"
+    source = "../webpack/build/img/endorsements/clampoint.png"
+    etag = "${md5(file("../webpack/build/img/endorsements/clampoint.png"))}"
+    content_type = "image/png"
+}
+
+resource "aws_s3_bucket_object" "endorsement_ward4" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/ward4.jpg"
+    source = "../webpack/build/img/endorsements/ward4.jpg"
+    etag = "${md5(file("../webpack/build/img/endorsements/ward4.jpg"))}"
+    content_type = "image/jpeg"
+}
+
 resource "aws_s3_bucket_object" "endorsement_carol_oldham" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/carol_oldham.jpg"

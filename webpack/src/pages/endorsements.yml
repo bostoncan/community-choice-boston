@@ -102,6 +102,19 @@ organizations:
       link: 'http://bostoncan.org'
       text: |
         "Get more renewable electricity for all Boston residents by combining our buying power."
+    - image: 'clampoint.png'
+      name: 'Clam Point Civic Association'
+      link: 'http://clampoint.org/'
+      text: |
+        "Community Choice Energy is the fastest single action Boston can take to
+        meet its greenhouse gas reduction goals."
+    - image: 'ward4.jpg'
+      name: 'Boston Ward 4 Democratic Committee'
+      link: 'https://twitter.com/Ward4Dems'
+      text: |
+        "The Boston Ward 4 Democratic Committee endorses the Community Choice
+        Energy campaign and urges the Boston City Council and
+        Mayor to adopt and implement a Community Choice Energy program promptly."
     - image: 'bsac.jpg'
       name: 'Boston Student Advisory Council'
       link: 'http://www.bostonpublicschools.org/student-voice'
