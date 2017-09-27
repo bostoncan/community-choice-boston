@@ -68,15 +68,6 @@ officials:
         and social justice, standing together to prevent disastrous impacts
         that will fall disproportionately on vulnerable communities."
         <br/><br/><br/>
-    - image: 'pressley.jpg'
-      name: 'Ayanna Pressley'
-      title: 'Boston City Councilor'
-      link: 'https://www.boston.gov/departments/city-council/ayanna-pressley'
-      text: |
-        "Cities around the country have had to do more to combat climate change.
-        Community Choice Energy is an example of community driven policy that
-        will push Boston to be greener and more resilient. I am proud to
-        support this effort."
     - image: 'essaibi-george.jpg'
       name: 'Annissa Essaibi-George'
       title: 'Boston City Councilor'
@@ -86,6 +77,23 @@ officials:
         to supporting work and policy that advances our transition to clean,
         renewable sources of energy. We have an obligation to do all we can to
         preserve a habitable environment for our children and their children."
+    - image: 'pressley.jpg'
+      name: 'Ayanna Pressley'
+      title: 'Boston City Councilor'
+      link: 'https://www.boston.gov/departments/city-council/ayanna-pressley'
+      text: |
+        "Cities around the country have had to do more to combat climate change.
+        Community Choice Energy is an example of community driven policy that
+        will push Boston to be greener and more resilient. I am proud to
+        support this effort."
+    - image: 'campbell.jpg'
+      name: 'Andrea Campbell'
+      title: 'Boston City Councilor'
+      link: ''
+      text: |
+        "Community Choice Energy is an important, environmentally conscious
+        step we can take toward making our City greener and making clean energy
+        accessible and affordable to all residents."
     - image: 'zakim.jpg'
       name: 'Josh Zakim'
       title: 'Boston City Councilor'
