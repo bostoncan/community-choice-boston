@@ -123,6 +123,12 @@ organizations:
         "The Boston Ward 4 Democratic Committee endorses the Community Choice
         Energy campaign and urges the Boston City Council and
         Mayor to adopt and implement a Community Choice Energy program promptly."
+    - image: 'charlestown.png'
+      name: 'Charlestown Neighborhood Council'
+      link: 'http://www.charlestownneighborhoodcouncil.org/'
+      text: |
+          "We endorse Community Choice Energy as an important step toward a greener
+          Boston."
     - image: 'bsac.jpg'
       name: 'Boston Student Advisory Council'
       link: 'http://www.bostonpublicschools.org/student-voice'

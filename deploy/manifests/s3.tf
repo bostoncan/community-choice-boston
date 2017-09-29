@@ -168,6 +168,14 @@ resource "aws_s3_bucket_object" "endorsement_clampoint" {
     content_type = "image/png"
 }
 
+resource "aws_s3_bucket_object" "endorsement_charlestown" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/charlestown.png"
+    source = "../webpack/build/img/endorsements/charlestown.png"
+    etag = "${md5(file("../webpack/build/img/endorsements/charlestown.png"))}"
+    content_type = "image/png"
+}
+
 resource "aws_s3_bucket_object" "endorsement_ward4" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/ward4.jpg"
