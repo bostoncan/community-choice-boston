@@ -336,6 +336,14 @@ resource "aws_s3_bucket_object" "endorsement_jpnc" {
     content_type = "image/png"
 }
 
+resource "aws_s3_bucket_object" "endorsement_arborway" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/arborway-coalition.png"
+    source = "../webpack/build/img/endorsements/arborway-coalition.png"
+    etag = "${md5(file("../webpack/build/img/endorsements/arborway-coalition.png"))}"
+    content_type = "image/png"
+}
+
 #
 # Other
 #

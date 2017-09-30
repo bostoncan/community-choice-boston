@@ -171,3 +171,9 @@ organizations:
         environment, and CCE is the single most effective way to immediately
         reduce greenhouse gases in our city. Now is the time for Boston to
         adopt CCE; we cannot wait."
+    - image: 'arborway-coalition.png'
+      name: 'The Arborway Coalition'
+      link: 'http://gatewaytothearborway.blogspot.com/'
+      text: |
+        "We encourage the City to take an important additional
+        step toward a greener Boston by adopting 'Community Choice Energy' (CCE)."
