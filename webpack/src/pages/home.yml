@@ -66,15 +66,14 @@ media_bullets:
         energy scams by implementing a new citywide clean energy electricity
         plan for all of us.</p>
 primary:
-    image: 'michelle_wu.jpg'
-    name: 'Michelle Wu'
-    title: 'Boston City Councilor-at-Large'
-    link: 'https://www.boston.gov/departments/city-council/michelle-wu'
+    image: 'boston-globe.jpg'
+    name: 'The Boston Globe'
+    link: 'http://www.bostonglobe.com/opinion/editorials/2017/10/07/boston-needs-lead-clean-energy/1Z5CbWHaUJOAFBuG03ktQM/story.html'
     text: |
-        The law lays out a process for the City of Boston to choose to power
-        our city as a whole with renewable energy resources such as solar and
-        wind. Community choice energy is the fastest way that Boston can get
-        on the path to being a 100% renewable energy city.
+        "Boston is an important city. It’s the largest in New England. It’s
+        filled with top-notch scientists and big thinkers, and its citizens
+        increasingly feel like citizens of the world. Boston needs to do
+        something. This is something. Let’s do it. "
 
 endorsements:
     - image: 'kalila_barnett.jpg'
@@ -88,15 +87,15 @@ endorsements:
       link: 'http://bostoncan.org'
       text: |
         "Get more renewable electricity for all Boston residents by combining our buying power."
-    - image: 'essaibi-george.jpg'
-      name: 'Annissa Essaibi-George'
-      title: 'Boston City Councilor'
-      link: 'https://www.boston.gov/departments/city-council/annissa-essaibi-george'
+    - image: 'michelle_wu.jpg'
+      name: 'Michelle Wu'
+      title: 'Boston City Councilor-at-Large'
+      link: 'https://www.boston.gov/departments/city-council/michelle-wu'
       text: |
-        "Climate Change is a clear threat to future generations. I am committed
-        to supporting work and policy that advances our transition to clean,
-        renewable sources of energy. We have an obligation to do all we can to
-        preserve a habitable environment for our children and their children."
+          The law lays out a process for the City of Boston to choose to power
+          our city as a whole with renewable energy resources such as solar and
+          wind. Community choice energy is the fastest way that Boston can get
+          on the path to being a 100% renewable energy city.
 
 faqs:
     - question: 'What is Community Choice Energy?'

@@ -105,6 +105,14 @@ officials:
 
 
 organizations:
+    - image: 'boston-globe.jpg'
+      name: 'The Boston Globe'
+      link: 'http://www.bostonglobe.com/opinion/editorials/2017/10/07/boston-needs-lead-clean-energy/1Z5CbWHaUJOAFBuG03ktQM/story.html'
+      text: |
+          "Boston is an important city. It’s the largest in New England. It’s
+          filled with top-notch scientists and big thinkers, and its citizens
+          increasingly feel like citizens of the world. Boston needs to do
+          something. This is something. Let’s do it. "
     - image: 'bcan.png'
       name: 'Boston Climate Action Network'
       link: 'http://bostoncan.org'

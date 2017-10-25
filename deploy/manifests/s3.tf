@@ -336,6 +336,15 @@ resource "aws_s3_bucket_object" "endorsement_nabb" {
     content_type = "image/jpeg"
 }
 
+resource "aws_s3_bucket_object" "endorsement_boston_globe" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/boston-globe.jpg"
+    source = "../webpack/build/img/endorsements/boston-globe.jpg"
+    etag = "${md5(file("../webpack/build/img/endorsements/boston-globe.jpg"))}"
+    cache_control = "max_age=31536000"
+    content_type = "image/jpeg"
+}
+
 resource "aws_s3_bucket_object" "endorsement_bcec" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/bcec.jpg"
