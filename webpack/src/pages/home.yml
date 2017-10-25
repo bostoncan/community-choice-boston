@@ -78,26 +78,27 @@ primary:
         something. This is something. Let’s do it. "
 
 endorsements:
-    - image: 'kalila_barnett.jpg'
-      name: 'Kalila Barnett'
-      title: 'Executive Director ACE-EJ'
-      link: 'http://www.ace-ej.org'
-      text: |
-        "I support Community Choice Energy because it can provide access to clean renewable energy for all Boston residents."
-    - image: 'bcan.png'
-      name: 'Boston Climate Action Network'
-      link: 'http://bostoncan.org'
-      text: |
-        "Get more renewable electricity for all Boston residents by combining our buying power."
-    - image: 'michelle_wu.jpg'
-      name: 'Michelle Wu'
-      title: 'Boston City Councilor-at-Large'
-      link: 'https://www.boston.gov/departments/city-council/michelle-wu'
-      text: |
-          The law lays out a process for the City of Boston to choose to power
-          our city as a whole with renewable energy resources such as solar and
-          wind. Community choice energy is the fastest way that Boston can get
-          on the path to being a 100% renewable energy city.
+    - items:
+        - image: 'kalila_barnett.jpg'
+          name: 'Kalila Barnett'
+          title: 'Executive Director ACE-EJ'
+          link: 'http://www.ace-ej.org'
+          text: |
+            "I support Community Choice Energy because it can provide access to clean renewable energy for all Boston residents."
+        - image: 'bcan.png'
+          name: 'Boston Climate Action Network'
+          link: 'http://bostoncan.org'
+          text: |
+            "Get more renewable electricity for all Boston residents by combining our buying power."
+        - image: 'michelle_wu.jpg'
+          name: 'Michelle Wu'
+          title: 'Boston City Councilor-at-Large'
+          link: 'https://www.boston.gov/departments/city-council/michelle-wu'
+          text: |
+              The law lays out a process for the City of Boston to choose to power
+              our city as a whole with renewable energy resources such as solar and
+              wind. Community choice energy is the fastest way that Boston can get
+              on the path to being a 100% renewable energy city.
 
 faqs:
     - question: 'What is Community Choice Energy?'

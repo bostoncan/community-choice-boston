@@ -1,5 +1,6 @@
+{% for row in endorsements %}
 <div class="row">
-    {% for e in endorsements %}
+    {% for e in row.items %}
     <div class="col-sm-4 vert-spacer-bottom">
         <a href="{{ e.link }}">
         <img class="img-circle center-block" src="/img/endorsements/{{ e.image }}" alt="" width="140" height="140">
@@ -12,3 +13,4 @@
     </div>
     {% endfor %}
 </div>
+{% endfor %}
