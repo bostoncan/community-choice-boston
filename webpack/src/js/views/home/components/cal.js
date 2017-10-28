@@ -35,7 +35,7 @@ module.exports = Backbone.View.extend({
                 day: dateFormat(start, 'dddd'),
                 month: dateFormat(start, 'mmmm'),
                 date: dateFormat(start, 'd'),
-                when: dateFormat(start, 'h:MM tt'),
+                when: dateFormat(start, 'h:MM tt, ddd mmmm d'),
                 where: item.location,
                 whereEnc: encodeURI(item.location),
                 title: item.summary,
