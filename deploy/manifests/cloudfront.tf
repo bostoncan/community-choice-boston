@@ -67,7 +67,7 @@ resource "aws_cloudfront_distribution" "dist" {
         }
 
         viewer_protocol_policy = "redirect-to-https"
-        compress = false
+        compress = true
         min_ttl = 0
         default_ttl = 3600
         max_ttl = 3600
