@@ -2,7 +2,7 @@
   "name": "cce-api-dev",
   "version": "0.0.1",
   "description": "Development environment for CCE lambda backend",
-  "dependencies": {
+  "devDependencies": {
     "body-parser": "1.15.2",
     "chai": "3.5.0",
     "express": "4.14.0",

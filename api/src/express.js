@@ -23,7 +23,7 @@ app.use('*', morgan('dev'));
 
 // Primary API controller - does the work that API Gateway does
 app.use('/api_v1/*', (req, res) => {
-    let lreq = {
+    const lreq = {
         params: _.merge(req.query, req.params),
         body: req.body,
         route: req.baseUrl.split('/')[2]
@@ -34,10 +34,10 @@ app.use('/api_v1/*', (req, res) => {
             let code, response;
 
             if (err) {
-                let prefix = err.split(':')[0],
-                    detail = err.split(':')[1];
+                const prefix = err.split(':')[0],
+                      detail = err.split(':')[1];
                 code = responseHash[prefix];
-                response = {code: code, message: prefix};
+                response = {code, message: prefix};
                 if (detail) {
                     response.detail = detail.trim();
                 }

@@ -13,6 +13,7 @@ fi
 
 # Run the deployment
 docker run -ti \
+    --env-file .env \
     -v "$HOME/.aws:/root/.aws" \
     -v "`pwd`:/src" \
     cce-deploy:latest \

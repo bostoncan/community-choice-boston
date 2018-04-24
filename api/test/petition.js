@@ -9,31 +9,35 @@ describe('Post petition event', () => {
         name_first: 'Linus',
         name_last: 'Henry',
         email: 'linus@example.com',
-        zip: '02122'
+        zip: '02122',
+        'contact-pref': 'none'
     };
 
-    it('should add a row', function(done) {
+    /*
+    it('should add a row', (done) => {
         this.timeout(10000);
-        let req = {route: 'petition', body: baseBody};
+
+        const req = {route: 'petition', body: baseBody};
         handler.handle(req, {done: (err) => {
             expect(err).not.to.exist;
             done();
         }});
     });
+    */
 
     it('should reject empty requests', (done) => {
-        let req = {route: 'petition', body: {}};
+        const req = {route: 'petition', body: {}};
         handler.handle(req, {done: (err) => {
             expect(err).to.equal('ERR_BAD_REQUEST: Empty request');
             done();
         }});
     });
 
-    it('should reject malformed emails', (done) => {
-        let body = _.cloneDeep(baseBody);
-        body.email = 'foobarbazzhands';
+    it('should require zip codes', (done) => {
+        const body = _.cloneDeep(baseBody);
+        delete body.zip;
 
-        let req = {route: 'petition', body: body};
+        const req = {route: 'petition', body};
         handler.handle(req, {done: (err) => {
             expect(err).to.equal('ERR_BAD_REQUEST: ' +
                                  'Additional properties not allowed');
@@ -41,4 +45,27 @@ describe('Post petition event', () => {
         }});
     });
 
+    it('should require contact-preferences', (done) => {
+        const body = _.cloneDeep(baseBody);
+        delete body['contact-pref'];
+
+        const req = {route: 'petition', body};
+        handler.handle(req, {done: (err) => {
+            expect(err).to.equal('ERR_BAD_REQUEST: ' +
+                                 'Additional properties not allowed');
+            done();
+        }});
+    });
+
+    it('should reject malformed emails', (done) => {
+        const body = _.cloneDeep(baseBody);
+        body.email = 'foobarbazzhands';
+
+        const req = {route: 'petition', body};
+        handler.handle(req, {done: (err) => {
+            expect(err).to.equal('ERR_BAD_REQUEST: ' +
+                                 'Additional properties not allowed');
+            done();
+        }});
+    });
 });
