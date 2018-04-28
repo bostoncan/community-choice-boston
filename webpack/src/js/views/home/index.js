@@ -10,6 +10,7 @@ var Backbone = require('backbone-lodash'),
 module.exports = Backbone.View.extend({
     events: {
         'click #sign': 'petitionScroll',
+        'click #sign-lower': 'petitionScroll',
         'click #share-fb': 'shareFB'
     },
 
@@ -31,8 +32,9 @@ module.exports = Backbone.View.extend({
 
     petitionScroll: function() {
         $('html,body').animate({
-            scrollTop: $("#join").offset().top
+            scrollTop: $("#petition").offset().top
         }, 'slow');
+        $('#name-first').focus();
     },
 
     shareFB: function() {

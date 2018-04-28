@@ -1,3 +1,4 @@
+/* globals fbq */
 'use strict';
 
 var $ = require('jquery'),
@@ -42,6 +43,7 @@ module.exports = Backbone.View.extend({
             success: function() {
                 localStorage.setItem('petition', '1');
                 self.succeed();
+                fbq('track', 'CompleteRegistration');
             },
             error: self.formError.bind(self)
         });

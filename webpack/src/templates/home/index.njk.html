@@ -17,16 +17,24 @@
             <h4 class="vert-spacer-bottom">{{ lead }}</h4>
         </div>
         <div class="row">
-            <div class="col-sm-5 green-info bg-success check-list">
-            {% for leader in leaders %}
-            <p>
-                <span class="fa-stack">
-                  <i class="fa fa-circle text-success fa-stack-2x"></i>
-                  <i class="fa fa-check fa-stack-1x fa-inverse"></i>
-                </span> {{ leader }}</p>
-            {% endfor %}
+            <div class="col-sm-6">
+                {{ leader_text | safe }}
+                <br/>
+                <div class="green-info bg-success check-list hidden-sm-inline">
+                    {% for leader in leaders %}
+                    <p>
+                        <span class="fa-stack">
+                          <i class="fa fa-circle text-success fa-stack-2x"></i>
+                          <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                        </span>
+                        {{ leader }}
+                    </p>
+                    {% endfor %}
+                </div>
             </div>
-            <div class="col-sm-7">{{ leader_text | safe }}</div>
+            <div class="col-sm-6" class="petition-wrapper">
+                <form id="petition" class="well"></form>
+            </div>
         </div>
     </div>
 
