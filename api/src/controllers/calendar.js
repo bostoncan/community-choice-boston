@@ -9,7 +9,6 @@ const qs = require('querystring'),
 
 class CalendarHandler {
     constructor(config) {
-        this.page = config.EVENTBRITE_PAGE;
         this.organizer_id = config.EVENTBRITE_ORGANIZER;
         this.baseUrl = 'https://www.eventbriteapi.com';
         this.eventPath = '/v3/events/search/';
@@ -28,7 +27,7 @@ class CalendarHandler {
         http.get(url).end((err, resp) => {
             if (err) return context.done('ERR_INTERNAL_ERROR');
 
-            const ev = {page: this.page};
+            const ev = {};
             if (!resp.events[0]) {
                 return context.done(null, {data: ev});
             }

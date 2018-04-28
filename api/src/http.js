@@ -16,8 +16,7 @@ class Request {
             path: parsed.path,
             method: method,
             headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Accept': 'application/json'
             }
         }
         this.body = '';
@@ -34,7 +33,10 @@ class Request {
     }
 
     end(done) {
-        this.params.headers['Content-Length'] = this.body.length;
+        if (this.body.length) {
+            this.params.headers['Content-Length'] = this.body.length;
+            this.params.headers['Content-Type'] = 'application/json';
+        }
 
         const r = https.request(this.params, (res) => {
             let body = '';
@@ -49,7 +51,7 @@ class Request {
             });
         });
 
-        if (this.body) r.write(this.body);
+        if (this.body.length) r.write(this.body);
         r.on('error', done);
         r.end();
     }
