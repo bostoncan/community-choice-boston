@@ -1,7 +1,8 @@
 'use strict';
 
 const qs = require('querystring'),
-      http = require('../http');
+      http = require('../http'),
+      events = require('./data/events');
 
 /*
  * Proxy call to the Eventbrite API to return the next event
@@ -16,6 +17,12 @@ class CalendarHandler {
     }
 
     handle(req, context) {
+        // Check a static list of upcoming events to override the call to EB
+        const upcoming = events.filter((e) => new Date(e.start).valueOf() > Date.now());
+        if (upcoming.length) {
+            return context.done(null, {data: upcoming[0]});
+        }
+
         const query = qs.stringify({
             'sort_by': 'date',
             'organizer.id': this.organizer_id,
