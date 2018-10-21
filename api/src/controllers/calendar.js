@@ -34,20 +34,20 @@ class CalendarHandler {
             if (err) return context.done('ERR_INTERNAL_ERROR');
 
             const ev = {};
-            if (!resp.events[0]) {
+            if (!resp.body.events[0]) {
                 return context.done(null, {data: ev});
             }
 
-            ev.summary = resp.events[0].name.text;
-            ev.url = resp.events[0].url;
-            ev.start = resp.events[0].start.utc;
+            ev.summary = resp.body.events[0].name.text;
+            ev.url = resp.body.events[0].url;
+            ev.start = resp.body.events[0].start.utc;
 
-            const venueUrl = `${this.baseUrl}/v3/venues/${resp.events[0].venue_id}` +
+            const venueUrl = `${this.baseUrl}/v3/venues/${resp.body.events[0].venue_id}` +
                              `/?token=${this.token}`;
 
             request.get(venueUrl).end((err, resp) => {
                 if (err) return context.done('ERR_INTERNAL_ERROR');
-                ev.location = resp.address.localized_address_display;
+                ev.location = resp.body.address.localized_address_display;
                 context.done(null, {data: ev});
             });
         });

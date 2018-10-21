@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "description": "CCE lambda backend dependencies",
   "dependencies": {
-    "feedparser-promised": "1.2.2",
+    "feedparser-promised": "~1.2.2",
     "google-spreadsheet": "2.0.3",
-    "simpleragent": "1.0.1",
+    "simpleragent": "1.0.3",
     "tv4": "1.2.7"
   }
 }

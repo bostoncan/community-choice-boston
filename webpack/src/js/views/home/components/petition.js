@@ -35,6 +35,9 @@ module.exports = Backbone.View.extend({
             }
         });
 
+        // The petition is now the newsletter, so all contacts
+        data['contact-pref'] = 'all';
+
         $.post({
             url: '/api_v1/petition',
             data: JSON.stringify(data),

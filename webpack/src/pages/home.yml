@@ -7,25 +7,28 @@ leaders:
     - 'Stabilize prices'
 
 leader_text: |
-    <p><strong>On October 4, 2017, the Boston City Council unanimously passed an order to authorize the City of Boston to adopt Community Choice Energy.</strong></p>
-    <p>Now, Mayor Walsh is dragging his feet with a two year implementation timeline, while Boston experiences the brunt of climate change. We can't wait two years to act!</p>
-    <p>We urge you to join us in asking Mayor Walsh to be a Climate Leader and implement CCE now!</p>
+    <p><b>Boston is currently actively working to implement Community Choice Energy!
+    </b></p>
+    <p>The Mayor's office is now engaged in the first steps of setting up
+       the program.</p>
+    <p>Read more below to learn about the program, how far along it is on
+       implementation, and how you can get involved!</p>
 
 embed_video_link: 'https://www.youtube.com/embed/6HkNZiN-FX4'
 
 news:
+    - title: 'Boston Takes ‘Big Step’ Toward Community Choice Aggregation'
+      link: 'https://nawindpower.com/boston-takes-big-step-toward-community-choice-aggregation'
+      when: 'Aug 23rd, 2018'
+    - title: 'Next Step Taken Towards Implementation of Community Choice Aggregation'
+      link: 'https://www.boston.gov/news/next-step-taken-toward-implementation-community-choice-aggregation'
+      when: 'Aug 22nd, 2018'
     - title: 'JP Gazette, letter to the editor: Community choice energy'
       link: 'http://jamaicaplaingazette.com/2017/09/29/letters-15/'
       when: 'Sept 29th, 2017'
     - title: 'JP Observer: Boston needs to opt for cleaner electricity'
       link: 'http://jamaicaplaingazette.com/2017/07/28/jp-observer-boston-needs-to-opt-for-cleaner-electricity/'
       when: 'July 28th, 2017'
-    - title: 'West Roxbury/Roslindale Bulletin, letter to the editor: We Can Support Climate Efforts Locally (page 10)'
-      link: '/pdf/West_Rox_Rosl_June_08_2017.pdf'
-      when: 'June 8th, 2017'
-    - title: 'Dorchester Reporter: City must lead on climate-change issue'
-      link: 'http://www.dotnews.com/columns/2017/city-must-lead-climate-change-issue'
-      when: 'June 7th, 2017'
 
 map_summary: |
   <p>Dozens of towns across Massachusetts and hundreds across America
