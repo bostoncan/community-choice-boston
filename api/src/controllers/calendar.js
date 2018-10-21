@@ -1,7 +1,6 @@
 'use strict';
 
-const qs = require('querystring'),
-      http = require('../http'),
+const request = require('simpleragent'),
       events = require('./data/events');
 
 /*
@@ -23,15 +22,15 @@ class CalendarHandler {
             return context.done(null, {data: upcoming[0]});
         }
 
-        const query = qs.stringify({
+        const queryParams = {
             'sort_by': 'date',
             'organizer.id': this.organizer_id,
             'token': this.token
-        });
+        };
 
-        const url = `${this.baseUrl}${this.eventPath}?${query}`;
+        const url = `${this.baseUrl}${this.eventPath}`;
 
-        http.get(url).end((err, resp) => {
+        request.get(url).query(queryParams).end((err, resp) => {
             if (err) return context.done('ERR_INTERNAL_ERROR');
 
             const ev = {};
@@ -46,7 +45,7 @@ class CalendarHandler {
             const venueUrl = `${this.baseUrl}/v3/venues/${resp.events[0].venue_id}` +
                              `/?token=${this.token}`;
 
-            http.get(venueUrl).end((err, resp) => {
+            request.get(venueUrl).end((err, resp) => {
                 if (err) return context.done('ERR_INTERNAL_ERROR');
                 ev.location = resp.address.localized_address_display;
                 context.done(null, {data: ev});

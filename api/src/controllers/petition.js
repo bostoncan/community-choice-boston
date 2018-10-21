@@ -2,7 +2,7 @@
 
 const PetitionModel = require('./schema/petition'),
       crypto = require('crypto'),
-      http = require('../http'),
+      request = require('simpleragent'),
       GoogleSpreadsheet = require('google-spreadsheet');
 
 class PetitionHandler {
@@ -80,7 +80,7 @@ class PetitionHandler {
             }
         };
 
-        http.put(url)
+        request.put(url)
             .set('Authorization', 'Basic ' + this.mc_auth)
             .send(payload)
             .end((err) => {
