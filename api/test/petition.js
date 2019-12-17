@@ -1,71 +1,44 @@
 'use strict';
 
 const handler = require('../src/handler'),
-      _ = require('lodash'),
       expect = require('chai').expect;
 
+const baseBody = {
+    name_first: 'Linus',
+    name_last: 'Henry',
+    email: 'linus@example.com',
+    zip: '02122',
+    'contact-pref': 'none'
+};
+
+function cloneBody() {
+    return JSON.parse(JSON.stringify(baseBody));
+}
+
 describe('Post petition event', () => {
-    const baseBody = {
-        name_first: 'Linus',
-        name_last: 'Henry',
-        email: 'linus@example.com',
-        zip: '02122',
-        'contact-pref': 'none'
-    };
+    // TODO: Nock interceptors and test successful case
 
-    /*
-    it('should add a row', (done) => {
-        this.timeout(10000);
-
-        const req = {route: 'petition', body: baseBody};
-        handler.handle(req, {done: (err) => {
-            expect(err).not.to.exist;
-            done();
-        }});
-    });
-    */
-
-    it('should reject empty requests', (done) => {
-        const req = {route: 'petition', body: {}};
-        handler.handle(req, {done: (err) => {
-            expect(err).to.equal('ERR_BAD_REQUEST: Empty request');
-            done();
-        }});
+    it('should reject empty requests', async () => {
+        const req = {path: '/api_v1/petition', body: '{}'};
+        const resp = await handler.handle(req);
+        expect(resp.statusCode).to.equal(400);
     });
 
-    it('should require zip codes', (done) => {
-        const body = _.cloneDeep(baseBody);
+    it('should require zip codes', async () => {
+        const body = cloneBody();
         delete body.zip;
 
-        const req = {route: 'petition', body};
-        handler.handle(req, {done: (err) => {
-            expect(err).to.equal('ERR_BAD_REQUEST: ' +
-                                 'Additional properties not allowed');
-            done();
-        }});
+        const req = {path: '/api_v1/petition', body: JSON.stringify(body)};
+        const resp = await handler.handle(req);
+        expect(resp.statusCode).to.equal(400);
     });
 
-    it('should require contact-preferences', (done) => {
-        const body = _.cloneDeep(baseBody);
-        delete body['contact-pref'];
-
-        const req = {route: 'petition', body};
-        handler.handle(req, {done: (err) => {
-            expect(err).to.equal('ERR_BAD_REQUEST: ' +
-                                 'Additional properties not allowed');
-            done();
-        }});
-    });
-
-    it('should reject malformed emails', (done) => {
-        const body = _.cloneDeep(baseBody);
+    it('should reject malformed emails', async () => {
+        const body = cloneBody();
         body.email = 'foobarbazzhands';
 
-        const req = {route: 'petition', body};
-        handler.handle(req, {done: (err) => {
-            expect(err).to.equal('ERR_BAD_REQUEST: ' +
-                                 'Additional properties not allowed');
-            done();
-        }});
+        const req = {path: '/api_v1/petition', body: JSON.stringify(body)};
+        const resp = await handler.handle(req);
+        expect(resp.statusCode).to.equal(400);
     });
 });

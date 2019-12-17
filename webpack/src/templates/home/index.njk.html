@@ -58,10 +58,10 @@
                         <div id="news">
                             <h4 class="text-center">CCE in the News</h4>
                             {% for n in news %}
-                            <h5>
-                                <strong><a href="{{n.link}}">{{n.title}}</a></strong>
-                            </h5>
-                            <p class="text-muted">{{n.when}}<p>
+                            <p>
+                                <strong><a href="{{n.link}}">{{n.title}}</a></strong><br/>
+                                <span class="text-muted" style="font-size: 14px; margin-bottom: 10px">{{n.when}}<span>
+                            </p>
                             {% endfor %}
                         </div>
                         <div id="posts"></div>

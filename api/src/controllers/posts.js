@@ -11,20 +11,14 @@ class PostsHandler {
         this.url = config.POSTS_URL;
     }
 
-    handle(req, context) {
-        feedparser.parse(this.url).then((items) => {
-            let data = items.map((item) => {
-                return {
-                    title: item.title,
-                    pubdate: item.pubdate,
-                    link: item.link
-                };
-            });
-            context.done(null, {data: data});
-        }).catch((err) => {
-            console.log(err);
-            context.done('ERR_INTERNAL_ERROR');
-        });
+    async handle(req) {
+        const items = await feedparser.parse(this.url);
+        const data = items.map((item) => ({
+            title: item.title,
+            pubdate: item.pubdate,
+            link: item.link
+        }));
+        return {data};
     }
 }
 

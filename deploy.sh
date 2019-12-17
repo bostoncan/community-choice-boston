@@ -4,17 +4,15 @@ set -e
 
 # Perform the builds
 if [ -z "$SKIP_BUILD" ]; then
-    docker-compose run api gulp archive
+    rm -rf api/build
+    docker-compose run api npm run package
     docker-compose run webpack webpack
-
-    # Build the deploy env to contain the latest build artifacts
-    docker build -t cce-deploy:latest --file ./deploy/Dockerfile .
 fi
 
 # Run the deployment
 docker run -ti \
     --env-file .env \
-    -v "$HOME/.aws:/root/.aws" \
-    -v "`pwd`:/src" \
-    cce-deploy:latest \
-    sh ./deploy/run.sh apply
+    --entrypoint /bin/sh \
+    -w /app \
+    -v "`pwd`:/app" \
+    hashicorp/terraform:0.12.2 tfw.sh

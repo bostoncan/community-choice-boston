@@ -7,7 +7,6 @@
 const express = require('express'),
       bodyParser = require('body-parser'),
       morgan = require('morgan'),
-      _ = require('lodash'),
       app = express();
 
 const handler = require('./handler');
@@ -22,36 +21,21 @@ app.use('*', bodyParser.json());
 app.use('*', morgan('dev'));
 
 // Primary API controller - does the work that API Gateway does
-app.use('/api_v1/*', (req, res) => {
+app.use('/api_v1/*', async (req, res) => {
     const lreq = {
-        params: _.merge(req.query, req.params),
-        body: req.body,
-        route: req.baseUrl.split('/')[2]
+        body: JSON.stringify(req.body),
+        path: '/' + req.baseUrl.split('/').slice(2).join('/'),
+        method: req.method
     };
 
-    handler.handle(lreq, {
-        done: (err, result) => {
-            let code, response;
-
-            if (err) {
-                const prefix = err.split(':')[0],
-                      detail = err.split(':')[1];
-                code = responseHash[prefix];
-                response = {code, message: prefix};
-                if (detail) {
-                    response.detail = detail.trim();
-                }
-            } else {
-                let data;
-                if (result) data = result.data;
-                code = 200;
-                response = {code: code, message: 'OK', data: data};
-            }
-            res.status(code).json(response);
-        }
-    });
+    const resp = await handler.handle(lreq);
+    res.status(resp.statusCode);
+    res.set(resp.headers);
+    res.send(resp.body);
 });
 
 app.use(express.static('../build'));
 
-app.listen(3000);
+if (require.main === module) {
+    app.listen(3000, () => console.log('Listening on port 3000'));
+}

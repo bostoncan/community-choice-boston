@@ -7,18 +7,15 @@ city
 The following directions assume a Mac or Linux machine, or at least bash
 access.  Windows users may find that their mileage varies.
 
-#### Local configs
-Create a json file in `./api/src/config/local.json` to override configs:
+#### Local Config Overrides
+Create a file in `api/.env` that contains overrides for local development, as
+in the example below, but with actual values:
 
-```json
-{
-  "GOOGLE_API_KEY": "API key for accessing the public calendar",
-  "GOOGLE_CAL_ID": "The id of the public calendar for CCE events",
-  "GOOGLE_SHEET_ID": "ID of the spreadsheet to hold petition submissions",
-  "GOOGLE_DRIVE_CRED": {
-     "//": "Contents of the json credentials file for accessing Google drive sheet"
-  }
-}
+```bash
+# Config overrides
+EVENTBRITE_TOKEN=ABCDEFGHIJKLMNOP
+EVENTBRITE_ORGANIZER=1234567890
+ACTION_NETWORK_TOKEN=foobarbazzhands
 ```
 
 #### Running locally
@@ -34,14 +31,22 @@ Open [localhost:3000](http://localhost:3000) to see.
 
 #### Deploying
 
-Put your production configs (generally Google IDs and credentials) into
-`./api/src/config/production.json`
+Put your production configs into `.env` in the project root.
 
-You will need to get credentials for the BCAN/CCE AWS account.
+In addition to config overrides, you will need to get credentials for the
+BCAN/CCE AWS account.
 
-Make sure you've put your AWS credentials in `~/.aws/credentials` under a
-profile named `bcan`, then you can kick off the builds and run the terraform
-deployment:
+```bash
+AWS_ACCESS_KEY_ID=<access_key>
+AWS_SECRET_ACCESS_KEY=<secret_key>
+
+# Config overrides
+TF_VAR_eventbrite_token=<token>
+TF_VAR_eventbrite_organizer=<organizer_id>
+TF_VAR_action_network_token=<token>
+```
+
+Then run the script:
 
 ```bash
 $ ./deploy.sh

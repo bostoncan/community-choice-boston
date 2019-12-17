@@ -3,6 +3,8 @@
 const request = require('simpleragent'),
       events = require('./data/events');
 
+const client = new request.Client('https://www.eventbriteapi.com/v3');
+
 /*
  * Proxy call to the Eventbrite API to return the next event
  */
@@ -10,47 +12,42 @@ const request = require('simpleragent'),
 class CalendarHandler {
     constructor(config) {
         this.organizer_id = config.EVENTBRITE_ORGANIZER;
-        this.baseUrl = 'https://www.eventbriteapi.com';
-        this.eventPath = '/v3/events/search/';
         this.token = config.EVENTBRITE_TOKEN;
     }
 
-    handle(req, context) {
+    async handle(req) {
         // Check a static list of upcoming events to override the call to EB
-        const upcoming = events.filter((e) => new Date(e.start).valueOf() > Date.now());
+        const now = new Date();
+        const upcoming = events.filter((e) => new Date(e.start) > now);
         if (upcoming.length) {
-            return context.done(null, {data: upcoming[0]});
+            return {data: upcoming[0]};
         }
 
         const queryParams = {
-            'sort_by': 'date',
-            'organizer.id': this.organizer_id,
+            'time_filter': 'current_future',
             'token': this.token
         };
 
-        const url = `${this.baseUrl}${this.eventPath}`;
+        const resp = await client
+            .get(`/organizations/${this.organizer_id}/events/`)
+            .query(queryParams);
 
-        request.get(url).query(queryParams).end((err, resp) => {
-            if (err) return context.done('ERR_INTERNAL_ERROR');
+        const found = resp.body.events[0];
+        if (!found) {
+            return {data: {}};
+        }
 
-            const ev = {};
-            if (!resp.body.events[0]) {
-                return context.done(null, {data: ev});
-            }
+        const ev = {
+            summary: found.name.text,
+            url: found.url,
+            start: found.start.utc
+        };
 
-            ev.summary = resp.body.events[0].name.text;
-            ev.url = resp.body.events[0].url;
-            ev.start = resp.body.events[0].start.utc;
+        const venueUrl = `/venues/${found.venue_id}/`;
+        const venueResp = await client.get(venueUrl).query({token: this.token});
+        ev.location = venueResp.body.address.localized_address_display;
 
-            const venueUrl = `${this.baseUrl}/v3/venues/${resp.body.events[0].venue_id}` +
-                             `/?token=${this.token}`;
-
-            request.get(venueUrl).end((err, resp) => {
-                if (err) return context.done('ERR_INTERNAL_ERROR');
-                ev.location = resp.body.address.localized_address_display;
-                context.done(null, {data: ev});
-            });
-        });
+        return {data: ev};
     }
 }
 

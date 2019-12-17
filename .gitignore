@@ -1,7 +1,9 @@
 .env
-.terraform
 /.tmp
 
+manifests/.terraform
+
+/api/.env
 /api/src/config/*.json
 /api/coverage
 /api/node_modules

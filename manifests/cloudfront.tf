@@ -53,7 +53,7 @@ resource "aws_cloudfront_distribution" "dist" {
         }
     }
 
-    cache_behavior {
+    ordered_cache_behavior {
         path_pattern = "/api_v1/*"
         allowed_methods  = ["GET", "HEAD", "DELETE", "OPTIONS", "PATCH", "POST", "PUT"]
         cached_methods   = ["GET", "HEAD"]

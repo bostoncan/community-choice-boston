@@ -1,44 +1,45 @@
 {
-  "type": "object",
-  "properties": {
-    "name_first": {
-      "type": "string",
-      "minLength": 1,
-      "required": true
-    },
-    "name_last": {
-      "type": "string",
-      "minLength": 2,
-      "required": true
-    },
-    "email": {
-      "type": "string",
-      "format": "email",
-      "required": true
-    },
-    "zip": {
-      "type": "string",
-      "pattern": "^\\d{5}$",
-      "required": true
-    },
-    "phone": {
-      "type": "string",
-      "pattern": "^[\\d\\-\\(\\) ]",
-      "minLength": 7
-    },
-    "address1": {
-      "type": "string"
-    },
-    "address2": {
-      "type": "string"
-    },
-    "city": {
-      "type": "string"
-    },
-    "contact-pref": {
-      "enum": ["all", "cce-only", "none"],
-      "required": true
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["name_first", "name_last", "email", "zip"],
+    "properties": {
+        "address1": {
+            "type": "string"
+        },
+        "address2": {
+            "type": "string"
+        },
+        "city": {
+            "type": "string"
+        },
+        "contact-pref": {
+            "type": "string",
+            "enum": [
+                "all",
+                "cce-only",
+                "none"
+            ]
+        },
+        "email": {
+            "format": "email",
+            "type": "string"
+        },
+        "name_first": {
+            "minLength": 1,
+            "type": "string"
+        },
+        "name_last": {
+            "minLength": 2,
+            "type": "string"
+        },
+        "phone": {
+            "minLength": 7,
+            "pattern": "^[\\d\\-\\(\\) ]",
+            "type": "string"
+        },
+        "zip": {
+            "pattern": "^\\d{5}$",
+            "type": "string"
+        }
     }
-  },
-  "additionalProperties": false
 }

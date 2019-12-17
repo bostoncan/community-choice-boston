@@ -7,9 +7,9 @@ leaders:
     - 'Stabilize prices'
 
 leader_text: |
-    <p><b>Boston is currently actively working to implement Community Choice Energy!
+    <p><b>Boston is now actively working to implement Community Choice Energy!
     </b></p>
-    <p>The Mayor's office is now engaged in the first steps of setting up
+    <p>The Mayor's office is engaged in the first steps of setting up
        the program.</p>
     <p>Read more below to learn about the program, how far along it is on
        implementation, and how you can get involved!</p>
@@ -17,6 +17,9 @@ leader_text: |
 embed_video_link: 'https://www.youtube.com/embed/6HkNZiN-FX4'
 
 news:
+    - title: 'Boston makes its move into electricity purchasing for its residents and businesses'
+      link: 'https://www.bostonglobe.com/business/2019/03/18/boston-makes-its-move-into-electricity-purchasing-for-its-residents-and-businesses/OvMWVps5TgWy8c9j2TkiJJ/story.html'
+      when: 'Mar 18th, 2019'
     - title: 'Boston Takes ‘Big Step’ Toward Community Choice Aggregation'
       link: 'https://nawindpower.com/boston-takes-big-step-toward-community-choice-aggregation'
       when: 'Aug 23rd, 2018'
@@ -26,9 +29,6 @@ news:
     - title: 'JP Gazette, letter to the editor: Community choice energy'
       link: 'http://jamaicaplaingazette.com/2017/09/29/letters-15/'
       when: 'Sept 29th, 2017'
-    - title: 'JP Observer: Boston needs to opt for cleaner electricity'
-      link: 'http://jamaicaplaingazette.com/2017/07/28/jp-observer-boston-needs-to-opt-for-cleaner-electricity/'
-      when: 'July 28th, 2017'
 
 map_summary: |
   <p>Dozens of towns across Massachusetts and hundreds across America

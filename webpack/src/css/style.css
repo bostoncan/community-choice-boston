@@ -1,5 +1,6 @@
 body {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
 #map {
@@ -74,11 +75,6 @@ body {
     width: 100%;
     top:0;
     left:0;
-}
-
-.jumbotron h1,h2 {
-    text-shadow: -1px 0 #444, 0 1px #444, 1px 0 #444, 0 -1px #444;
-    font-weight: bold;
 }
 
 .jumbotron p .btn {
