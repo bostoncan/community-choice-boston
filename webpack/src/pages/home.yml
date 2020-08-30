@@ -1,4 +1,4 @@
-title: 'Community Choice Energy Boston'
+title: 'Community Choice Electricity Boston'
 lead: 'Help us make renewable electricity affordable and accessible for all Boston residents.'
 leaders:
     - 'Choose renewables'
@@ -7,7 +7,7 @@ leaders:
     - 'Stabilize prices'
 
 leader_text: |
-    <p><b>Boston is now actively working to implement Community Choice Energy!
+    <p><b>Boston is now actively working to implement Community Choice Electricity!
     </b></p>
     <p>The Mayor's office is engaged in the first steps of setting up
        the program.</p>
@@ -26,7 +26,7 @@ news:
     - title: 'Next Step Taken Towards Implementation of Community Choice Aggregation'
       link: 'https://www.boston.gov/news/next-step-taken-toward-implementation-community-choice-aggregation'
       when: 'Aug 22nd, 2018'
-    - title: 'JP Gazette, letter to the editor: Community choice energy'
+    - title: 'JP Gazette, letter to the editor: Community Choice Electricity'
       link: 'http://jamaicaplaingazette.com/2017/09/29/letters-15/'
       when: 'Sept 29th, 2017'
 
@@ -51,7 +51,7 @@ media_bullets:
     - icon: 'fa-dollar'
       title: 'Money Smart'
       content: |
-        <p>The new Community Choice Energy purchasing plan <strong>will
+        <p>The new Community Choice Electricity purchasing plan <strong>will
         add little or no costs to residents or businesses</strong>. The
         new shared plan will also protect us from price spikes caused by
         the changing cost of fossil fuels.</p>
@@ -60,7 +60,7 @@ media_bullets:
       content: |
         <p>Have people been calling you or knocking on your door and offering
         you a new electricity plan? Many of these plans do not deliver on their
-        promises. Our Community Choice Energy plan protects residents against
+        promises. Our Community Choice Electricity plan protects residents against
         energy scams by implementing a new citywide clean energy electricity
         plan for all of us.</p>
 primary:
@@ -80,7 +80,7 @@ endorsements:
           title: 'Executive Director ACE-EJ'
           link: 'http://www.ace-ej.org'
           text: |
-            "I support Community Choice Energy because it can provide access to clean renewable energy for all Boston residents."
+            "I support Community Choice Electricity because it can provide access to clean renewable energy for all Boston residents."
         - image: 'bcan.png'
           name: 'Boston Climate Action Network'
           link: 'http://bostoncan.org'
@@ -93,11 +93,11 @@ endorsements:
           text: |
               The law lays out a process for the City of Boston to choose to power
               our city as a whole with renewable energy resources such as solar and
-              wind. Community choice energy is the fastest way that Boston can get
+              wind. Community Choice Electricity is the fastest way that Boston can get
               on the path to being a 100% renewable energy city.
 
 faqs:
-    - question: 'What is Community Choice Energy?'
+    - question: 'What is Community Choice Electricity?'
       answer: |
         Massachusetts state law allows any city or town to choose the
         electricity supplier for all its residents and businesses. This way,
@@ -110,11 +110,11 @@ faqs:
         significantly for residents.'
     - question: 'Will I be able to keep my current plan?'
       answer: |
-        Yes! No one is locked into the Community Choice Energy plan. If you
+        Yes! No one is locked into the Community Choice Electricity plan. If you
         currently have a competitive supplier you can keep that supplier as
         long as you like. If you have Eversource as your supplier, you can opt
-        out of Community Choice Energy or choose another competitive supplier.
-    - question: 'What would community choice energy do for environmental justice?'
+        out of Community Choice Electricity or choose another competitive supplier.
+    - question: 'What would Community Choice Electricity do for environmental justice?'
       answer: |
         In Massachusetts, poor communities bear the brunt of fossil fuel
         pollution and get few of its economic benefits. White and affluent
@@ -126,7 +126,7 @@ faqs:
 
 petition_body: |
     <p>We petition Mayor Marty Walsh to increase renewable energy and stabilize
-    our electric bills by promptly implementing Community Choice Energy</p>
+    our electric bills by promptly implementing Community Choice Electricity</p>
     <p>Climate change makes this action urgent. By bulk-purchasing renewable
     power, we can help drive the market for clean energy and protect Boston,
     the United States, and the world.</p>
