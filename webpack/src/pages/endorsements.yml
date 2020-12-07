@@ -4,19 +4,19 @@ people:
     - items:
         - image: 'rev_mariama_white_hammond.jpg'
           name: 'Reverend Mariama White-Hammond'
-          title: 'Co-pastor, Bethel A.M.E Ministries<br/>&nbsp;'
+          title: 'Pastor, New Roots AME Church'
           link: 'https://twitter.com/mariamawh'
           text: |
             "I definitely think Community Choice is the direction we should be going in."
         - image: 'kalila_barnett.jpg'
           name: 'Kalila Barnett<br/>&nbsp;'
-          title: 'Executive Director ACE-EJ<br/><br/>&nbsp;'
+          title: 'Former Executive Director ACE-EJ<br/><br/>&nbsp;'
           link: 'http://www.ace-ej.org'
           text: |
             "I support Community Choice Energy because it can provide access to clean renewable energy for all Boston residents."
         - image: 'joel_wool.jpg'
           name: 'Joel Wool<br/>&nbsp;'
-          title: 'Advocate: Energy & Environment - Clean Water Action'
+          title: 'Former Advocate: Energy & Environment - Clean Water Action'
           link: 'https://twitter.com/joelwool'
           text: |
             "Community Choice Energy means ALL of Boston can pitch in to build our clean energy future together."
@@ -55,7 +55,7 @@ officials:
             on the path to being a 100% renewable energy city."
         - image: 'tito_jackson.jpg'
           name: 'Tito Jackson'
-          title: 'Boston City Councilor'
+          title: 'Former Boston City Councilor'
           link: 'http://www.titojacksonformayor.com/'
           text: |
             "Community Choice Energy is simply the right thing to do. It is critical
@@ -83,7 +83,7 @@ officials:
             preserve a habitable environment for our children and their children."
         - image: 'pressley.jpg'
           name: 'Ayanna Pressley'
-          title: 'Boston City Councilor'
+          title: 'US Congresswoman, Former Boston City Councilor'
           link: 'https://www.boston.gov/departments/city-council/ayanna-pressley'
           text: |
             "Cities around the country have had to do more to combat climate change.
@@ -101,7 +101,7 @@ officials:
     - items:
         - image: 'zakim.jpg'
           name: 'Josh Zakim'
-          title: 'Boston City Councilor'
+          title: 'Former Boston City Councilor'
           link: 'https://www.boston.gov/departments/city-council/josh-zakim'
           text: |
               "We must all work together to protect our city from climate change.

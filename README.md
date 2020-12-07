@@ -1,22 +1,11 @@
 # Community Choice Energy Campaign Page
 Campaign page to support Community Choice Aggregation in Boston, compiling
 public information and an action plan for increasing renewables for the
-city
+city.
 
 ### Development Environment Setup
 The following directions assume a Mac or Linux machine, or at least bash
 access.  Windows users may find that their mileage varies.
-
-#### Local Config Overrides
-Create a file in `api/.env` that contains overrides for local development, as
-in the example below, but with actual values:
-
-```bash
-# Config overrides
-EVENTBRITE_TOKEN=ABCDEFGHIJKLMNOP
-EVENTBRITE_ORGANIZER=1234567890
-ACTION_NETWORK_TOKEN=foobarbazzhands
-```
 
 #### Running locally
 
@@ -27,7 +16,7 @@ First, install [Docker](https://docs.docker.com/engine/installation/#/on-macos-a
 $ docker-compose up
 ```
 
-Open [localhost:3000](http://localhost:3000) to see.
+Open [localhost](http://localhost) to see.
 
 #### Deploying
 
@@ -39,11 +28,6 @@ BCAN/CCE AWS account.
 ```bash
 AWS_ACCESS_KEY_ID=<access_key>
 AWS_SECRET_ACCESS_KEY=<secret_key>
-
-# Config overrides
-TF_VAR_eventbrite_token=<token>
-TF_VAR_eventbrite_organizer=<organizer_id>
-TF_VAR_action_network_token=<token>
 ```
 
 Then run the script:

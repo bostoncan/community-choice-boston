@@ -1,14 +1,11 @@
 version: '2'
 services:
-    api:
-        build: './api'
-        env_file: './api/.env'
-        command: ['node', './src/express.js']
+    nginx:
+        image: 'nginx:alpine'
         volumes:
-            - './api:/app'
-            - './webpack/build:/build'
+            - './webpack/build:/usr/share/nginx/html'
         ports:
-            - '3000:3000'
+            - '80:80'
     webpack:
         build: './webpack'
         command: ['webpack', '--progress', '--colors', '--watch']

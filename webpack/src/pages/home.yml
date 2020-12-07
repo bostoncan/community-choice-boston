@@ -1,18 +1,15 @@
 title: 'Community Choice Electricity Boston'
-lead: 'Help us make renewable electricity affordable and accessible for all Boston residents.'
-leaders:
-    - 'Choose renewables'
-    - 'Fight climate change'
-    - 'Protect consumers'
-    - 'Stabilize prices'
+lead: 'Making renewable electricity affordable and accessible for all Boston residents.'
 
 leader_text: |
-    <p><b>Boston is now actively working to implement Community Choice Electricity!
+    <p><b>Boston is now running the largest community choice aggregation in New England!
     </b></p>
-    <p>The Mayor's office is engaged in the first steps of setting up
-       the program.</p>
-    <p>Read more below to learn about the program, how far along it is on
-       implementation, and how you can get involved!</p>
+    <p>BostonCAN is thrilled to confirm that CCE offers all Boston electricity customers a painless but meaningful way to take action against climate change.</p>
+
+follow_text: |
+    <p>To read more about BostonCAN's advocacy work on climate justice in the
+    City of Boston, and how you can get involved in our campaigns, visit
+    <a href="https://bostoncan.org">our website</a>.</p>
 
 embed_video_link: 'https://www.youtube.com/embed/6HkNZiN-FX4'
 
@@ -73,28 +70,219 @@ primary:
         increasingly feel like citizens of the world. Boston needs to do
         something. This is something. Let’s do it. "
 
-endorsements:
+people:
     - items:
+        - image: 'rev_mariama_white_hammond.jpg'
+          name: 'Reverend Mariama White-Hammond'
+          title: 'Pastor, New Roots AME Church'
+          link: 'https://twitter.com/mariamawh'
+          text: |
+            "I definitely think Community Choice is the direction we should be going in."
         - image: 'kalila_barnett.jpg'
-          name: 'Kalila Barnett'
-          title: 'Executive Director ACE-EJ'
+          name: 'Kalila Barnett<br/>&nbsp;'
+          title: 'Former Executive Director ACE-EJ<br/><br/>&nbsp;'
           link: 'http://www.ace-ej.org'
           text: |
-            "I support Community Choice Electricity because it can provide access to clean renewable energy for all Boston residents."
-        - image: 'bcan.png'
-          name: 'Boston Climate Action Network'
-          link: 'http://bostoncan.org'
+            "I support Community Choice Energy because it can provide access to clean renewable energy for all Boston residents."
+        - image: 'joel_wool.jpg'
+          name: 'Joel Wool<br/>&nbsp;'
+          title: 'Former Advocate: Energy & Environment - Clean Water Action'
+          link: 'https://twitter.com/joelwool'
           text: |
-            "Get more renewable electricity for all Boston residents by combining our buying power."
+            "Community Choice Energy means ALL of Boston can pitch in to build our clean energy future together."
+    - items:
+        - image: 'jenny_sazama.jpg'
+          name: 'Jenny Sazama'
+          title: 'Director & Co-Founder, Youth On Board'
+          link: 'http://www.youthonboard.org/'
+          text: |
+            "Youth will inherit the climate we create. Let's make it renewable."
+        - image: 'carol_oldham.jpg'
+          name: 'Carol Oldham'
+          title: 'Former Executive Director, Mass Climate Action Network'
+          link: 'http://www.massclimateaction.org'
+          text: |
+            "Community Choice Energy allows residents and small businesses to seamlessly switch to more renewable energy."
+
+        - image: 'michael_orr.jpg'
+          name: 'Michael Orr'
+          title: 'Somerville Resident<br/>&nbsp;'
+          link: '#'
+          text: |
+            "I decided to opt up for the 100% renewables choice through CCA. In
+             just two minutes I was signed up! It was sooooo easy."
+
+officials:
+    - items:
         - image: 'michelle_wu.jpg'
           name: 'Michelle Wu'
           title: 'Boston City Councilor-at-Large'
           link: 'https://www.boston.gov/departments/city-council/michelle-wu'
           text: |
-              The law lays out a process for the City of Boston to choose to power
-              our city as a whole with renewable energy resources such as solar and
-              wind. Community Choice Electricity is the fastest way that Boston can get
-              on the path to being a 100% renewable energy city.
+            "The law lays out a process for the City of Boston to choose to power
+            our city as a whole with renewable energy resources such as solar and
+            wind. Community choice energy is the fastest way that Boston can get
+            on the path to being a 100% renewable energy city."
+        - image: 'walsh.jpg'
+          name: 'Marty Walsh'
+          title: 'Mayor of Boston'
+          link: 'https://www.boston.gov/departments/mayors-office'
+          text: |
+              "Community Choice Energy will help Boston deliver electricity in
+              a way that is safe, affordable, and convenient for all residents.
+              As we continue our work to achieve carbon neutrality in Boston by
+              2050, creating affordable energy options represents Boston's
+              commitment to equity in all our environmental goals."
+        - image: 'matt_omalley.jpg'
+          name: 'Matt O''Malley'
+          title: 'Boston City Councilor'
+          link: 'https://www.boston.gov/departments/city-council/matt-omalley'
+          text: |
+            "Fighting climate change and protecting our environment is about equity
+            and social justice, standing together to prevent disastrous impacts
+            that will fall disproportionately on vulnerable communities."
+            <br/><br/><br/>
+    - items:
+        - image: 'essaibi-george.jpg'
+          name: 'Annissa Essaibi-George'
+          title: 'Boston City Councilor'
+          link: 'https://www.boston.gov/departments/city-council/annissa-essaibi-george'
+          text: |
+            "Climate Change is a clear threat to future generations. I am committed
+            to supporting work and policy that advances our transition to clean,
+            renewable sources of energy. We have an obligation to do all we can to
+            preserve a habitable environment for our children and their children."
+        - image: 'pressley.jpg'
+          name: 'Ayanna Pressley'
+          title: 'US Congresswoman, Former Boston City Councilor'
+          link: 'https://www.boston.gov/departments/city-council/ayanna-pressley'
+          text: |
+            "Cities around the country have had to do more to combat climate change.
+            Community Choice Energy is an example of community driven policy that
+            will push Boston to be greener and more resilient. I am proud to
+            support this effort."
+        - image: 'campbell.jpg'
+          name: 'Andrea Campbell'
+          title: 'Boston City Councilor'
+          link: ''
+          text: |
+            "Community Choice Energy is an important, environmentally conscious
+            step we can take toward making our City greener and making clean energy
+            accessible and affordable to all residents."
+    - items:
+        - image: 'zakim.jpg'
+          name: 'Josh Zakim'
+          title: 'Former Boston City Councilor'
+          link: 'https://www.boston.gov/departments/city-council/josh-zakim'
+          text: |
+              "We must all work together to protect our city from climate change.
+              Adopting CCE is a small, simple step that we can take that will make
+              a large impact on our environment."
+        - image: 'tito_jackson.jpg'
+          name: 'Tito Jackson'
+          title: 'Former Boston City Councilor'
+          link: 'http://www.titojacksonformayor.com/'
+          text: |
+            "Community Choice Energy is simply the right thing to do. It is critical
+            for the City of Boston to use its resources to significantly fight
+            climate change, and become a leader in standing for a better environment."
+            <br/><br/><br/>
+
+organizations:
+    - items:
+        - image: 'boston-globe.jpg'
+          name: 'The Boston Globe'
+          link: 'http://www.bostonglobe.com/opinion/editorials/2017/10/07/boston-needs-lead-clean-energy/1Z5CbWHaUJOAFBuG03ktQM/story.html'
+          text: |
+              "Boston is an important city. It’s the largest in New England. It’s
+              filled with top-notch scientists and big thinkers, and its citizens
+              increasingly feel like citizens of the world. Boston needs to do
+              something. This is something. Let’s do it. "
+        - image: 'bcan.png'
+          name: 'Boston Climate Action Network'
+          link: 'http://bostoncan.org'
+          text: |
+            "Get more renewable electricity for all Boston residents by combining our buying power."
+        - image: 'clampoint.png'
+          name: 'Clam Point Civic Association'
+          link: 'http://clampoint.org/'
+          text: |
+            "Community Choice Energy is the fastest single action Boston can take to
+            meet its greenhouse gas reduction goals."
+    - items:
+        - image: 'ward4.jpg'
+          name: 'Boston Ward 4 Democratic Committee'
+          link: 'https://twitter.com/Ward4Dems'
+          text: |
+            "The Boston Ward 4 Democratic Committee endorses the Community Choice
+            Energy campaign and urges the Boston City Council and
+            Mayor to adopt and implement a Community Choice Energy program promptly."
+        - image: 'charlestown.png'
+          name: 'Charlestown Neighborhood Council'
+          link: 'http://www.charlestownneighborhoodcouncil.org/'
+          text: |
+              "We endorse Community Choice Energy as an important step toward a greener
+              Boston."
+        - image: 'bsac.jpg'
+          name: 'Boston Student Advisory Council'
+          link: 'http://www.bostonpublicschools.org/student-voice'
+          text: |
+            "The climate is our future. We don't have time to waste."
+    - items:
+        - image: 'nabb.jpg'
+          name: 'Neighborhood Association of the Back Bay, Green Committee'
+          link: 'http://www.nabbonline.com/'
+          text: |
+            "We can get more renewable electricity by combining our buying power.
+            We can choose renewables, fight climate change, protect consumers,
+            create jobs, and stabilize prices."
+        - image: 'bcec.jpg'
+          name: 'Boston Clean Energy Coalition'
+          link: 'https://www.facebook.com/Boston-Clean-Energy-Coalition-249864232150793/'
+          text: |
+            "The Boston Clean Energy Coalition enthusiastically supports Community
+            Choice Energy for Boston because it will accelerate our transition to
+            a renewable energy future in an equitable fashion."
+        - image: 'sierra-mass.jpg'
+          name: 'Sierra Club - Massachussetts'
+          link: 'http://www.sierraclub.org/massachusetts'
+          text: |
+            "Community Choice Energy is a great opportunity for Boston to invest in
+            renewable energy and help consumers by providing them with consistent
+            electricity prices year round."
+    - items:
+        - image: 'roslindale.jpg'
+          name: 'Roslindale Affinity Group<br/>&nbsp;'
+          link: '#'
+          text: |
+            "We whole-heartedly endorse the Community Choice Energy (CCE) initiative
+            in Boston.  Using the power of bulk puchasing in the electricity generation
+            market, CCE consolidates demand by Boston residents for locally generated
+            wind, solar and non-fossil fuel electricity."
+        - image: 'wrse.jpg'
+          name: 'West Roxbury Saves Energy'
+          link: 'http://westroxburysavesenergy.org'
+          text: |
+            "It is time for Boston to take the lead in all matters that help our
+            environment, and CCE is the single most effective way to immediately
+            reduce greenhouse gases in our city. Now is the time for Boston to
+            adopt CCE; we cannot wait."
+        - image: 'arborway-coalition.png'
+          name: 'The Arborway Coalition'
+          link: 'http://gatewaytothearborway.blogspot.com/'
+          text: |
+            "We encourage the City to take an important additional
+            step toward a greener Boston by adopting 'Community Choice Energy' (CCE)."
+    - items:
+        - image: 'jpnc.png'
+          name: 'Jamaica Plain Neighborhood Council'
+          link: ''
+          text: |
+              "(CCE) will bring both environmental and economic benefits by
+              reducing carbon emissions and helping the city to meet the goals of
+              its Climate Action Plan, while also protecting Boston residents and
+              businesses from price spikes caused by volatility in the cost of
+              fossil fuels."
 
 faqs:
     - question: 'What is Community Choice Electricity?'

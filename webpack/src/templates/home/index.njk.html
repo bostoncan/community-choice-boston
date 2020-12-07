@@ -5,8 +5,6 @@
       <div class="container">
         <img class="center-block" src="/img/cce.png">
         <p class="lead hidden-sm">{{ lead }}</p>
-        <p><a id="sign" class="btn btn-lg btn-success" href="#" role="button">
-            Subscribe For Updates</a></p>
       </div>
     </div>
 {% endblock %}
@@ -16,65 +14,22 @@
         <div class="visible-sm-inline text-center">
             <h4 class="vert-spacer-bottom">{{ lead }}</h4>
         </div>
-        <div class="row">
-            <div class="col-sm-6">
-                {{ leader_text | safe }}
-                <br/>
-                <div class="green-info bg-success check-list hidden-sm-inline">
-                    {% for leader in leaders %}
-                    <p>
-                        <span class="fa-stack">
-                          <i class="fa fa-circle text-success fa-stack-2x"></i>
-                          <i class="fa fa-check fa-stack-1x fa-inverse"></i>
-                        </span>
-                        {{ leader }}
-                    </p>
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="col-sm-6" class="petition-wrapper">
-                <form id="petition" class="well"></form>
-            </div>
+        <div class="vert-spacer-bottom">
+            {{ leader_text | safe }}
         </div>
-    </div>
-
-    <div class="container section">
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="{{ embed_video_link }}" allowfullscreen></iframe></center>
+        <div class="text-center">
+            <a
+                href="https://www.boston.gov/departments/environment/community-choice-electricity"
+                class="btn btn-success btn-lg">
+                Learn More on the City's Website
+            </a>
         </div>
-    </div>
-
-    <div class="section bg-section bg-success">
-        <div class="margin-sides container">
-            <div class="row card vert-padding-top-small">
-                <div id="next-event"></div>
-                <div>
-                    <div class="col-sm-4 cce-poster">
-                        <a href="http://bostoncan.org">
-                            <img class="center-block" style="max-width: 100%" alt="Boston wants Community Choice Electricity" src="/img/poster-thumb.jpg"/>
-                        </a>
-                    </div>
-                    <div class="col-sm-8">
-                        <div id="news">
-                            <h4 class="text-center">CCE in the News</h4>
-                            {% for n in news %}
-                            <p>
-                                <strong><a href="{{n.link}}">{{n.title}}</a></strong><br/>
-                                <span class="text-muted" style="font-size: 14px; margin-bottom: 10px">{{n.when}}<span>
-                            </p>
-                            {% endfor %}
-                        </div>
-                        <div id="posts"></div>
-                    </div>
-                </div>
-            </div>
+        <div class="vert-spacer-top">
+            {{ follow_text | safe }}
         </div>
-    </div>
-
-    <div class="container section">
-        <h2>Let's Join the Massachusetts Movement</h2>
-        <h4 class="section-subtitle">Dozens of towns across the state are using Community Choice to go green!</h4>
-        {% include "home/partials/map.njk.html" %}
+        <div class="petition-wrapper">
+            <div id='can-form-area-sign-up-for-our-newsletter-38' style='width: 100%'></div>
+        </div>
     </div>
 
     <div class="section bg-section bg-success">
@@ -101,55 +56,23 @@
 
     <div class="section">
         <div class="container">
-            <h2>Endorsements</h2>
-            <h4 class="section-subtitle">Organizations, Activist Groups, Officials, and Businesses are all getting on board.</h4>
-            <div class="row">
-                <div class="col-sm-6">
-                    <a href="{{ primary.link }}">
-                    <img class="img-circle center-block" src="/img/endorsements/{{ primary.image }}" alt="" width="280" height="280">
-                    </a>
-                </div>
-                <div class="col-sm-6">
-                  <h3 class="text-center">{{ primary.name | safe }}</h3>
-                  {% if primary.title %}
-                     <h4 class="text-center">{{ primary.title | safe }}</h4>
-                  {% endif %}
-                  <p class="text-muted">{{ primary.text | safe }}</p>
-                </div>
+            <div class="vert-spacer-bottom">
+                <h2>Thank You</h2>
+                <h4 class="section-subtitle">To all the organizations, activist groups, officials, and businesses who helped make this happen, not all of whom are listed here.</h4>
             </div>
-            <div class="vert-spacer"><hr/></div>
+            <h2 class="text-center vert-spacer-top vert-spacer-bottom">Community Leaders</h2>
+            {% set endorsements = people %}
             {% include "common/endorsements.njk.html" %}
-            <p class="text-center"><a href="/endorsements.html" class="btn btn-success">See Everyone</a></p>
-        </div>
-    </div>
 
-    <div class="section bg-section bg-success">
-      <div class="container">
-        <div class="card faq">
-            {% for q in faqs %}
-                <h4>{{ q.question }}</h4>
-                {{ q.answer | safe }}
-            {% endfor %}
-            <p class="vert-spacer-top text-center"><a href="/faq.html" class="btn btn-success">Read More</a></p>
-          </div>
-        </div>
-    </div>
+            <h2 class="text-center vert-spacer-top vert-spacer-bottom">Organizations</h2>
+            {% set endorsements = organizations %}
+            {% include "common/endorsements.njk.html" %}
 
-    <div class="section" id="join">
-        <div class="container">
-            <h2>Three Ways To Join the Movement</h2>
-            <h4 class="section-subtitle">Join the movement. Band together to save the planet from warming.</h4>
-            {% include "home/partials/get-involved.njk.html" %}
-        </div>
-        <div class="container vert-spacer-top">
-          <div class="row">
-            <div class="col-sm-6">
-              {{ funded_by | safe }}
-            </div>
-            <div class="col-sm-6 center-block">
-              <img src="/img/negef.png" />
-            </div>
-          </div>
+            <h2 class="text-center vert-spacer-top vert-spacer-bottom">Officials</h2>
+            {% set endorsements = officials %}
+            {% include "common/endorsements.njk.html" %}
+
+
         </div>
     </div>
 {% endblock %}

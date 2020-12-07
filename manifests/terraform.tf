@@ -14,25 +14,6 @@ variable "aws_region" {
     default = "us-east-1"
 }
 
-variable "eventbrite_token" {
-    type = "string"
-    description = "API Token for Eventbrite"
-}
-
-variable "eventbrite_organizer" {
-    type = "string"
-    description = "Eventbrite Organizer ID"
-}
-
-variable "action_network_token" {
-    type = "string"
-    description = "API Token for the Action Network"
-}
-
-provider "template" {
-    version = "~> 2.1"
-}
-
 provider "aws" {
     region = "${var.aws_region}"
     version = "2.41.0"

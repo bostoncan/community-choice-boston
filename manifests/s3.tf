@@ -291,6 +291,15 @@ resource "aws_s3_bucket_object" "endorsement_josh_zakim" {
     content_type = "image/jpeg"
 }
 
+resource "aws_s3_bucket_object" "endorsement_marty_walsh" {
+    bucket = "${aws_s3_bucket.site.bucket}"
+    key = "img/endorsements/walsh.jpg"
+    source = "../webpack/build/img/endorsements/walsh.jpg"
+    etag = "${filemd5("../webpack/build/img/endorsements/walsh.jpg")}"
+    cache_control = "max_age=31536000"
+    content_type = "image/jpeg"
+}
+
 resource "aws_s3_bucket_object" "endorsement_tito_jackson" {
     bucket = "${aws_s3_bucket.site.bucket}"
     key = "img/endorsements/tito_jackson.jpg"

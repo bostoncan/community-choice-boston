@@ -4,6 +4,17 @@ body {
     font-weight: 300;
 }
 
+#can_embed_form h1,
+#can_embed_form h2,
+#can_embed_form h3,
+#can_embed_form h4,
+#can_embed_form h5,
+#can_embed_form h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
 #map {
     position: relative;
     left: 50%;
@@ -214,11 +225,8 @@ body {
     margin-top: 30px;
 }
 
-.petition {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 420px;
+.petition-wrapper {
+    margin-top: 50px;
 }
 
 .center-icon {
@@ -235,6 +243,18 @@ footer {
     margin-bottom: 20px;
 }
 
-.cce-poster {
-    padding-top: 15px;
+.petition-wrapper #logo_wrap {
+    display: none;
+}
+
+.petition-wrapper #can_embed_form #can_embed_form_inner h2 {
+    text-align: center !important;
+}
+
+.petition-wrapper #can_embed_form h4 {
+    display: none;
+}
+
+.petition-wrapper #can_embed_form {
+    border: none !important;
 }

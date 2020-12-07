@@ -4,8 +4,6 @@ set -e
 
 # Perform the builds
 if [ -z "$SKIP_BUILD" ]; then
-    rm -rf api/build
-    docker-compose run api npm run package
     docker-compose run webpack webpack
 fi
 
